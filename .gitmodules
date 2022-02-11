@@ -1,0 +1,3 @@
+[submodule "dot-hugo"]
+	path = dot-hugo
+	url = https://github.com/themefisher/dot-hugo.git
