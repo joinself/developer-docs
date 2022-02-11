@@ -126,11 +126,11 @@ Fact response
 <p>A single <strong>fact</strong> can be <strong>verified</strong> by multiple issuers and so have multiple <strong>assertions</strong>. <strong>Verified facts</strong> are held by <strong>identities</strong> and can be shared with other <strong>identities (relying parties)</strong> who require them.</p>
 <p>Facts and related attestations are stored on the user’s device, so the user has full control over who can access its information.</p>
 <p>Each fact has the following properties:</p>
-<h5 id=sources>Sources</h5>
+<h4 id=sources>Sources</h4>
 <p>A fact’s source represents where this fact comes from, for example a DOB can come from different sources such as a passport or a driving license. By default this field is set with a wildcard <em>“*”</em> and the user will select the source on their device. Same happens if you specify multiple sources.</p>
 <p>At the moment there are three different sources <em>user_specified</em>, <em>passport</em> and <em>driving_license</em>.</p>
 <p>As this list is always growing, you can check the possible values on your SDK <a href=https://github.com/joinself/self-ruby-sdk/blob/master/lib/sources.rb#L6>ruby-sdk</a> and <a href=https://github.com/joinself/self-go-sdk/blob/a027b7567d6d7d74ad2bbbf7219a24c57742b839/fact/fact.go#L20>go-sdk</a>.</p>
-<h5 id=fact>Fact</h5>
+<h4 id=fact>Fact</h4>
 <p>This is the name of the fact you want to request like <em>display_name</em>, <em>email_address</em> or <em>phone_number</em>.</p>
 <p>The list of values by source is:</p>
 <ul>
@@ -138,11 +138,11 @@ Fact response
 <li><strong><em>passport</em></strong> and <strong>_identity-card _</strong>: <em>document_number</em>, <em>surname</em>, <em>given_names</em>, <em>date_of_birth</em>, <em>date_of_expiration</em>, <em>sex</em>, <em>nationality</em>, _country_of_issuance.</li>
 <li><strong><em>driving_license</em></strong> : <em>document_number</em>, <em>surname</em>, <em>given_names</em>, <em>date_of_birth</em>, <em>date_of_issuance</em>, <em>date_of_expiration</em>, <em>address</em>, <em>issuing_authority</em>, <em>place_of_birth</em>, <em>country_of_issuance</em>.</li>
 </ul>
-<h5 id=attestations>Attestations</h5>
+<h4 id=attestations>Attestations</h4>
 <p>A list of <strong>verified</strong> <strong>attestations</strong> signed by an <strong>issuer</strong>. This only has content on <em>fact request</em> responses, and it contains a list of <strong>attestations</strong> for the current fact.</p>
-<h5 id=expected-value>Expected value</h5>
+<h4 id=expected-value>Expected value</h4>
 <p>When you send an <strong>intermediary</strong> fact check you expect the value of a user’s fact to be compared with an expected value, this field is where you will provide that value.</p>
-<h5 id=operator>Operator</h5>
+<h4 id=operator>Operator</h4>
 <p>On an intermediary fact check this field contains the operator used to compare the expected value against the expected value. Valid operators can be found <a href=https://github.com/joinself/self-ruby-sdk/blob/master/lib/sources.rb#L34>here</a></p>
 <h3 id=fact-requests>Fact requests</h3>
 <p><strong>Fact</strong> requests allow your app to request specific <strong>facts</strong> from identities on the <em>Self-network</em>.</p>

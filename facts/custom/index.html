@@ -127,6 +127,9 @@ Fact response
 <p>Passing the cid or conversation id, you&rsquo;ll be able to modify the default random uuid for that request, and easily identify the related response.</p>
 <h3 id=exp_timeout>exp_timeout</h3>
 <p>Timeout in seconds after which the request will expire. Useful if you want your <strong>fact request</strong> to be valid just for a specific period of time. It <strong>defaults to 900 seconds</strong>.</p>
+<h3 id=allowed_until>allowed_until</h3>
+<p>Providing this option with a timestamp, your app will be allowed to request this same data without user confirmation until the provided data.
+This is quite useful if you intend to use some data recurrently but don&rsquo;t want to store it on your end.</p>
 </div>
 <p class="post-meta border-bottom pb-3 mb-0 mt-3">
 Updated on 05 Jan 2020
