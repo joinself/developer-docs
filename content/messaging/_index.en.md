@@ -6,16 +6,6 @@ description: "Interact with your users through messaging"
 type : "docs"
 ---
 
-Self provides powerful tools to interact with your users through messages.
+Messaging is the core of Self and we want to provide you with a flexible library to interact with your users. 
 
-- [x] Sending text messages
-- [x] Sending text messages with attached files
-- [x] Process incoming messages
-- [x] Message confirmations
-- [x] Edit messages
-- [x] Delete messages
-- [x] Direct response
-- [x] Groups creation
-- [x] Group messaging
-- [x] Leaving a group  
-- [x] Group management (sub invite and leave)
+On this section you'll find tools to send an receive messages, manage groups or share documents.
