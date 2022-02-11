@@ -1,0 +1,314 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<title>Initializing your client</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.1">
+<meta name=description content="Initializing your client - Joinself - Platform Documentation ">
+<link rel=stylesheet href=https://docs.joinself.com/plugins/bootstrap/bootstrap.min.css>
+<link rel=stylesheet href=https://docs.joinself.com/plugins/themify-icons/themify-icons.css>
+<link rel=icon href=https://docs.joinself.com/images/favicon.png type=image/x-icon>
+<link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap" rel=stylesheet>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js></script>
+<style>:root{--primary-color:#0e1c42;--body-color:#f9f9f9;--text-color:#636363;--text-color-dark:#0e1c42;--white-color:#ffffff;--light-color:#f8f9fa;--font-family:Barlow}</style>
+<link href=https://docs.joinself.com/css/style.min.css rel=stylesheet media=screen>
+<script src=https://docs.joinself.com/plugins/jquery/jquery-1.12.4.js></script>
+<script src=https://docs.joinself.com/plugins/jquery/jquery-ui.js></script>
+<script src=https://docs.joinself.com/plugins/bootstrap/bootstrap.min.js></script>
+<script src=https://docs.joinself.com/plugins/match-height/jquery.matchHeight-min.js></script>
+<meta property="og:image" content="https://docs.joinself.com/images/logo.png">
+<meta property="og:image:width" content="57">
+<meta property="og:image:height" content="35">
+<meta property="og:image:type" content="image/png">
+<meta name=twitter:title content="Initializing your client">
+<meta name=twitter:description content="Joinself - Platform Documentation">
+<meta property="og:title" content="Initializing your client">
+<meta property="og:description" content="Joinself - Platform Documentation">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://docs.joinself.com/setup/initialize/">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Initializing your client">
+<meta name=twitter:description content="Joinself - Platform Documentation">
+</head>
+<body>
+<header class="shadow-bottom sticky-top bg-white">
+<nav class="navbar navbar-expand-md navbar-light">
+<div class="container px-2 px-md-0">
+<a class="navbar-brand px-2" href=/>
+<img class=img-fluid src=https://docs.joinself.com/images/logo.png alt="Joinself - Platform Documentation">
+</a>
+<button class="navbar-toggler border-0" type=button data-toggle=collapse data-target=#navigation aria-controls=navigation aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse text-center" id=navigation>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item>
+<a class="nav-link text-dark" href=https://docs.joinself.com/>Home</a>
+</li>
+<li class=nav-item>
+<a class="nav-link text-dark" href=https://www.joinself.com/faq>Faq</a>
+</li>
+<li class=nav-item>
+<a class="nav-link text-dark" href=https://www.joinself.com/contact-us>contact</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-dark" href=# role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>
+docs
+</a>
+<div class=dropdown-menu>
+<a class=dropdown-item href=https://docs.joinself.com/setup/>Setup</a>
+<a class=dropdown-item href=https://docs.joinself.com/users/>Users</a>
+<a class=dropdown-item href=https://docs.joinself.com/messaging/>Messaging</a>
+<a class=dropdown-item href=https://docs.joinself.com/authentication/>Authentication</a>
+<a class=dropdown-item href=https://docs.joinself.com/facts/>Facts</a>
+<a class=dropdown-item href=https://docs.joinself.com/zero/>Zero-knowledge</a>
+<a class=dropdown-item href=https://docs.joinself.com/notify/>Notify</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<section class="single section-sm pb-0">
+<div class=container>
+<div class=row>
+<div class=col-lg-3>
+<div class=sidebar>
+<a class=back-btn href=/ aria-label=back></a>
+<ul class=list-styled>
+<li data-nav-id=https://docs.joinself.com/setup/ title=Setup class=sidelist>
+<a href=https://docs.joinself.com/setup/>
+Setup
+</a>
+<ul>
+<li data-nav-id=https://docs.joinself.com/setup/getting-started/ title="Getting started" class=sidelist>
+<a href=https://docs.joinself.com/setup/getting-started/>
+Getting started
+</a>
+</li>
+<li data-nav-id=https://docs.joinself.com/setup/dependencies/ title="System dependencies" class=sidelist>
+<a href=https://docs.joinself.com/setup/dependencies/>
+System dependencies
+</a>
+</li>
+<li data-nav-id=https://docs.joinself.com/setup/initialize/ title="Initializing your client" class="sidelist
+active">
+<a href=https://docs.joinself.com/setup/initialize/>
+Initializing your client
+</a>
+</li>
+<li data-nav-id=https://docs.joinself.com/setup/disconnect/ title=Disconnecting class=sidelist>
+<a href=https://docs.joinself.com/setup/disconnect/>
+Disconnecting
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class=col-lg-9>
+<div class="p-lg-5 p-4 bg-white" id=content>
+<h2 class=mb-5 id=title>Initializing your client</h2>
+<div class=content><h3 id=install-your-client>Install your client</h3>
+<div class=code-tabs>
+<ul class="nav nav-tabs"></ul>
+<div class=tab-content><div class=tab-pane title=Ruby>
+<pre><code>$ gem install &quot;selfsdk&quot;
+</code></pre>
+</div>
+<div class=tab-pane title=Go>
+<pre><code>$ go get github.com/joinself/self-go-sdk
+</code></pre>
+</div>
+<div class=tab-pane title=Typescript>
+<pre><code>$ npm install self-sdk
+</code></pre>
+</div>
+</div>
+</div>
+<p>We currently offer support for some basic clients. We are always happy to receive contributions to review - send us a PR, or contact us at <a href=mailto:info@joinself.com>info@joinself.com</a> to share what you have built with us!</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Go</td>
+<td><a href=https://github.com/joinself/self-go-sdk>https://github.com/joinself/self-go-sdk</a></td>
+</tr>
+<tr>
+<td>Ruby</td>
+<td><a href=https://github.com/joinself/self-ruby-sdk/>https://github.com/joinself/self-ruby-sdk/</a></td>
+</tr>
+<tr>
+<td>Typescript</td>
+<td><a href=https://github.com/joinself/self-typescript-sdk/>https://github.com/joinself/self-typescript-sdk/</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id=referencing-the-sdk>Referencing the SDK</h3>
+<p>SelfSDK is referenced like any other library for each specific language.</p>
+<div class=code-tabs>
+<ul class="nav nav-tabs"></ul>
+<div class=tab-content><div class=tab-pane title=Ruby>
+<pre><code>require &quot;selfsdk&quot;
+</code></pre>
+</div>
+<div class=tab-pane title=Go>
+<pre><code>import &quot;github.com/joinself/self-go-sdk&quot;
+</code></pre>
+</div>
+<div class=tab-pane title=Typescript>
+<pre><code>import SelfSDK from 'self-sdk'
+</code></pre>
+</div>
+</div>
+</div>
+<h3 id=storage-key-generation>Storage key generation</h3>
+<p>Self-SDK locally persists session and account information needed for end to end encryption. A SELF_STORAGE_KEY is required to securely encrypt this information.
+It is recommended that you use a large random string for your SELF_STORAGE_KEY. You can generate a random string through the command line with:</p>
+<p><code>$ LC_ALL=C tr -dc '[:alnum:]' &lt; /dev/urandom | head -c64</code></p>
+<p>Keep that key in a secure place as you’ll need it to initialize a connection.</p>
+<h3 id=basic-connection>Basic connection</h3>
+<p>A basic connection to <em>Self network</em> only requires your <em>SELF_APP_ID</em>, <em>SELF_APP_DEVICE_SECRET</em>, <em>SELF_STORAGE_KEY</em> and <em>SELF_STORAGE_DIR</em>.</p>
+<p>You may want to add <em>SELF_APP_ID</em>, <em>SELF_APP_DEVICE_SECRET</em>, <em>SELF_STORAGE_KEY</em> and <em>SELF_STORAGE_DIR</em> as environment variables.</p>
+<div class=code-tabs>
+<ul class="nav nav-tabs"></ul>
+<div class=tab-content><div class=tab-pane title=Ruby>
+<pre><code>@client = SelfSDK::App.new(ENV[&quot;SELF_APP_ID&quot;], 
+                           ENV[&quot;SELF_APP_DEVICE_SECRET&quot;], 
+                           ENV[&quot;SELF_STORAGE_KEY&quot;], 
+                           ENV[&quot;SELF_STORAGE_DIR&quot;])
+</code></pre>
+</div>
+<div class=tab-pane title=Go>
+<pre><code>client, err := selfsdk.New(selfsdk.Config{
+    SelfAppD:            os.Getenv(&quot;SELF_APP_ID&quot;),
+    SelfAppDeviceSecret: os.Getenv(&quot;SELF_APP_DEVICE_SECRET&quot;),
+    StorageKey:          os.Getenv(&quot;SELF_STORAGE_KEY&quot;),
+    StorageDir:          os.Getenv(&quot;SELF_STORAGE_DIR&quot;),
+})
+</code></pre>
+</div>
+<div class=tab-pane title=Typescript>
+<pre><code>const client = await SelfSDK.build( 
+    os.Getenv(&quot;SELF_APP_ID&quot;),
+    os.Getenv(&quot;SELF_APP_DEVICE_SECRET&quot;),
+    os.Getenv(&quot;SELF_STORAGE_KEY&quot;),
+    os.Getenv(&quot;SELF_STORAGE_DIR&quot;),
+</code></pre>
+</div>
+</div>
+</div>
+<h3 id=custom-environment>Custom environment</h3>
+<p>When you’re debugging your app, you may want to point to the <em>sandbox environment</em> instead of <em>production</em> to run your tests. You can define the environment by passing additional parameters to the <em>Self client</em> initialization.</p>
+<div class=code-tabs>
+<ul class="nav nav-tabs"></ul>
+<div class=tab-content><div class=tab-pane title=Ruby>
+<pre><code>@client = SelfSDK::App.new(ENV[&quot;SELF_APP_ID&quot;], 
+                           ENV[&quot;SELF_APP_DEVICE_SECRET&quot;], 
+                           ENV[&quot;SELF_STORAGE_KEY&quot;], 
+                           ENV[&quot;SELF_STORAGE_DIR&quot;],
+                           environmnent: :sandbox)
+</code></pre>
+</div>
+<div class=tab-pane title=Go>
+<pre><code>client, err := selfsdk.New(selfsdk.Config{
+    SelfAppD:            os.Getenv(&quot;SELF_APP_ID&quot;),
+    SelfAppDeviceSecret: os.Getenv(&quot;SELF_APP_DEVICE_SECRET&quot;),
+    StorageKey:          os.Getenv(&quot;SELF_STORAGE_KEY&quot;),
+    StorageDir:          os.Getenv(&quot;SELF_STORAGE_DIR&quot;),
+    Environment:	     &quot;sandbox&quot;,
+})
+</code></pre>
+</div>
+<div class=tab-pane title=Typescript>
+<pre><code>const client = await SelfSDK.build( 
+    os.Getenv(&quot;SELF_APP_ID&quot;),
+    os.Getenv(&quot;SELF_APP_DEVICE_SECRET&quot;),
+    os.Getenv(&quot;SELF_STORAGE_KEY&quot;),
+    os.Getenv(&quot;SELF_STORAGE_DIR&quot;),
+    { 'env': 'sandbox' })
+</code></pre>
+</div>
+</div>
+</div>
+<h3 id=reconnection>Reconnection</h3>
+<p>Self-SDK keeps a websocket connection open to self-messaging, but eventually, that connection may drop. By default <em>Self-SDK</em> will try to reconnect, but you can override this behaviour by passing custom parameters to initialization.</p>
+<div class=code-tabs>
+<ul class="nav nav-tabs"></ul>
+<div class=tab-content><div class=tab-pane title=Ruby>
+<pre><code>@client = SelfSDK::App.new(ENV[&quot;SELF_APP_ID&quot;], 
+                           ENV[&quot;SELF_APP_DEVICE_SECRET&quot;], 
+                           ENV[&quot;SELF_STORAGE_KEY&quot;], 
+                           ENV[&quot;SELF_STORAGE_DIR&quot;],
+                           auto_reconnect: false)
+</code></pre>
+</div>
+<div class=tab-pane title=Go>
+<pre><code>client, err := selfsdk.New(selfsdk.Config{
+    SelfAppD:            os.Getenv(&quot;SELF_APP_ID&quot;),
+    SelfAppDeviceSecret: os.Getenv(&quot;SELF_APP_DEVICE_SECRET&quot;),
+    StorageKey:          os.Getenv(&quot;SELF_STORAGE_KEY&quot;),
+    StorageDir:          os.Getenv(&quot;SELF_STORAGE_DIR&quot;),
+    ReconnectAttempts:	 -1,
+})
+</code></pre>
+</div>
+<div class=tab-pane title=Typescript>
+<pre><code>const client = await SelfSDK.build( 
+    os.Getenv(&quot;SELF_APP_ID&quot;),
+    os.Getenv(&quot;SELF_APP_DEVICE_SECRET&quot;),
+    os.Getenv(&quot;SELF_STORAGE_KEY&quot;),
+    os.Getenv(&quot;SELF_STORAGE_DIR&quot;),
+    { 'autoReconnect': false })
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<p class="post-meta border-bottom pb-3 mb-0 mt-3">
+Updated on 09 Feb 2022
+</p>
+<nav class="pagination mt-3">
+<a class="nav nav-prev" href=https://docs.joinself.com/setup/dependencies/ aria-label="Previous page"><i class="ti-arrow-left mr-2"></i>
+<span class="d-none d-md-block">System dependencies</span></a>
+<a class="nav nav-next" href=https://docs.joinself.com/setup/disconnect/ aria-label="Previous page">
+<span class="d-none d-md-block">Disconnecting</span><i class="ti-arrow-right ml-2"></i></a>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="section pb-4">
+<div class=container>
+<div class="row align-items-center">
+<div class="col-md-8 text-md-left text-center">
+<p class="mb-md-0 mb-4">© Self Group Ltd. 2022</p>
+</div>
+<div class="col-md-4 text-md-right text-center">
+<ul class=list-inline>
+<li class=list-inline-item>
+<a class="text-color d-inline-block p-2" href=https://twitter.com/futureoftrust aria-label=Twitter><i class=ti-twitter-alt></i></a>
+</li>
+<li class=list-inline-item>
+<a class="text-color d-inline-block p-2" href=https://github.com/joinself/ aria-label=Github><i class=ti-github></i></a>
+</li>
+<li class=list-inline-item>
+<a class="text-color d-inline-block p-2" href=https://www.linkedin.com/company/joinself/ aria-label=Linkedin><i class=ti-linkedin></i></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<script src=https://docs.joinself.com/js/script.min.js></script>
+</body>
+</html>
