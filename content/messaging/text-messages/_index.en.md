@@ -12,7 +12,7 @@ Self SDK allows you to send messages to any identity on self network, this inclu
 
 The interface used to interact with messaging is chat service, let's see how can we create an app automatically responding all ping messages with a pong.
 
-{{% tabs groupId="install" %}}
+{{% tabs %}}
     {{% tab "Ruby" %}}
     @app.chat.on_message do |msg|
         if msg.body == "ping
@@ -53,7 +53,7 @@ The interface for sending a normal message is quite simple, just provide the use
 
 However, the system provides some useful options you can pass to this method. Let's have a look at the most important ones.
 
-{{% tabs groupId="install" %}}
+{{% tabs %}}
     {{% tab "Ruby" %}}
     @app.chat.message user, "ready!", gid: "group_id",
                                       rid: "uuid",
@@ -88,7 +88,7 @@ In this case `rid` is used to refer a previous message by it's `jti`, once the o
 
 If you've already received a message you want to respond, you can do it directly through the respond method like:
 
-{{% tabs groupId="install" %}}
+{{% tabs %}}
     {{% tab "Ruby" %}}
     @app.chat.on_message do |msg|
         msg.respond "I like this"
