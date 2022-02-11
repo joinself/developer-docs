@@ -1,0 +1,149 @@
+################################# Default configuration ###################
+# provide your domain here
+baseURL = "https://docs.joinself.com/"
+# theme
+theme = "dot"
+# site title
+title = "Joinself - Platform Documentation"
+# disable language
+disableLanguages = []
+# google analytics
+googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+
+############################# Default Parameters ##########################
+[params]
+# logo is for all page
+logo = "images/logo.png"
+# logo white is for homepage logo, you can use colorful logo too...
+logo_white = "images/logo_white.png"
+# when logo is empty, it will shown your site title
+
+# OpenGraph / Twitter Card metadata
+description = "Joinself - Platform Documentation"
+author = "Self Grouop Ltd."
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+
+# customize color
+primary_color = "#0e1c42"
+body_color = "#f9f9f9"
+text_color = "#636363"
+text_color_dark = "#0e1c42"
+white_color = "#ffffff"
+light_color = "#f8f9fa"
+
+# font family
+font_family = "Barlow" # Choose font family from : https://fonts.google.com/
+
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+
+
+############################## social links ##############################
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
+name = "Twitter"
+link = "https://twitter.com/futureoftrust"
+  
+[[params.social]]
+icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
+name = "Github"
+link = "https://github.com/joinself/"
+  
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
+name = "Linkedin"
+link = "https://www.linkedin.com/company/joinself/"
+
+################################ English Language ######################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+weight = 1
+copyright = "&copy; Self Group Ltd. 2022"
+
+# banner
+[Languages.en.params.banner]
+title = "Platform Documentation"
+subtitle = "Here you'll find handy documentation about our APIs and SDKs"
+bg_image = "https://assets.website-files.com/5f93d989df86cd3e82710c38/5fcf94534da2634c0591391b_homepage%20people_1.png"
+placeholder = "Have a question? Just ask here or enter terms"
+
+# call to action
+[Languages.en.params.cta]
+enable = true
+title = "Didn't find an answer to your question?"
+content = "Want to know how the Self Network can solve problems specific to your business?"
+# call to action button
+[Languages.en.params.cta.button]
+enable = true
+label = "contact us"
+link = "https://www.joinself.com/contact-us"
+
+
+################## english navigation #################
+[[Languages.en.menu.main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[Languages.en.menu.main]]
+name = "Faq"
+url = "https://www.joinself.com/faq"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "contact"
+url = "https://www.joinself.com/contact-us"
+weight = 3
+
+# Dropdown menu
+[[Languages.en.menu.main]]
+weight = 4
+name = "docs"
+hasChildren = true
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Setup"
+  url = "setup/"
+  weight = 1
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Users"
+  url = "users/"
+  weight = 2
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Messaging"
+  url = "messaging/"
+  weight = 3
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Authentication"
+  url = "authentication/"
+  weight = 4
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Facts"
+  url = "facts/"
+  weight = 5
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Zero-knowledge"
+  url = "zero/"
+  weight = 6
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Notify"
+  url = "notify/"
+  weight = 7
