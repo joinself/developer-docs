@@ -91,11 +91,6 @@ url = ""
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "Faq"
-url = "https://www.joinself.com/faq"
-weight = 2
-
-[[Languages.en.menu.main]]
 name = "contact"
 url = "https://www.joinself.com/contact-us"
 weight = 3
