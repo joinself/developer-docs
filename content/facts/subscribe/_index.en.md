@@ -14,7 +14,7 @@ Additionally a fact response comes with a list of attestations for the requested
 
 Subscribing to a **facts** response is similar to authentication.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client.facts.subscribe do |resp|
         # GOTO Deal with the response for details

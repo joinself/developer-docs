@@ -12,7 +12,7 @@ Users can respond to authentication requests by accepting or rejecting them. On 
 
 You can subscribe to authentication responses with this snippet
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client.authentication.subscribe do |auth_res|
         puts resp.status

@@ -14,7 +14,7 @@ Same registration example we used for authentication works here, if you want to 
 Let’s see how we can request a verified email address with a non-blocking request.
 
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
         def get_email_in_background(selfid)
             @client.facts.request(user, [:email_address]) do |res|

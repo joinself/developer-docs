@@ -12,7 +12,7 @@ The fact response will comes with a status and the same list of helpers as we de
 
 Additionally each fact of the response has a list of attestations let’s see how to process them.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     resp.facts.each do |fact|
         p fact.name

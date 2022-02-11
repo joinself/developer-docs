@@ -8,7 +8,7 @@ draft: false
 keywords: ["fact", "anonymous", "zero knowledge", "zero", "intermediary", "async"]
 ---
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     res = @client.facts.request_via_intermediary(selfid, facts, async: true)
     {{% /tab %}}

@@ -32,4 +32,46 @@
   <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
+  <script>
+
+    function setCookie(key, value, expiry) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+        document.cookie = key + '=' + value + ';path=/' + ';expires=' + expires.toUTCString();
+    }
+
+    function getCookie(key) {
+        var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+        return keyValue ? keyValue[2] : null;
+    }
+
+
+    function defaultPageTabs(tabIndex) {
+        let tabs = $('.code-tabs')
+        for(var i = 0; i<tabs.length; i++) {
+            $(tabs[i]).find('.active').removeClass('active');
+            tab = $(tabs[i]).find('.tab-pane').eq(tabIndex);
+            $(tab).addClass('active');
+            tabHeader = $(tabs[i]).find('.nav-item').eq(tabIndex);
+            $(tabHeader).addClass('active');
+        }
+    }
+
+    $('document').ready(function(){
+        hljs.highlightAll();
+
+
+        $('.nav-tabs a').click(function (e) {
+            var tab = $(this).parent();
+            var tabIndex = tab.index();
+            defaultPageTabs(tabIndex);
+            setCookie('tabIndex', tabIndex, 200);
+        });
+
+        tabIndex = getCookie('tabIndex');
+        if (tabIndex != null) {
+            defaultPageTabs(tabIndex);
+        }
+
+    });
+  </script>

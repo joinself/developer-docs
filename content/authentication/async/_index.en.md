@@ -14,7 +14,7 @@ Sending an asynchronous authentication request is pretty straightforward, you ca
 
 This will return a conversation id identifying the authentication conversation, you should store it and catch it on a subscription, check _Receiving authentication response - Subscribe_ section on how to manage this.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     cid = @client.
         authentication.

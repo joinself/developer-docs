@@ -13,7 +13,7 @@ Same as with authentication there are situations where you want to block your ex
 This function blocks the execution line until the user responds with its verified email address.
 
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
         def get_email(selfid)
             res = @client.facts.request(selfid, [:email_address])

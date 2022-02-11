@@ -14,7 +14,7 @@ This approach is useful when you want to wait for a user to respond to the authe
 
 Lets see how it works, the functions below show a full cycle for a blocking authentication.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     begin
         @app.authentication.request("1112223334").accepted?

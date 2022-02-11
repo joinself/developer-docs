@@ -14,7 +14,7 @@ In this section we will review what actions we can take to modify the message st
 
 When your app receives a message the sdk is marking it as received by default. This behavior can be changed by modifying passing a specific parameter to on_message, at the same time you can mark a message as read on your convenience, let's see how.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @app.chat.on_message mark_as_delivered: false do |msg|
         msg.mark_as_delivered # explicitly mark the message as delivered
@@ -40,7 +40,7 @@ When your app receives a message the sdk is marking it as received by default. T
 
 Similarly to the previous example, you can modify on_message to automatically mark all messages as read with a specific option.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @app.chat.on_message mark_as_read: true do |msg|
         # ...
@@ -62,7 +62,7 @@ Similarly to the previous example, you can modify on_message to automatically ma
 
 Additionally you can explicitly mark a received message as read with your own logic.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @app.chat.on_message do |msg|
         msg.mark_as_read
@@ -87,7 +87,7 @@ Additionally you can explicitly mark a received message as read with your own lo
 
 For a message you've already sent you can modify its body.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     m = @app.chat.message user, "one"
     m.edit "two"
@@ -111,7 +111,7 @@ For a message you've already sent you can modify its body.
 
 Deleting a message is as simple as modifying it, but using `delete` method instead.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     m = @app.chat.message user, "one"
     m.delete

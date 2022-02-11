@@ -8,7 +8,7 @@ draft: false
 keywords: [""]
 ---
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     if resp.accepted?
         p "accepted"

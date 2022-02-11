@@ -8,7 +8,7 @@ draft: false
 keywords: ["fact", "anonymous", "zero knowledge", "zero", "intermediary", "blocking"]
 ---
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     facts = [{ sources: [SelfSDK::SOURCE_USER_SPECIFIED],
             fact: SelfSDK::FACT_EMAIL,

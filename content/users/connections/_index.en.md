@@ -12,7 +12,7 @@ keywords: ["identity", "app", "connect", "disconnect", "permit", "block"]
 
 Allows incoming messages from specified identities.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client.messaging.permit_connection "1234567890"
     {{% /tab %}}
@@ -33,7 +33,7 @@ Allows incoming messages from specified identities.
 
 You can permit connections from everyone using an “*”.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client.messaging.permit_connection "*"
     {{% /tab %}}
@@ -52,7 +52,7 @@ You can permit connections from everyone using an “*”.
 
 You can also revoke connections from a specific self identifier with:
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client.messaging.revoke_connection "1234567890"
     {{% /tab %}}
@@ -73,7 +73,7 @@ You can also revoke connections from a specific self identifier with:
 
 Revoke connection permissions from everyone using an “*”.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client.messaging.revoke_connection "*"
     {{% /tab %}}
@@ -91,7 +91,7 @@ Revoke connection permissions from everyone using an “*”.
 
 You can list your app allowed connections.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client.messaging.allowed_connections.each do |self_id|
     p "- '#{self_id}'"

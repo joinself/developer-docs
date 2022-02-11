@@ -10,7 +10,7 @@ keywords: ["install", "setup", "initialisation"]
 
 
 ### Install your client
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     $ gem install "selfsdk"
     {{% /tab %}}
@@ -37,7 +37,7 @@ Typescript | [https://github.com/joinself/self-typescript-sdk/](https://github.c
 
 SelfSDK is referenced like any other library for each specific language.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     require "selfsdk"
     {{% /tab %}}
@@ -69,7 +69,7 @@ A basic connection to _Self network_ only requires your _SELF_APP_ID_, _SELF_APP
 
 You may want to add _SELF_APP_ID_, _SELF_APP_DEVICE_SECRET_, _SELF_STORAGE_KEY_ and _SELF_STORAGE_DIR_ as environment variables.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client = SelfSDK::App.new(ENV["SELF_APP_ID"], 
                                ENV["SELF_APP_DEVICE_SECRET"], 
@@ -101,7 +101,7 @@ You may want to add _SELF_APP_ID_, _SELF_APP_DEVICE_SECRET_, _SELF_STORAGE_KEY_ 
 
 When you’re debugging your app, you may want to point to the _sandbox environment_ instead of _production_ to run your tests. You can define the environment by passing additional parameters to the _Self client_ initialization.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client = SelfSDK::App.new(ENV["SELF_APP_ID"], 
                                ENV["SELF_APP_DEVICE_SECRET"], 
@@ -134,7 +134,7 @@ When you’re debugging your app, you may want to point to the _sandbox environm
 
 Self-SDK keeps a websocket connection open to self-messaging, but eventually, that connection may drop. By default _Self-SDK_ will try to reconnect, but you can override this behaviour by passing custom parameters to initialization.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client = SelfSDK::App.new(ENV["SELF_APP_ID"], 
                                ENV["SELF_APP_DEVICE_SECRET"], 

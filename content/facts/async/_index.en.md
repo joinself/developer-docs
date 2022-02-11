@@ -11,7 +11,7 @@ The asynchronous approach can be used in scenarios like the previous one, howeve
 
 
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     cid = @client.facts.request(selfid, [SelfSDK::FACT_EMAIL], async: true)
     {{% /tab %}}

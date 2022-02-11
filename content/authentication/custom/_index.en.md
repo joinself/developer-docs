@@ -13,7 +13,7 @@ Providing a _cid_ allows you to override the randomly generated _conversation id
 Instead of using the randomly generated conversation identifier, we can force the system to use our own unique id.
 
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client.
         authentication.

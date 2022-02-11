@@ -10,7 +10,7 @@ keywords: ["messaging", "message", "messages", "attachments", "read", "delivered
 
 Managing group conversations is something really simple with Self SDK, let's see an end to end example to understand how they work.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @groups = {}
     @app.chat.on_invite do |group|
@@ -80,7 +80,7 @@ As you can see this example manages every group incoming message, to keep an in 
 ### Creating a group
 
 Your app is als also able to create a group by calling invite method.
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     members = [user1, user2, user3]
     @app.chat.invite "my_gid", "Group name", members
@@ -100,7 +100,7 @@ Your app is als also able to create a group by calling invite method.
 {{< notice note >}}Have in mind you can send messages to a newly created group, but those messages will only be delivered to the group members that have decided to join the group.{{</ notice >}}
 
 Groups can also have an image as avatar, you can pass a file contents as parameter to chat invite to provide that image.
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     members = [user1, user2, user3]
     URI.open("https://www.avasflowers.net/img/prod_img/avasflowers-dreaming-of-tuscany-bouquet.jpg") do |image|

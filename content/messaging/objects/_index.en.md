@@ -14,7 +14,7 @@ Sharing an image, a document or just a gif is an important part of your users da
 
 Most of the time we only share public images, and in this case we don't require the document to be encrypted, so we can directly share the URL.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     opts = { objects: [{ 
         link: "https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif", 
@@ -49,7 +49,7 @@ Most of the time we only share public images, and in this case we don't require 
 
 All non-public objects shared between identities are encrypted by default using [Poly1305](https://en.wikipedia.org/wiki/Poly1305). This encryption layer is built on the SDK, so should be transparent for end users. Let's see how we can send a local file.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     URI.open(path) do |image|
         name = "image.#{path.split(".").last}"

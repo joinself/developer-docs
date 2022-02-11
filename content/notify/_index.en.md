@@ -9,7 +9,7 @@ keywords: ["notify", "notifications", "push notification"]
 
 It prompts the user with a push notification or badge with a specific message. The message will be available on the notifications screen.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client.messaging.notify "1234567890", "Hello world!"
     {{% /tab %}}

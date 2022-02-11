@@ -12,7 +12,7 @@ In contrast to blocking auth requests, there are situations where you just want 
 
 Let's say you have a conventional registration process where you let your users register to your application by its email address but you delay the email confirmation until they get back to you. This allows your users to go through a quick registration process, while you delay the data confirmation process.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     # Request lets you pass a block to be executed once a response is received
     @client.authentication.request selfid do |auth|

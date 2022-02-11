@@ -20,7 +20,7 @@ At the moment identities can be divided into users and apps.
 
 Every single identity on the _Self_ network has at least one public key assigned to it. Lets see how you can get the public keys related to a _Self_ user.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @user = @client.identity.public_key "1112223334", "1"
     {{% /tab %}}
@@ -39,7 +39,7 @@ Every single identity on the _Self_ network has at least one public key assigned
 
 Same as with public keys each identity has at least one device.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @devices = @client.identity.devices "1112223334"
     {{% /tab %}}

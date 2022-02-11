@@ -10,7 +10,7 @@ keywords: ["setup", "disconnecting", "shut down", "stop", "close"]
 
 You should gracefully manage the client disconnection by calling `close` method. If a connection is not gracefully closed Self messaging servers will kill that connection after one minute.
 
-{{% tabs groupId="install" %}}
+{{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
     @client.close
     {{% /tab %}}
