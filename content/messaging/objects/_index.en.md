@@ -30,7 +30,7 @@ Most of the time we only share public images, and in this case we don't require 
 		Link: "https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif",
 		Mime: "image/gif",
 	}
-	m, err = cs.Message([]string{os.Args[1]}, "no way...", chat.MessageOptions{
+	m, err = client.ChatService().Message([]string{os.Args[1]}, "no way...", chat.MessageOptions{
 		Objects: []chat.MessageObject{obj},
 	})    
     {{% /tab %}}
@@ -40,7 +40,6 @@ Most of the time we only share public images, and in this case we don't require 
         "link": "https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif", 
         "name": "homer",
         "mime": "image/gif",
-
     }]}
     client.chat().message user, "ready!", opts)
     {{% /tab %}}
