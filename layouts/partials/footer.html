@@ -23,7 +23,23 @@
     </div>
   </footer>
   <!-- /footer -->
-  
+  <style>
+       .form-control {
+            border-radius: 10px !important;
+        }
+        .banner {
+            background-color: #0e1c42 !important;
+        }
+        .overlay::before {
+            opacity: 0 !important;
+        }
+        .bg-cover {
+            background-size: contain;
+            background-position: right;
+        }
+
+  </style>
+
   <!-- Main Script -->
   {{ $script := resources.Get "js/script.js" | minify}}
   <script src="{{ $script.Permalink }}"></script>

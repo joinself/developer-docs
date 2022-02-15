@@ -68,8 +68,8 @@ copyright = "&copy; Self Group Ltd. 2022"
 # banner
 [Languages.en.params.banner]
 title = "Platform Documentation"
-subtitle = "Here you'll find handy documentation about our APIs and SDKs"
-bg_image = "https://assets.website-files.com/5f93d989df86cd3e82710c38/5fcf94534da2634c0591391b_homepage%20people_1.png"
+subtitle = "Here you'll find documentation about our APIs and SDKs"
+bg_image = "images/header.png"
 placeholder = "Have a question? Just ask here or enter terms"
 
 # call to action
@@ -87,7 +87,7 @@ link = "https://www.joinself.com/contact-us"
 ################## english navigation #################
 [[Languages.en.menu.main]]
 name = "Home"
-url = ""
+url = "https://www.joinself.com"
 weight = 1
 
 [[Languages.en.menu.main]]
