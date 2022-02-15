@@ -1,6 +1,6 @@
 ---
 title: "Zero-knowledge"
-date: 2017-12-29T11:02:05+06:00
+date: 2022-02-15T11:02:05+06:00
 icon: "ti-shield"
 description: "Zero knowledge proofs"
 type : "docs"

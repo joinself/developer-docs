@@ -1,6 +1,6 @@
 ---
 title: "Messaging"
-date: 2018-12-29T11:02:05+06:00
+date: 2022-02-15T11:02:05+06:00
 icon: "ti-comment"
 description: "Interact with your users through messaging"
 type : "docs"

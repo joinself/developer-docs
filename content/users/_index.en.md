@@ -1,6 +1,6 @@
 ---
 title: "Users / Apps"
-date: 2019-12-27T11:02:05+06:00
+date: 2022-02-15T11:02:05+06:00
 icon: "ti-user"
 description: "Connect, disconnect and request public information about users and apps"
 type : "docs"

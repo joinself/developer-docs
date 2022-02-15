@@ -1,6 +1,6 @@
 ---
 title: "Authentication"
-date: 2018-12-28T11:02:05+06:00
+date: 2022-02-15T11:02:05+06:00
 icon: "ti-lock"
 description: "Primary & Multi-factor authentication"
 type : "docs"
