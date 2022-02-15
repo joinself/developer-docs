@@ -21,6 +21,7 @@ Most of the time we only share public images, and in this case we don't require 
         name: "homer",
         mime: "image/gif",
     }] }
+    client.message user, "ready!", opts
     {{% /tab %}}
 
     {{% tab "Go" %}}
