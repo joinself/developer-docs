@@ -45,6 +45,7 @@ Most of the time we only share public images, and in this case we don't require 
     {{% /tab %}}
 {{% /tabs %}}
 
+
 ### Non-public objects
 
 All non-public objects shared between identities are encrypted by default using [Poly1305](https://en.wikipedia.org/wiki/Poly1305). This encryption layer is built on the SDK, so should be transparent for end users. Let's see how we can send a local file.
