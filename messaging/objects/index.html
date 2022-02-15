@@ -129,7 +129,7 @@ client.message user, &quot;ready!&quot;, opts
 	Link: &quot;https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif&quot;,
 	Mime: &quot;image/gif&quot;,
 }
-m, err = cs.Message([]string{os.Args[1]}, &quot;no way...&quot;, chat.MessageOptions{
+m, err = client.ChatService().Message([]string{os.Args[1]}, &quot;no way...&quot;, chat.MessageOptions{
 	Objects: []chat.MessageObject{obj},
 })    
 </code></pre>
@@ -139,9 +139,9 @@ m, err = cs.Message([]string{os.Args[1]}, &quot;no way...&quot;, chat.MessageOpt
     &quot;link&quot;: &quot;https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif&quot;, 
     &quot;name&quot;: &quot;homer&quot;,
     &quot;mime&quot;: &quot;image/gif&quot;,
-<p>}]}
+}]}
 client.chat().message user, &quot;ready!&quot;, opts)
-</code></pre></p>
+</code></pre>
 </div>
 </div>
 </div>
