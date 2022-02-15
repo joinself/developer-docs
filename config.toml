@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://joinself.github.io/developer-docs/"
+baseURL = "https://docs.joinself.com/"
 # theme
 theme = "dot"
 # site title
