@@ -4,6 +4,7 @@ date: 2022-02-15T11:02:05+06:00
 icon: "ti-loop"
 description: "Do not store sensible data, request it"
 type : "docs"
+weight: 8
 ---
 
 As we've seen on [Facts](facts/) section you can request user's verified sensible data through facts service.

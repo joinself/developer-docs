@@ -4,6 +4,7 @@ date: 2022-02-15T11:02:05+06:00
 icon: "ti-lock"
 description: "Primary & Multi-factor authentication"
 type : "docs"
+weight: 3
 ---
 
 One of the core features of Self is the ability to authenticate identities.

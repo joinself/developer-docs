@@ -4,6 +4,7 @@ date: 2022-02-15T11:02:05+06:00
 icon: "ti-user"
 description: "Connect, disconnect and request public information about users and apps"
 type : "docs"
+weight: 2
 ---
 
 This feature allows you to manage your connections by permitting and revoking incoming messages from specific identities.

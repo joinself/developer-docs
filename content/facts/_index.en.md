@@ -4,6 +4,7 @@ date: 2022-02-15T11:02:05+06:00
 icon: "ti-files"
 description: "Request access to user's sensible data"
 type : "docs"
+weight: 4
 ---
 
 A **Facts** is a statement about an **identity**. **Verified facts** are **facts** that have been **attested** to by trusted **issuer**(s).

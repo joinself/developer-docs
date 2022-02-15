@@ -4,6 +4,7 @@ date: 2022-02-15T11:02:05+06:00
 icon: "ti-comment"
 description: "Interact with your users through messaging"
 type : "docs"
+weight: 5
 ---
 
 Messaging is the core of Self and we want to provide you with a flexible library to interact with your users. 

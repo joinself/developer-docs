@@ -2,9 +2,10 @@
 title: "Notify"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-bell"
-description: "Zero knowledge proofs"
+description: "Send notifications to your users"
 type : "docs"
 keywords: ["notify", "notifications", "push notification"]
+weight: 6
 ---
 
 It prompts the user with a push notification or badge with a specific message. The message will be available on the notifications screen.

@@ -2,8 +2,9 @@
 title: "Zero-knowledge"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-shield"
-description: "Zero knowledge proofs"
+description: "Check users facts without accessing sensible data"
 type : "docs"
+weight: 7
 ---
 
 An easy to use zero knowledge fact checker allows developers to ask the questions they really need an answer to, and receive anonymised answers.
