@@ -1,10 +1,10 @@
 <!doctype html><html lang=en-us>
 <head>
 <meta charset=utf-8>
-<title>Blocking fact request</title>
+<title>Recurrent requests</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=generator content="Hugo 0.92.2">
-<meta name=description content="Blocking fact request - Joinself - Platform Documentation ">
+<meta name=description content="Recurrent requests - Joinself - Platform Documentation ">
 <link rel=stylesheet href=https://docs.joinself.com/plugins/bootstrap/bootstrap.min.css>
 <link rel=stylesheet href=https://docs.joinself.com/plugins/themify-icons/themify-icons.css>
 <link rel=icon href=https://docs.joinself.com/images/favicon.png type=image/x-icon>
@@ -21,15 +21,15 @@
 <meta property="og:image:width" content="57">
 <meta property="og:image:height" content="35">
 <meta property="og:image:type" content="image/png">
-<meta name=twitter:title content="Blocking fact request">
-<meta name=twitter:description content="Joinself - Platform Documentation">
-<meta property="og:title" content="Blocking fact request">
-<meta property="og:description" content="Joinself - Platform Documentation">
+<meta name=twitter:title content="Recurrent requests">
+<meta name=twitter:description content="Do not store sensible data, request it">
+<meta property="og:title" content="Recurrent requests">
+<meta property="og:description" content="Do not store sensible data, request it">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://docs.joinself.com/facts/blocking/">
+<meta property="og:url" content="https://docs.joinself.com/storageless/">
 <meta name=twitter:card content="summary">
-<meta name=twitter:title content="Blocking fact request">
-<meta name=twitter:description content="Joinself - Platform Documentation">
+<meta name=twitter:title content="Recurrent requests">
+<meta name=twitter:description content="Do not store sensible data, request it">
 </head>
 <body>
 <header class="shadow-bottom sticky-top bg-white">
@@ -75,111 +75,85 @@ docs
 <div class=sidebar>
 <a class=back-btn href=/ aria-label=back></a>
 <ul class=list-styled>
-<li data-nav-id=https://docs.joinself.com/facts/ title=Facts class=sidelist>
-<a href=https://docs.joinself.com/facts/>
-Facts
-</a>
-<ul>
-<li data-nav-id=https://docs.joinself.com/facts/blocking/ title="Blocking fact request" class="sidelist
+<li data-nav-id=https://docs.joinself.com/storageless/ title="Recurrent requests" class="sidelist
 active">
-<a href=https://docs.joinself.com/facts/blocking/>
-Blocking fact request
+<a href=https://docs.joinself.com/storageless/>
+Recurrent requests
 </a>
-</li>
-<li data-nav-id=https://docs.joinself.com/facts/non-blocking/ title="Non-blocking fact request" class=sidelist>
-<a href=https://docs.joinself.com/facts/non-blocking/>
-Non-blocking fact request
-</a>
-</li>
-<li data-nav-id=https://docs.joinself.com/facts/async/ title="Asynchronous fact request" class=sidelist>
-<a href=https://docs.joinself.com/facts/async/>
-Asynchronous fact request
-</a>
-</li>
-<li data-nav-id=https://docs.joinself.com/facts/custom/ title="Modifiers for fact requests" class=sidelist>
-<a href=https://docs.joinself.com/facts/custom/>
-Modifiers for fact requests
-</a>
-</li>
-<li data-nav-id=https://docs.joinself.com/facts/subscribe/ title="Subscribe to fact response" class=sidelist>
-<a href=https://docs.joinself.com/facts/subscribe/>
-Subscribe to fact response
-</a>
-</li>
-<li data-nav-id=https://docs.joinself.com/facts/response/ title="Fact response" class=sidelist>
-<a href=https://docs.joinself.com/facts/response/>
-Fact response
-</a>
-</li>
-</ul>
 </li>
 </ul>
 </div>
 </div>
 <div class=col-lg-9>
 <div class="p-lg-5 p-4 bg-white" id=content>
-<h2 class=mb-5 id=title>Blocking fact request</h2>
-<div class=content><p>Same as with authentication there are situations where you want to block your execution line until the user responds to your <strong>fact</strong> request. For example, you may want to block a user&rsquo;s access to a certain space of your site until you verify its passport number.</p>
-<p>This function blocks the execution line until the user responds with its verified email address.</p>
+<h2 class=mb-5 id=title>Recurrent requests</h2>
+<div class=content><p>As we&rsquo;ve seen on <a href=facts/>Facts</a> section you can request user&rsquo;s verified sensible data through facts service.</p>
+<p>This becomes really useful when you can use the data at the moment. However, if you need to access the same data periodically or some time in the future, you&rsquo;ll be forced to store it.</p>
+<p>Self recurrent requests feature allows you to <strong>access the same data for a specific period of time</strong> without having to wait for user&rsquo;s acceptance, so you don&rsquo;t need to store it on your servers.</p>
+<p>Recurrent requests looks exactly the same as a regular fact request, except it makes use of allowed_for modifier, let&rsquo;s see an example.</p>
 <div class=code-tabs>
 <ul class="nav nav-tabs"></ul>
 <div class=tab-content><div class=tab-pane title=Ruby>
-<pre><code>    def get_email(selfid)
-        res = @client.facts.request(selfid, [:email_address])
-        return &quot;&quot; unless res.accepted?
-        res.attestation_values_for(:email_address).first
-        // Refer to Receiving fact response - Deal with request for more info
-    rescue =&gt; e // An exception will be raised in case of a timeout or internal error
-        return &quot;&quot;
-    end
+<pre><code>ten_days = 10 * 60 * 60 * 60
+# Request email, with recurrent requests enabled for ten days
+res = @client.facts.request(user, [:email_address], allowed_for: ten_days)    
+# At this point the user will be prompted with a confirmation box to 
+# allow access its email for the next 10 days.
+#
+# If we send the same request again, it will be automatically shared by the device
+# without user interaction.
+res = @client.facts.request(user, [:email_address])
 </code></pre>
 </div>
 <div class=tab-pane title=Go>
-<pre><code>req := fact.FactRequest{
-SelfID:      selfID,
+<pre><code>// Request email, with recurrent requests enabled for ten days
+resp, err := client.FactService().Request(&amp;fact.FactRequest{
+    SelfID:      selfID,
     Description: &quot;info&quot;,
     Facts: []fact.Fact{{ Fact: fact.FactEmail }},
     Expiry: time.Minute * 5,
-}
-<p>resp, err := client.FactService().Request(&amp;req)
-if err != nil {
-return &quot;&quot;, err
-}</p>
-<p>aa, err := resp.AttestaionValuesFor(fact.FactEmail)
-if err != nil {
-return &quot;&quot;, err
-}</p>
-<p>println(aa[0])
-</code></pre></p>
+    AllowedFor: time.Day * 10,
+})
+check(err)
+// At this point the user will be prompted with a confirmation box to 
+// allow access its email for the next 10 days.
+//
+// If we send the same request again, it will be automatically shared by the device
+// without user interaction.
+resp, err := client.FactService().Request(&amp;fact.FactRequest{
+    SelfID:      selfID,
+    Description: &quot;info&quot;,
+    Facts: []fact.Fact{{ Fact: fact.FactEmail }},
+    Expiry: time.Minute * 5,
+})
+check(err)
+</code></pre>
 </div>
 <div class=tab-pane title=Typescript>
-<pre><code>try {
-    let res = await sdk.facts().request(selfID, [{ fact: 'email_address' }])
-<pre><code>if (!res) {
-    sdk.logger.warn(`fact request has timed out`)
-} else if (res.status === 'accepted') {
-    let pn = res.attestationValuesFor('email_address')[0]
-    sdk.logger.info(`${selfID} email address is &amp;quot;${pn}&amp;quot;`)
-} else {
-    sdk.logger.warn(`${selfID} has rejected your authentication request`)
-}
-</code></pre>
-<p>} catch (error) {
-sdk.logger.error(error.toString())
-}
+<pre><code>let tenDays = 10 * 60 * 60 * 60
+<p>// Request email, with recurrent requests enabled for ten days
+let res = await sdk.facts().request(user, [{ fact: &lsquo;email_address&rsquo;, allowed_for: tenDays }])
+// At this point the user will be prompted with a confirmation box to
+// allow access its email for the next 10 days.
+//
+// If we send the same request again, it will be automatically shared by the device
+// without user interaction.
+let res = await sdk.facts().request(user, [{ fact: &lsquo;email_address&rsquo; }])
 </code></pre></p>
 </div>
 </div>
 </div>
+<p>Given the user is always able to cancel this recurrent requests at any time, it&rsquo;s highly recommended to include the <code>allowed for</code> modifier on every request.</p>
+<div class="notices note"><p>Even the responses to your fact requests are automated by the user, have in mind the request always hits the user&rsquo;s device, so the response can take some time to get back to you..</p></div>
 </div>
 <p class="post-meta border-bottom pb-3 mb-0 mt-3">
 Updated on 15 Feb 2022
 </p>
 <nav class="pagination mt-3">
-<a class="nav nav-prev" href=https://docs.joinself.com/facts/ aria-label="Previous page"><i class="ti-arrow-left mr-2"></i>
-<span class="d-none d-md-block">Facts</span></a>
-<a class="nav nav-next" href=https://docs.joinself.com/facts/non-blocking/ aria-label="Previous page">
-<span class="d-none d-md-block">Non-blocking fact request</span><i class="ti-arrow-right ml-2"></i></a>
+<a class="nav nav-prev" href=https://docs.joinself.com/notify/ aria-label="Previous page"><i class="ti-arrow-left mr-2"></i>
+<span class="d-none d-md-block">Notify</span></a>
+<a class="nav nav-next" href=https://docs.joinself.com/setup/ aria-label="Previous page">
+<span class="d-none d-md-block">Setup</span><i class="ti-arrow-right ml-2"></i></a>
 </nav>
 </div>
 </div>
