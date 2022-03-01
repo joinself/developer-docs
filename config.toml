@@ -142,3 +142,15 @@ hasChildren = true
   name = "Notify"
   url = "notify/"
   weight = 7
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Recurrent requests"
+  url = "storageless/"
+  weight = 8
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Document sign"
+  url = "documentsign/"
+  weight = 9
