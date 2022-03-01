@@ -1,9 +1,8 @@
 <!doctype html><html lang=en-us>
 <head>
 <meta charset=utf-8>
-<title>Custom auth requests</title>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.92.2">
+<title>Custom auth requests</title><meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.93.0">
 <meta name=description content="Custom auth requests - Joinself - Platform Documentation ">
 <link rel=stylesheet href=https://docs.joinself.com/plugins/bootstrap/bootstrap.min.css>
 <link rel=stylesheet href=https://docs.joinself.com/plugins/themify-icons/themify-icons.css>
@@ -11,8 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap" rel=stylesheet>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js></script>
-<style>:root{--primary-color:#0e1c42;--body-color:#f9f9f9;--text-color:#636363;--text-color-dark:#0e1c42;--white-color:#ffffff;--light-color:#f8f9fa;--font-family:Barlow}</style>
-<link href=https://docs.joinself.com/css/style.min.css rel=stylesheet media=screen>
+<style>:root{--primary-color:#0e1c42;--body-color:#f9f9f9;--text-color:#636363;--text-color-dark:#0e1c42;--white-color:#ffffff;--light-color:#f8f9fa;--font-family:Barlow}</style><link href=https://docs.joinself.com/css/style.min.css rel=stylesheet media=screen>
 <script src=https://docs.joinself.com/plugins/jquery/jquery-1.12.4.js></script>
 <script src=https://docs.joinself.com/plugins/jquery/jquery-ui.js></script>
 <script src=https://docs.joinself.com/plugins/bootstrap/bootstrap.min.js></script>
@@ -30,8 +28,7 @@
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Custom auth requests">
 <meta name=twitter:description content="Joinself - Platform Documentation">
-</head>
-<body>
+</head><body>
 <header class="shadow-bottom sticky-top bg-white">
 <nav class="navbar navbar-expand-md navbar-light">
 <div class="container px-2 px-md-0">
@@ -45,11 +42,9 @@
 <ul class="navbar-nav ml-auto">
 <li class=nav-item>
 <a class="nav-link text-dark" href=https://www.joinself.com>Home</a>
-</li>
-<li class=nav-item>
+</li><li class=nav-item>
 <a class="nav-link text-dark" href=https://www.joinself.com/contact-us>contact</a>
-</li>
-<li class="nav-item dropdown">
+</li><li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle text-dark" href=# role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>
 docs
 </a>
@@ -61,14 +56,9 @@ docs
 <a class=dropdown-item href=https://docs.joinself.com/facts/>Facts</a>
 <a class=dropdown-item href=https://docs.joinself.com/zero/>Zero-knowledge</a>
 <a class=dropdown-item href=https://docs.joinself.com/notify/>Notify</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-</header>
-<section class="single section-sm pb-0">
+<a class=dropdown-item href=https://docs.joinself.com/storageless/>Recurrent requests</a>
+<a class=dropdown-item href=https://docs.joinself.com/documentsign/>Document sign</a>
+</div></li></ul></div></div></nav></header><section class="single section-sm pb-0">
 <div class=container>
 <div class=row>
 <div class=col-lg-3>
@@ -84,107 +74,64 @@ Authentication
 <a href=https://docs.joinself.com/authentication/blocking/>
 Blocking auth requests
 </a>
-</li>
-<li data-nav-id=https://docs.joinself.com/authentication/non-blocking/ title="Non-blocking auth requests" class=sidelist>
+</li><li data-nav-id=https://docs.joinself.com/authentication/non-blocking/ title="Non-blocking auth requests" class=sidelist>
 <a href=https://docs.joinself.com/authentication/non-blocking/>
 Non-blocking auth requests
 </a>
-</li>
-<li data-nav-id=https://docs.joinself.com/authentication/async/ title="Async auth requests" class=sidelist>
+</li><li data-nav-id=https://docs.joinself.com/authentication/async/ title="Async auth requests" class=sidelist>
 <a href=https://docs.joinself.com/authentication/async/>
 Async auth requests
 </a>
-</li>
-<li data-nav-id=https://docs.joinself.com/authentication/custom/ title="Custom auth requests" class="sidelist
+</li><li data-nav-id=https://docs.joinself.com/authentication/custom/ title="Custom auth requests" class="sidelist
 active">
 <a href=https://docs.joinself.com/authentication/custom/>
 Custom auth requests
 </a>
-</li>
-<li data-nav-id=https://docs.joinself.com/authentication/subscription/ title="Subscribe to responses" class=sidelist>
+</li><li data-nav-id=https://docs.joinself.com/authentication/subscription/ title="Subscribe to responses" class=sidelist>
 <a href=https://docs.joinself.com/authentication/subscription/>
 Subscribe to responses
 </a>
-</li>
-<li data-nav-id=https://docs.joinself.com/authentication/response/ title="Dealing with responses" class=sidelist>
+</li><li data-nav-id=https://docs.joinself.com/authentication/response/ title="Dealing with responses" class=sidelist>
 <a href=https://docs.joinself.com/authentication/response/>
 Dealing with responses
 </a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class=col-lg-9>
+</li></ul></li></ul></div></div><div class=col-lg-9>
 <div class="p-lg-5 p-4 bg-white" id=content>
-<h2 class=mb-5 id=title>Custom auth requests</h2>
-<div class=content><p>Providing a <em>cid</em> allows you to override the randomly generated <em>conversation id</em> with your own, this is useful to keep track of conversations with a preset identifier, let’s see the asynchronous example using a custom cid.</p>
-<p>Instead of using the randomly generated conversation identifier, we can force the system to use our own unique id.</p>
-<div class=code-tabs>
-<ul class="nav nav-tabs"></ul>
-<div class=tab-content><div class=tab-pane title=Ruby>
+<h2 class=mb-5 id=title>Custom auth requests</h2><div class=content><p>Providing a <em>cid</em> allows you to override the randomly generated <em>conversation id</em> with your own, this is useful to keep track of conversations with a preset identifier, let’s see the asynchronous example using a custom cid.</p><p>Instead of using the randomly generated conversation identifier, we can force the system to use our own unique id.</p><div class=code-tabs>
+<ul class="nav nav-tabs"></ul><div class=tab-content><div class=tab-pane title=Ruby>
 <pre><code>@client.
     authentication.
     request(&quot;1112223334&quot;, cid: &quot;conversation_id&quot;)
-</code></pre>
-</div>
-<div class=tab-pane title=Go>
+</code></pre></div><div class=tab-pane title=Go>
 <pre><code>client.
     AuthenticationService().
     RequestAsync(&quot;1112223334&quot;, &quot;conversation_id&quot;)
-</code></pre>
-</div>
-<div class=tab-pane title=Typescript>
+</code></pre></div><div class=tab-pane title=Typescript>
 <pre><code>let res = await client.
     authentication().
     request(&quot;1112223334&quot;, { 'cid': &quot;conversation_id&quot; })
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<p class="post-meta border-bottom pb-3 mb-0 mt-3">
+</code></pre></div></div></div></div><p class="post-meta border-bottom pb-3 mb-0 mt-3">
 Updated on 15 Feb 2022
-</p>
-<nav class="pagination mt-3">
+</p><nav class="pagination mt-3">
 <a class="nav nav-prev" href=https://docs.joinself.com/authentication/async/ aria-label="Previous page"><i class="ti-arrow-left mr-2"></i>
 <span class="d-none d-md-block">Async auth requests</span></a>
 <a class="nav nav-next" href=https://docs.joinself.com/authentication/subscription/ aria-label="Previous page">
 <span class="d-none d-md-block">Subscribe to responses</span><i class="ti-arrow-right ml-2"></i></a>
-</nav>
-</div>
-</div>
-</div>
-</div>
-</section>
-<footer class="section pb-4">
+</nav></div></div></div></div></section><footer class="section pb-4">
 <div class=container>
 <div class="row align-items-center">
 <div class="col-md-8 text-md-left text-center">
-<p class="mb-md-0 mb-4">© Self Group Ltd. 2022</p>
-</div>
-<div class="col-md-4 text-md-right text-center">
+<p class="mb-md-0 mb-4">© Self Group Ltd. 2022</p></div><div class="col-md-4 text-md-right text-center">
 <ul class=list-inline>
 <li class=list-inline-item>
 <a class="text-color d-inline-block p-2" href=https://twitter.com/futureoftrust aria-label=Twitter><i class=ti-twitter-alt></i></a>
-</li>
-<li class=list-inline-item>
+</li><li class=list-inline-item>
 <a class="text-color d-inline-block p-2" href=https://github.com/joinself/ aria-label=Github><i class=ti-github></i></a>
-</li>
-<li class=list-inline-item>
+</li><li class=list-inline-item>
 <a class="text-color d-inline-block p-2" href=https://www.linkedin.com/company/joinself/ aria-label=Linkedin><i class=ti-linkedin></i></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</footer>
-<style>.form-control{border-radius:10px!important}.banner{background-color:#0e1c42!important}.overlay::before{opacity:0!important}.bg-cover{background-size:contain;background-position:100%}</style>
-<script src=https://docs.joinself.com/js/script.min.js></script>
+</li></ul></div></div></div></footer><style>.form-control{border-radius:10px!important}.banner{background-color:#0e1c42!important}.overlay::before{opacity:0!important}.bg-cover{background-size:contain;background-position:100%}</style><script src=https://docs.joinself.com/js/script.min.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css>
 <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script>
-<script>function setCookie(b,c,d){var a=new Date;a.setTime(a.getTime()+d*24*60*60*1e3),document.cookie=b+'='+c+';path=/'+';expires='+a.toUTCString()}function getCookie(b){var a=document.cookie.match('(^|;) ?'+b+'=([^;]*)(;|$)');return a?a[2]:null}function defaultPageTabs(c){let b=$('.code-tabs');for(var a=0;a<b.length;a++)$(b[a]).find('.active').removeClass('active'),tab=$(b[a]).find('.tab-pane').eq(c),$(tab).addClass('active'),tabHeader=$(b[a]).find('.nav-item').eq(c),$(tabHeader).addClass('active')}$('document').ready(function(){hljs.highlightAll(),mermaid.initialize({startOnLoad:!0}),$('.nav-tabs a').click(function(c){var b=$(this).parent(),a=b.index();defaultPageTabs(a),setCookie('tabIndex',a,200)}),tabIndex=getCookie('tabIndex'),tabIndex!=null&&defaultPageTabs(tabIndex)})</script>
-</body>
-</html>
+<script>function setCookie(t,n,s){var e=new Date;e.setTime(e.getTime()+s*24*60*60*1e3),document.cookie=t+"="+n+";path=/"+";expires="+e.toUTCString()}function getCookie(t){var e=document.cookie.match("(^|;) ?"+t+"=([^;]*)(;|$)");return e?e[2]:null}function defaultPageTabs(n){let t=$(".code-tabs");for(var e=0;e<t.length;e++)$(t[e]).find(".active").removeClass("active"),tab=$(t[e]).find(".tab-pane").eq(n),$(tab).addClass("active"),tabHeader=$(t[e]).find(".nav-item").eq(n),$(tabHeader).addClass("active")}$("document").ready(function(){hljs.highlightAll(),mermaid.initialize({startOnLoad:!0}),$(".nav-tabs a").click(function(){var t=$(this).parent(),e=t.index();defaultPageTabs(e),setCookie("tabIndex",e,200)}),tabIndex=getCookie("tabIndex"),tabIndex!=null&&defaultPageTabs(tabIndex)})</script>
+</body></html>

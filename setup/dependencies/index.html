@@ -1,9 +1,8 @@
 <!doctype html><html lang=en-us>
 <head>
 <meta charset=utf-8>
-<title>System dependencies</title>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=generator content="Hugo 0.92.2">
+<title>System dependencies</title><meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.93.0">
 <meta name=description content="System dependencies - Joinself - Platform Documentation ">
 <link rel=stylesheet href=https://docs.joinself.com/plugins/bootstrap/bootstrap.min.css>
 <link rel=stylesheet href=https://docs.joinself.com/plugins/themify-icons/themify-icons.css>
@@ -11,8 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap" rel=stylesheet>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js></script>
-<style>:root{--primary-color:#0e1c42;--body-color:#f9f9f9;--text-color:#636363;--text-color-dark:#0e1c42;--white-color:#ffffff;--light-color:#f8f9fa;--font-family:Barlow}</style>
-<link href=https://docs.joinself.com/css/style.min.css rel=stylesheet media=screen>
+<style>:root{--primary-color:#0e1c42;--body-color:#f9f9f9;--text-color:#636363;--text-color-dark:#0e1c42;--white-color:#ffffff;--light-color:#f8f9fa;--font-family:Barlow}</style><link href=https://docs.joinself.com/css/style.min.css rel=stylesheet media=screen>
 <script src=https://docs.joinself.com/plugins/jquery/jquery-1.12.4.js></script>
 <script src=https://docs.joinself.com/plugins/jquery/jquery-ui.js></script>
 <script src=https://docs.joinself.com/plugins/bootstrap/bootstrap.min.js></script>
@@ -30,8 +28,7 @@
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="System dependencies">
 <meta name=twitter:description content="Joinself - Platform Documentation">
-</head>
-<body>
+</head><body>
 <header class="shadow-bottom sticky-top bg-white">
 <nav class="navbar navbar-expand-md navbar-light">
 <div class="container px-2 px-md-0">
@@ -45,11 +42,9 @@
 <ul class="navbar-nav ml-auto">
 <li class=nav-item>
 <a class="nav-link text-dark" href=https://www.joinself.com>Home</a>
-</li>
-<li class=nav-item>
+</li><li class=nav-item>
 <a class="nav-link text-dark" href=https://www.joinself.com/contact-us>contact</a>
-</li>
-<li class="nav-item dropdown">
+</li><li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle text-dark" href=# role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false>
 docs
 </a>
@@ -61,14 +56,9 @@ docs
 <a class=dropdown-item href=https://docs.joinself.com/facts/>Facts</a>
 <a class=dropdown-item href=https://docs.joinself.com/zero/>Zero-knowledge</a>
 <a class=dropdown-item href=https://docs.joinself.com/notify/>Notify</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-</header>
-<section class="single section-sm pb-0">
+<a class=dropdown-item href=https://docs.joinself.com/storageless/>Recurrent requests</a>
+<a class=dropdown-item href=https://docs.joinself.com/documentsign/>Document sign</a>
+</div></li></ul></div></div></nav></header><section class="single section-sm pb-0">
 <div class=container>
 <div class=row>
 <div class=col-lg-3>
@@ -84,96 +74,57 @@ Setup
 <a href=https://docs.joinself.com/setup/getting-started/>
 Getting started
 </a>
-</li>
-<li data-nav-id=https://docs.joinself.com/setup/dependencies/ title="System dependencies" class="sidelist
+</li><li data-nav-id=https://docs.joinself.com/setup/dependencies/ title="System dependencies" class="sidelist
 active">
 <a href=https://docs.joinself.com/setup/dependencies/>
 System dependencies
 </a>
-</li>
-<li data-nav-id=https://docs.joinself.com/setup/initialize/ title="Initializing your client" class=sidelist>
+</li><li data-nav-id=https://docs.joinself.com/setup/initialize/ title="Initializing your client" class=sidelist>
 <a href=https://docs.joinself.com/setup/initialize/>
 Initializing your client
 </a>
-</li>
-<li data-nav-id=https://docs.joinself.com/setup/disconnect/ title=Disconnecting class=sidelist>
+</li><li data-nav-id=https://docs.joinself.com/setup/disconnect/ title=Disconnecting class=sidelist>
 <a href=https://docs.joinself.com/setup/disconnect/>
 Disconnecting
 </a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class=col-lg-9>
+</li></ul></li></ul></div></div><div class=col-lg-9>
 <div class="p-lg-5 p-4 bg-white" id=content>
-<h2 class=mb-5 id=title>System dependencies</h2>
-<div class=content><p>Self SDK depends on some native libraries to manage encryption <a href=github.com/joinself/olm>libself_olm</a> and <a href=github.com/joinself/omemo>libself_omemo</a>. Below you&rsquo;ll find the instructions to get them working on your system.</p>
-<h4 id=debianubuntu>Debian/Ubuntu</h4>
-<pre tabindex=0><code>$ curl -O https://download.joinself.com/olm/libself-olm_0.1.17_amd64.deb
+<h2 class=mb-5 id=title>System dependencies</h2><div class=content><p>Self SDK depends on some native libraries to manage encryption <a href=github.com/joinself/olm>libself_olm</a> and <a href=github.com/joinself/omemo>libself_omemo</a>. Below you&rsquo;ll find the instructions to get them working on your system.</p><h4 id=debianubuntu>Debian/Ubuntu</h4><pre tabindex=0><code>$ curl -O https://download.joinself.com/olm/libself-olm_0.1.17_amd64.deb
 $ curl -O https://download.joinself.com/omemo/libself-omemo_0.1.2_amd64.deb
 $ apt install libsodium-dev
 $ apt install ./libself-olm_0.1.17_amd64.deb ./libself-omemo_0.1.2_amd64.deb
-</code></pre><h4 id=redhatcentos>Redhat/Centos</h4>
-<pre tabindex=0><code>$ rpm -Uvh https://download.joinself.com/olm/libself-olm-0.1.14-1.x86_64.rpm
+</code></pre><h4 id=redhatcentos>Redhat/Centos</h4><pre tabindex=0><code>$ rpm -Uvh https://download.joinself.com/olm/libself-olm-0.1.14-1.x86_64.rpm
 $ rpm -Uvh https://download.joinself.com/omemo/libself-omemo-0.1.2-1.x86_64.rpm
-</code></pre><h4 id=mac-x86_64>Mac (x86_64)</h4>
-<pre tabindex=0><code>$ brew tap joinself/crypto
+</code></pre><h4 id=mac-x86_64>Mac (x86_64)</h4><pre tabindex=0><code>$ brew tap joinself/crypto
 $ brew install libself-olm libself-omemo
-</code></pre><h4 id=mac-m1arm64>Mac (m1/arm64)</h4>
-<p>Brew on M1 macs currently lacks environment variables needed for the sdk to find the <code>olm</code> and <code>omemo</code> libraries, so you will need to add some additional configuration to your system:</p>
-<p>In your <code>~/.zshrc</code>, add:</p>
-<pre tabindex=0><code>export C_INCLUDE_PATH=/opt/homebrew/include/
+</code></pre><h4 id=mac-m1arm64>Mac (m1/arm64)</h4><p>Brew on M1 macs currently lacks environment variables needed for the sdk to find the <code>olm</code> and <code>omemo</code> libraries, so you will need to add some additional configuration to your system:</p><p>In your <code>~/.zshrc</code>, add:</p><pre tabindex=0><code>export C_INCLUDE_PATH=/opt/homebrew/include/
 export LIBRARY_PATH=$LIBRARY_PATH:/opt/homebrew/lib
-</code></pre><p>You should then be able to run:</p>
-<pre tabindex=0><code>$ source ~/.zshrc
+</code></pre><p>You should then be able to run:</p><pre tabindex=0><code>$ source ~/.zshrc
 $ brew tap joinself/crypto
 $ brew install --build-from-source libself-olm libself-omemo
-</code></pre><p>Note, you may also need to create <code>/usr/local/lib</code> if it does not exist:</p>
-<pre tabindex=0><code>$ sudo mkdir /usr/local/lib
-</code></pre></div>
-<p class="post-meta border-bottom pb-3 mb-0 mt-3">
+</code></pre><p>Note, you may also need to create <code>/usr/local/lib</code> if it does not exist:</p><pre tabindex=0><code>$ sudo mkdir /usr/local/lib
+</code></pre></div><p class="post-meta border-bottom pb-3 mb-0 mt-3">
 Updated on 15 Feb 2022
-</p>
-<nav class="pagination mt-3">
+</p><nav class="pagination mt-3">
 <a class="nav nav-prev" href=https://docs.joinself.com/setup/getting-started/ aria-label="Previous page"><i class="ti-arrow-left mr-2"></i>
 <span class="d-none d-md-block">Getting started</span></a>
 <a class="nav nav-next" href=https://docs.joinself.com/setup/initialize/ aria-label="Previous page">
 <span class="d-none d-md-block">Initializing your client</span><i class="ti-arrow-right ml-2"></i></a>
-</nav>
-</div>
-</div>
-</div>
-</div>
-</section>
-<footer class="section pb-4">
+</nav></div></div></div></div></section><footer class="section pb-4">
 <div class=container>
 <div class="row align-items-center">
 <div class="col-md-8 text-md-left text-center">
-<p class="mb-md-0 mb-4">© Self Group Ltd. 2022</p>
-</div>
-<div class="col-md-4 text-md-right text-center">
+<p class="mb-md-0 mb-4">© Self Group Ltd. 2022</p></div><div class="col-md-4 text-md-right text-center">
 <ul class=list-inline>
 <li class=list-inline-item>
 <a class="text-color d-inline-block p-2" href=https://twitter.com/futureoftrust aria-label=Twitter><i class=ti-twitter-alt></i></a>
-</li>
-<li class=list-inline-item>
+</li><li class=list-inline-item>
 <a class="text-color d-inline-block p-2" href=https://github.com/joinself/ aria-label=Github><i class=ti-github></i></a>
-</li>
-<li class=list-inline-item>
+</li><li class=list-inline-item>
 <a class="text-color d-inline-block p-2" href=https://www.linkedin.com/company/joinself/ aria-label=Linkedin><i class=ti-linkedin></i></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</footer>
-<style>.form-control{border-radius:10px!important}.banner{background-color:#0e1c42!important}.overlay::before{opacity:0!important}.bg-cover{background-size:contain;background-position:100%}</style>
-<script src=https://docs.joinself.com/js/script.min.js></script>
+</li></ul></div></div></div></footer><style>.form-control{border-radius:10px!important}.banner{background-color:#0e1c42!important}.overlay::before{opacity:0!important}.bg-cover{background-size:contain;background-position:100%}</style><script src=https://docs.joinself.com/js/script.min.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
 <link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css>
 <script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js></script>
-<script>function setCookie(b,c,d){var a=new Date;a.setTime(a.getTime()+d*24*60*60*1e3),document.cookie=b+'='+c+';path=/'+';expires='+a.toUTCString()}function getCookie(b){var a=document.cookie.match('(^|;) ?'+b+'=([^;]*)(;|$)');return a?a[2]:null}function defaultPageTabs(c){let b=$('.code-tabs');for(var a=0;a<b.length;a++)$(b[a]).find('.active').removeClass('active'),tab=$(b[a]).find('.tab-pane').eq(c),$(tab).addClass('active'),tabHeader=$(b[a]).find('.nav-item').eq(c),$(tabHeader).addClass('active')}$('document').ready(function(){hljs.highlightAll(),mermaid.initialize({startOnLoad:!0}),$('.nav-tabs a').click(function(c){var b=$(this).parent(),a=b.index();defaultPageTabs(a),setCookie('tabIndex',a,200)}),tabIndex=getCookie('tabIndex'),tabIndex!=null&&defaultPageTabs(tabIndex)})</script>
-</body>
-</html>
+<script>function setCookie(t,n,s){var e=new Date;e.setTime(e.getTime()+s*24*60*60*1e3),document.cookie=t+"="+n+";path=/"+";expires="+e.toUTCString()}function getCookie(t){var e=document.cookie.match("(^|;) ?"+t+"=([^;]*)(;|$)");return e?e[2]:null}function defaultPageTabs(n){let t=$(".code-tabs");for(var e=0;e<t.length;e++)$(t[e]).find(".active").removeClass("active"),tab=$(t[e]).find(".tab-pane").eq(n),$(tab).addClass("active"),tabHeader=$(t[e]).find(".nav-item").eq(n),$(tabHeader).addClass("active")}$("document").ready(function(){hljs.highlightAll(),mermaid.initialize({startOnLoad:!0}),$(".nav-tabs a").click(function(){var t=$(this).parent(),e=t.index();defaultPageTabs(e),setCookie("tabIndex",e,200)}),tabIndex=getCookie("tabIndex"),tabIndex!=null&&defaultPageTabs(tabIndex)})</script>
+</body></html>
