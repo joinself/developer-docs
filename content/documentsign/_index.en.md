@@ -24,11 +24,11 @@ Sometimes a short text is enough, so you don't really need to share a PDF to be 
     {{% /tab %}}
 
     {{% tab "Go" %}}
-    // TBD
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
-    // TBD
+    let resp = await sdk.docs().requestSignature(selfID, terms, [])
+    console.log(`Document signature : ${resp["status"]}`)
     {{% /tab %}}
 {{% /tabs %}}
 
@@ -75,7 +75,20 @@ In case you want users to sign a document (like a PDF) you can attach objects to
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
-    // TBD
+    let resp = await sdk.docs().requestSignature(selfID, terms, docs)
+    if (resp["status"] == "accepted") {
+      console.log("Document signed!")
+      console.log("")
+      console.log("signned documents: ")
+      for (var i=0; i < resp["signed_objects"].length; i++) {
+        console.log(`- Name : ${resp["signed_objects"]["name"]}`)
+        console.log(`  Link : ${resp["signed_objects"]["link"]}`)
+        console.log(`  Hash : ${resp["signed_objects"]["hash"]}`)
+      }
+      console.log("")
+      console.log("full signature")
+      console.log(resp["input"])
+    }
     {{% /tab %}}
 {{% /tabs %}}
 
