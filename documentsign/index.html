@@ -78,9 +78,9 @@ Document sign
     puts &quot;Document signature : #{resp.status}&quot;
 end
 </code></pre></div><div class=tab-pane title=Go>
-<pre><code>// TBD
-</code></pre></div><div class=tab-pane title=Typescript>
-<pre><code>// TBD
+</div><div class=tab-pane title=Typescript>
+<pre><code>let resp = await sdk.docs().requestSignature(selfID, terms, [])
+console.log(`Document signature : ${resp[&quot;status&quot;]}`)
 </code></pre></div></div></div><br>
 <h3 id=object-based-signatures>Object based signatures</h3><p>In case you want users to sign a document (like a PDF) you can attach objects to your request, and get a list of signed objects on the response.</p><div class=code-tabs>
 <ul class="nav nav-tabs"></ul><div class=tab-content><div class=tab-pane title=Ruby>
@@ -115,7 +115,20 @@ end
 </code></pre></div><div class=tab-pane title=Go>
 <pre><code>// TBD
 </code></pre></div><div class=tab-pane title=Typescript>
-<pre><code>// TBD
+<pre><code>let resp = await sdk.docs().requestSignature(selfID, terms, docs)
+if (resp[&quot;status&quot;] == &quot;accepted&quot;) {
+  console.log(&quot;Document signed!&quot;)
+  console.log(&quot;&quot;)
+  console.log(&quot;signned documents: &quot;)
+  for (var i=0; i &lt; resp[&quot;signed_objects&quot;].length; i++) {
+    console.log(`- Name : ${resp[&quot;signed_objects&quot;][&quot;name&quot;]}`)
+    console.log(`  Link : ${resp[&quot;signed_objects&quot;][&quot;link&quot;]}`)
+    console.log(`  Hash : ${resp[&quot;signed_objects&quot;][&quot;hash&quot;]}`)
+  }
+  console.log(&quot;&quot;)
+  console.log(&quot;full signature&quot;)
+  console.log(resp[&quot;input&quot;])
+}
 </code></pre></div></div></div><p>As you can see the signed response will come with a SHA256 hash of the original document, so you can verify the document has been signed.</p></div><p class="post-meta border-bottom pb-3 mb-0 mt-3">
 Updated on 15 Feb 2022
 </p><nav class="pagination mt-3">
