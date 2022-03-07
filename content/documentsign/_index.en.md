@@ -24,6 +24,8 @@ Sometimes a short text is enough, so you don't really need to share a PDF to be 
     {{% /tab %}}
 
     {{% tab "Go" %}}
+    res := client.DocsService().RequestSignature(os.Args[1], terms, []documents.InputObjects)
+    log.Println(res)
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
@@ -71,7 +73,37 @@ In case you want users to sign a document (like a PDF) you can attach objects to
     {{% /tab %}}
 
     {{% tab "Go" %}}
-    // TBD
+	ds := client.DocsService()
+	content, err := ioutil.ReadFile("./sample.pdf")
+	if err != nil {
+		log.Fatal(err)
+	}    
+	objects := make([]documents.InputObject, 0)
+	objects = append(objects, documents.InputObject{
+		Name: "Terms and conditions",
+		Data: content,
+		Mime: "application/pdf",
+	})
+
+	log.Println("sending document sign request")
+	resp, err := ds.RequestSignature(os.Args[1], "Read and sign this documents", objects)
+	if err != nil {
+		log.Println(err.Error())
+	}
+	if resp.Status == "accepted" {
+		fmt.Println("Document has been signed")
+		fmt.Println("")
+		fmt.Println("signed documents:")
+		spew.Dump(resp.SignedObjects)
+		for _, o := range resp.SignedObjects {
+			fmt.Println("- Name: " + o.Name)
+			fmt.Println("  Link: " + o.Link)
+			fmt.Println("  Hash: " + o.Hash)
+		}
+		fmt.Println("")
+		fmt.Println("full signature:")
+		fmt.Println(resp.Signature)
+	}
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
