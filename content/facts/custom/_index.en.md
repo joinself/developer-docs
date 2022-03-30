@@ -19,7 +19,14 @@ Passing the cid or conversation id, you'll be able to modify the default random 
 
 Timeout in seconds after which the request will expire. Useful if you want your **fact request** to be valid just for a specific period of time. It **defaults to 900 seconds**.
 
-### allowed_until
+### allowed_for
 
-Providing this option with a timestamp, your app will be allowed to request this same data without user confirmation until the provided data. 
+Providing this option with a number of seconds, your app will be allowed to request the same data without user confirmation for the specified time. 
+
 This is quite useful if you intend to use some data recurrently but don't want to store it on your end.
+
+Note this option is not compatible with `auth` modifier for security reasons.
+
+### auth
+
+Boolean representing if you want to display this fact request as an authentication with facts or not, it will default to false.
