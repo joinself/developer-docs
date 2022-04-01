@@ -17,12 +17,11 @@ The asynchronous approach can be used in scenarios like the previous one, howeve
     {{% /tab %}}
 
     {{% tab "Go" %}}
-    req := fact.FactRequest{
+    req := fact.FactRequestAsync{
     SelfID:          selfID,
         Description: "info",
         Facts:       []fact.Fact{{ Fact: fact.FactEmail }},
         Expiry:      time.Minute * 5,
-        Async:       true,
         CID:         "conversation_id",
     }
 

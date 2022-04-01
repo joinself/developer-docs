@@ -18,12 +18,11 @@ Facts service allows you to send a fact request with the form of an authenticati
     {{% /tab %}}
 
     {{% tab "Go" %}}
-    req := fact.FactRequest{
+    req := fact.FactRequestAsync{
     SelfID:          selfID,
         Description: "info",
         Facts:       []fact.Fact{{ Fact: fact.FactEmail }},
         Expiry:      time.Minute * 5,
-        Async:       true,
         CID:         "conversation_id",
         Auth:        true,
     }
