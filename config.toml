@@ -154,3 +154,9 @@ hasChildren = true
   name = "Document sign"
   url = "documentsign/"
   weight = 9
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Direct connection"
+  url = "directconnection/"
+  weight = 10
