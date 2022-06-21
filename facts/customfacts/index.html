@@ -18,15 +18,31 @@ active"><a href=https://docs.joinself.com/facts/customfacts/>Custom facts</a></l
     &quot;Trip to Venice&quot;, 
     &quot;airplanemode_active&quot;
 )
-</code></pre></div><div class=tab-pane title=Go></div><div class=tab-pane title=Typescript></div></div></div><h4 id=facts>Facts</h4><p>Facts are composed of a key, a value and a source.</p><table><thead><tr><th>param</th><th>description</th><th>required</th></tr></thead><tbody><tr><td>key</td><td>is the id for the fact, it will allow other apps to request your facts by id.</td><td>true</td></tr><tr><td>value</td><td>It&rsquo;s stored as a string by default</td><td>true</td></tr><tr><td>source</td><td>it groups facts from the same source, it allows other apps to use it as filters.</td><td>true</td></tr><tr><td>group</td><td>if group is not provided facts will end under on the <code>ungrouped</code> section on the user&rsquo;s device</td><td>false</td></tr><tr><td>type</td><td>it defines how the fact has to be processed by other clients, it defaults to <code>string</code>, but can also be set as <code>password</code> or <code>delegation_certificate</code></td><td>false</td></tr></tbody></table><ul><li></li></ul><div class=code-tabs><ul class="nav nav-tabs"></ul><div class=tab-content><div class=tab-pane title=Ruby><pre><code>my_fact = SelfSDK::Services::Facts::Fact.new(
+</code></pre></div><div class=tab-pane title=Go><pre><code>g := fact.FactGroup{
+	Name: &quot;Trip to Shangai&quot;,
+	Icon: &quot;airplanemode_active&quot;,
+}
+</code></pre></div><div class=tab-pane title=Typescript><pre><code>let group = new Group(&quot;group name&quot;, &quot;plane&quot;)
+</code></pre></div></div></div><h4 id=facts>Facts</h4><p>Facts are composed of a key, a value and a source.</p><table><thead><tr><th>param</th><th>description</th><th>required</th></tr></thead><tbody><tr><td>key</td><td>is the id for the fact, it will allow other apps to request your facts by id.</td><td>true</td></tr><tr><td>value</td><td>It&rsquo;s stored as a string by default</td><td>true</td></tr><tr><td>source</td><td>it groups facts from the same source, it allows other apps to use it as filters.</td><td>true</td></tr><tr><td>group</td><td>if group is not provided facts will end under on the <code>ungrouped</code> section on the user&rsquo;s device</td><td>false</td></tr><tr><td>type</td><td>it defines how the fact has to be processed by other clients, it defaults to <code>string</code>, but can also be set as <code>password</code> or <code>delegation_certificate</code></td><td>false</td></tr></tbody></table><ul><li></li></ul><div class=code-tabs><ul class="nav nav-tabs"></ul><div class=tab-content><div class=tab-pane title=Ruby><pre><code>my_fact = SelfSDK::Services::Facts::Fact.new(
     &quot;confirmation_code&quot;,
     &quot;CD128763&quot;,
     &quot;source12&quot;,
     group: my_group)
-</code></pre></div><div class=tab-pane title=Go></div><div class=tab-pane title=Typescript></div></div></div><h4 id=issuing-facts-1>Issuing facts</h4><p>Once you have your fact defined, it&rsquo;s time to send it to your user&rsquo;s device. You can do this by calling <code>issue</code> method on the facts service.</p><table><thead><tr><th>param</th><th>description</th><th>required</th></tr></thead><tbody><tr><td>user</td><td>the user you&rsquo;re signing and sending facts to</td><td>true</td></tr><tr><td>facts</td><td>an array with the facts you want to issue</td><td>true</td></tr><tr><td>viewers</td><td>an array of app identifiers related to apps apps that can consume this facts</td><td>false</td></tr></tbody></table><div class=code-tabs><ul class="nav nav-tabs"></ul><div class=tab-content><div class=tab-pane title=Ruby><pre><code>@app.facts.issue(user, 
+</code></pre></div><div class=tab-pane title=Go><pre><code>f := fact.FactToIssue{
+		Key:    &quot;BCN-SIN-cc&quot;,
+		Value:  &quot;CD128763&quot;,
+		Source: source,
+		Group:  &amp;g,
+	}
+</code></pre></div><div class=tab-pane title=Typescript><pre><code>let fact = new FactToIssue(&quot;foo&quot;, &quot;bar&quot;, source, {
+  group: group
+})
+</code></pre></div></div></div><h4 id=issuing-facts-1>Issuing facts</h4><p>Once you have your fact defined, it&rsquo;s time to send it to your user&rsquo;s device. You can do this by calling <code>issue</code> method on the facts service.</p><table><thead><tr><th>param</th><th>description</th><th>required</th></tr></thead><tbody><tr><td>user</td><td>the user you&rsquo;re signing and sending facts to</td><td>true</td></tr><tr><td>facts</td><td>an array with the facts you want to issue</td><td>true</td></tr><tr><td>viewers</td><td>an array of app identifiers related to apps apps that can consume this facts</td><td>false</td></tr></tbody></table><div class=code-tabs><ul class="nav nav-tabs"></ul><div class=tab-content><div class=tab-pane title=Ruby><pre><code>@app.facts.issue(user, 
                  my_fact], 
                  viewers: [appID1, appID2])
-</code></pre></div><div class=tab-pane title=Go></div><div class=tab-pane title=Typescript></div></div></div><h4 id=retrieving-facts>Retrieving facts</h4><p>Retrieving facts is pretty much the same as we do for accessing core facts, the only difference is we must specify what issuers are we going to be accepting on our request, let&rsquo;s see an example.</p><div class=code-tabs><ul class="nav nav-tabs"></ul><div class=tab-content><div class=tab-pane title=Ruby><pre><code>myAppID = ENV[&quot;SELF_APP_ID&quot;]
+</code></pre></div><div class=tab-pane title=Go><pre><code>client.FactService().Issue(selfid, []fact.FactToIssue{f}, []string{})
+</code></pre></div><div class=tab-pane title=Typescript><pre><code>await sdk.facts().issue(selfID, [fact])
+</code></pre></div></div></div><h4 id=retrieving-facts>Retrieving facts</h4><p>Retrieving facts is pretty much the same as we do for accessing core facts, the only difference is we must specify what issuers are we going to be accepting on our request, let&rsquo;s see an example.</p><div class=code-tabs><ul class="nav nav-tabs"></ul><div class=tab-content><div class=tab-pane title=Ruby><pre><code>myAppID = ENV[&quot;SELF_APP_ID&quot;]
 @app.facts.request(user, 
                    [{ 
                        fact: my_fact.key, 
@@ -40,7 +56,20 @@ active"><a href=https://docs.joinself.com/facts/customfacts/>Custom facts</a></l
     a = res.attestation_values_for(k)
     puts &quot;Your stored fact is #{a.first}!&quot;
 end
-</code></pre></div><div class=tab-pane title=Go></div><div class=tab-pane title=Typescript></div></div></div><h4 id=scope-and-facts>Scope and facts</h4><p>Custom facts scope is configurable by the developer by using <code>viewers</code> and <code>issuers</code> parameters to <code>facts.issue</code> and <code>facts.request</code>. This makes it possible to create private, protected and public custom facts.</p><h5 id=private>Private</h5><p>By specifying yourself as the only <code>viewers</code> on a facts.issue you will be creating facts you&rsquo;re the only one able to consume.</p><h5 id=protected>Protected</h5><p>Specifying multiple app ids as <code>viewers</code> you&rsquo;ll make those facts available only to a subset of apps.</p><h5 id=public>Public</h5><p>When viewers parameter is not provided, issued facts become public.</p></div><p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 15 Feb 2022</p><nav class="pagination mt-3"><a class="nav nav-prev" href=https://docs.joinself.com/facts/response/ aria-label="Previous page"><i class="ti-arrow-left mr-2"></i>
+</code></pre></div><div class=tab-pane title=Go><pre><code>resp, err := client.FactService().Request(&amp;fact.FactRequest{
+	SelfID:      selfid,
+	Description: &quot;We need access to your flight confirmation codes to reschedule your flights&quot;,
+	Facts: []fact.Fact{
+		{
+			Fact:    f[0].Key,
+			Sources: []string{source},
+			Issuers: []string{appID},
+		},
+	},
+	Expiry: time.Minute * 5,
+})
+</code></pre></div><div class=tab-pane title=Typescript><pre><code>let res = await sdk.facts().request(selfID, [{ fact: fact.key, issuers: [ appID ] }])
+</code></pre></div></div></div><h4 id=scope-and-facts>Scope and facts</h4><p>Custom facts scope is configurable by the developer by using <code>viewers</code> and <code>issuers</code> parameters to <code>facts.issue</code> and <code>facts.request</code>. This makes it possible to create private, protected and public custom facts.</p><h5 id=private>Private</h5><p>By specifying yourself as the only <code>viewers</code> on a facts.issue you will be creating facts you&rsquo;re the only one able to consume.</p><h5 id=protected>Protected</h5><p>Specifying multiple app ids as <code>viewers</code> you&rsquo;ll make those facts available only to a subset of apps.</p><h5 id=public>Public</h5><p>When viewers parameter is not provided, issued facts become public.</p></div><p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 15 Feb 2022</p><nav class="pagination mt-3"><a class="nav nav-prev" href=https://docs.joinself.com/facts/response/ aria-label="Previous page"><i class="ti-arrow-left mr-2"></i>
 <span class="d-none d-md-block">Fact response</span></a>
 <a class="nav nav-next" href=https://docs.joinself.com/messaging/ aria-label="Previous page"><span class="d-none d-md-block">Messaging</span><i class="ti-arrow-right ml-2"></i></a></nav></div></div></div></div></section><footer class="section pb-4"><div class=container><div class="row align-items-center"><div class="col-md-8 text-md-left text-center"><p class="mb-md-0 mb-4">© Self Group Ltd. 2022</p></div><div class="col-md-4 text-md-right text-center"><ul class=list-inline><li class=list-inline-item><a class="text-color d-inline-block p-2" href=https://twitter.com/futureoftrust aria-label=Twitter><i class=ti-twitter-alt></i></a></li><li class=list-inline-item><a class="text-color d-inline-block p-2" href=https://github.com/joinself/ aria-label=Github><i class=ti-github></i></a></li><li class=list-inline-item><a class="text-color d-inline-block p-2" href=https://www.linkedin.com/company/joinself/ aria-label=Linkedin><i class=ti-linkedin></i></a></li></ul></div></div></div></footer><style>.form-control{border-radius:10px!important}.banner{background-color:#0e1c42!important}.overlay::before{opacity:0!important}.bg-cover{background-size:contain;background-position:100%}</style><script src=https://docs.joinself.com/js/script.min.js></script>
 <script src=https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js></script>
