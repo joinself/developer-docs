@@ -44,9 +44,14 @@ This is how we can create a group.
     {{% /tab %}}
 
     {{% tab "Go" %}}
+	g := fact.FactGroup{
+		Name: "Trip to Shangai",
+		Icon: "airplanemode_active",
+	}
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
+    let group = new Group("group name", "plane")
     {{% /tab %}}
 {{% /tabs %}}
 
@@ -77,9 +82,18 @@ Facts are composed of a key, a value and a source.
     {{% /tab %}}
 
     {{% tab "Go" %}}
+	f := fact.FactToIssue{
+			Key:    "BCN-SIN-cc",
+			Value:  "CD128763",
+			Source: source,
+			Group:  &g,
+		}
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
+    let fact = new FactToIssue("foo", "bar", source, {
+      group: group
+    })
     {{% /tab %}}
 {{% /tabs %}}
 
@@ -103,9 +117,11 @@ Once you have your fact defined, it's time to send it to your user's device. You
     {{% /tab %}}
 
     {{% tab "Go" %}}
+    client.FactService().Issue(selfid, []fact.FactToIssue{f}, []string{})
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
+    await sdk.facts().issue(selfID, [fact])
     {{% /tab %}}
 {{% /tabs %}}
 
@@ -133,9 +149,22 @@ Retrieving facts is pretty much the same as we do for accessing core facts, the 
     {{% /tab %}}
 
     {{% tab "Go" %}}
+	resp, err := client.FactService().Request(&fact.FactRequest{
+		SelfID:      selfid,
+		Description: "We need access to your flight confirmation codes to reschedule your flights",
+		Facts: []fact.Fact{
+			{
+				Fact:    f[0].Key,
+				Sources: []string{source},
+				Issuers: []string{appID},
+			},
+		},
+		Expiry: time.Minute * 5,
+	})
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
+    let res = await sdk.facts().request(selfID, [{ fact: fact.key, issuers: [ appID ] }])
     {{% /tab %}}
 {{% /tabs %}}
 
