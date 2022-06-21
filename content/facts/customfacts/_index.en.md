@@ -1,10 +1,9 @@
 ---
 title: "Custom facts"
 date: 2022-02-15T11:02:05+06:00
-icon: "ti-loop"
-description: "Use your users device as secure storage for critical information."
-type : "docs"
+date: 2022-02-15T11:02:05+06:00
 weight: 8
+draft: false
 keywords: ["fact", "facts", "request", "requests", "custom"]
 ---
 
