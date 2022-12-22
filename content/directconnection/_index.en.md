@@ -2,7 +2,7 @@
 title: "App direct connection"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-plug"
-description: "App direct connection"
+description: "Allow your customers to easily connect your app."
 type : "docs"
 keywords: ["connection", "connect", "qr"]
 weight: 10
