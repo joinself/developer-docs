@@ -48,6 +48,10 @@ li.sidelist a, li.sidelist>a {
     padding:0px;
 }
 
+#TableOfContents {
+    padding-bottom: 20px;
+}
+
 .subtitle {
     font-size: 22px;
     padding-top: 10px;
