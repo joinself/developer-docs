@@ -10,6 +10,11 @@ h6 {
   line-height: 1.2;
 }
 
+h2, .h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
 ul li:before {
     display:none;
 }
