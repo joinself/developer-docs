@@ -73,7 +73,7 @@ $ ./demo run
 ```
 
 {{< notice info >}}
-  Use the powershell script *demo.ps1* instead of *demo* if you're running Windows.
+  Use the powershell script *./demo.ps1* instead of *demo* if you're running Windows.
 {{< /notice >}}
 
 
@@ -81,7 +81,7 @@ $ ./demo run
 
 
 {{% notice tip %}}
-Stop the container with **demo down**
+Stop the container with **./demo down**
 {{% /notice %}}
 
 
@@ -156,7 +156,7 @@ $ ./demo run
 ```
 
 {{< notice info >}}
-  Use the powershell script *demo.ps1* instead of *demo* if you're running Windows.
+  Use the powershell script *./demo.ps1* instead of *demo* if you're running Windows.
 {{< /notice >}}
 
 
