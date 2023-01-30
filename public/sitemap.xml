@@ -14,6 +14,9 @@
     <loc>https://docs.joinself.com/facts/non-blocking/</loc>
     <lastmod>2022-02-15T11:02:05+06:00</lastmod>
   </url><url>
+    <loc>https://docs.joinself.com/quickstart/sandbox/</loc>
+    <lastmod>2022-02-15T11:02:05+06:00</lastmod>
+  </url><url>
     <loc>https://docs.joinself.com/setup/</loc>
     <lastmod>2022-02-15T11:02:05+06:00</lastmod>
   </url><url>
@@ -22,6 +25,9 @@
   </url><url>
     <loc>https://docs.joinself.com/messaging/text-messages/</loc>
     <lastmod>2022-02-09T11:05:05+06:00</lastmod>
+  </url><url>
+    <loc>https://docs.joinself.com/quickstart/app-setup/</loc>
+    <lastmod>2022-02-15T11:02:05+06:00</lastmod>
   </url><url>
     <loc>https://docs.joinself.com/setup/getting-started/</loc>
     <lastmod>2022-02-15T11:02:05+06:00</lastmod>
@@ -64,6 +70,8 @@
   </url><url>
     <loc>https://docs.joinself.com/setup/initialize/</loc>
     <lastmod>2022-02-09T11:02:05+06:00</lastmod>
+  </url><url>
+    <loc>https://docs.joinself.com/quickstart/glossary/</loc>
   </url><url>
     <loc>https://docs.joinself.com/facts/</loc>
     <lastmod>2022-02-15T11:02:05+06:00</lastmod>
@@ -122,18 +130,13 @@
     <loc>https://docs.joinself.com/voice/</loc>
     <lastmod>2022-02-15T11:02:05+06:00</lastmod>
   </url><url>
-    <loc>https://docs.joinself.com/intro/</loc>
-    <lastmod>2022-02-15T11:02:05+06:00</lastmod>
-  </url><url>
     <loc>https://docs.joinself.com/</loc>
     <lastmod>2022-02-15T11:02:05+06:00</lastmod>
   </url><url>
-    <loc>https://docs.joinself.com/intro/quickstart/</loc>
+    <loc>https://docs.joinself.com/quickstart/</loc>
     <lastmod>2022-02-15T11:02:05+06:00</lastmod>
   </url><url>
     <loc>https://docs.joinself.com/categories/</loc>
-  </url><url>
-    <loc>https://docs.joinself.com/intro/glossary/</loc>
   </url><url>
     <loc>https://docs.joinself.com/tags/</loc>
   </url>

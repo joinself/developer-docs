@@ -2,10 +2,10 @@
 <html lang="en-us">
   <head>
   <meta charset="utf-8" />
-  <title>Zero-knowledge</title>
+  <title>QuickStart</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="generator" content="Hugo 0.101.0" />
-  <meta name="description" content="Zero-knowledge - Joinself - Platform Documentation " />
+  <meta name="description" content="QuickStart - Joinself - Platform Documentation " />
   
   
   <meta name="theme-name" content="dot-hugo" />
@@ -85,19 +85,19 @@
     content="image/png"
   />
   
-  <meta name="twitter:title" content="Zero-knowledge" />
+  <meta name="twitter:title" content="QuickStart" />
   <meta
     name="twitter:description"
-    content="Check users facts without accessing sensible data"
+    content="Get started with the Quickstart"
   />
-    <meta property="og:title" content="Zero-knowledge" />
-<meta property="og:description" content="Check users facts without accessing sensible data" />
+    <meta property="og:title" content="QuickStart" />
+<meta property="og:description" content="Get started with the Quickstart" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://docs.joinself.com/zero/" />
+<meta property="og:url" content="https://docs.joinself.com/quickstart/" />
 
  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Zero-knowledge"/>
-<meta name="twitter:description" content="Check users facts without accessing sensible data"/>
+<meta name="twitter:title" content="QuickStart"/>
+<meta name="twitter:description" content="Get started with the Quickstart"/>
 
 </head>
 
@@ -195,8 +195,8 @@
             </div>
 
             <div class="sidebar-title">
-                <i class="ti-shield"></i>
-                Zero-knowledge
+                <i class="ti-rocket"></i>
+                QuickStart
             </div>
 
             <ul class="list-styled">
@@ -215,18 +215,49 @@
                    
                
                    
+               
+                   
+               
+                   
+               
+                   
+               
+                   
+               
+                   
                             
    
   <li
-    data-nav-id="https://docs.joinself.com/zero/"
-    title="Zero-knowledge"
+    data-nav-id="https://docs.joinself.com/quickstart/"
+    title="QuickStart"
     class="sidelist
     active"
   >
-    <a href="https://docs.joinself.com/zero/">
-        Zero-knowledge
+    <a href="https://docs.joinself.com/quickstart/">
+        QuickStart
     </a>
 
+    
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#setting-up-your-app">Setting up your app</a></li>
+    <li><a href="#quickstart-setup">Quickstart setup</a></li>
+    <li><a href="#setting-up-with-docker-recommended">Setting up with Docker (Recommended)</a></li>
+    <li><a href="#setting-up-without-docker">Setting up without Docker</a>
+      <ul>
+        <li><a href="#debianubuntu">Debian/Ubuntu</a></li>
+        <li><a href="#redhatcentos">Redhat/Centos</a></li>
+        <li><a href="#mac-x86_64">Mac (x86_64)</a></li>
+        <li><a href="#mac-m1arm64">Mac (m1/arm64)</a></li>
+        <li><a href="#setting-up-quickstart">Setting up Quickstart</a></li>
+      </ul>
+    </li>
+    <li><a href="#playing-with-the-examples">Playing with the examples</a></li>
+  </ul>
+</nav>
+        
     
     
      
@@ -236,15 +267,17 @@
                   
    
   <li
-    data-nav-id="https://docs.joinself.com/zero/blocking/"
-    title="Blocking requests"
+    data-nav-id="https://docs.joinself.com/quickstart/sandbox/"
+    title="Sandbox"
     class="sidelist
     "
   >
-    <a href="https://docs.joinself.com/zero/blocking/">
-        Blocking requests
+    <a href="https://docs.joinself.com/quickstart/sandbox/">
+        Sandbox
     </a>
 
+    
+        
     
     
      
@@ -256,15 +289,17 @@
                   
    
   <li
-    data-nav-id="https://docs.joinself.com/zero/non-blocking/"
-    title="Non-blocking requests"
+    data-nav-id="https://docs.joinself.com/quickstart/app-setup/"
+    title="App setup"
     class="sidelist
     "
   >
-    <a href="https://docs.joinself.com/zero/non-blocking/">
-        Non-blocking requests
+    <a href="https://docs.joinself.com/quickstart/app-setup/">
+        App setup
     </a>
 
+    
+        
     
     
      
@@ -276,53 +311,13 @@
                   
    
   <li
-    data-nav-id="https://docs.joinself.com/zero/async/"
-    title="Asynchronous"
+    data-nav-id="https://docs.joinself.com/quickstart/glossary/"
+    title="Glossary"
     class="sidelist
     "
   >
-    <a href="https://docs.joinself.com/zero/async/">
-        Asynchronous
-    </a>
-
-    
-    
-     
-  </li>
-    
-         
-       
-         
-                  
-   
-  <li
-    data-nav-id="https://docs.joinself.com/zero/subscribe/"
-    title="Subscribe to zero knowledge fact check"
-    class="sidelist
-    "
-  >
-    <a href="https://docs.joinself.com/zero/subscribe/">
-        Subscribe to zero knowledge fact check
-    </a>
-
-    
-    
-     
-  </li>
-    
-         
-       
-         
-                  
-   
-  <li
-    data-nav-id="https://docs.joinself.com/zero/response/"
-    title="Zero knowledge fact responses"
-    class="sidelist
-    "
-  >
-    <a href="https://docs.joinself.com/zero/response/">
-        Zero knowledge fact responses
+    <a href="https://docs.joinself.com/quickstart/glossary/">
+        Glossary
     </a>
 
     
@@ -338,16 +333,6 @@
     
                    
                
-                   
-               
-                   
-               
-                   
-               
-                   
-               
-                   
-               
                 
             </ul>
           </div>
@@ -355,16 +340,141 @@
         <div class="col-lg-9">
           <div class="p-lg-5 p-4 bg-white" id="content">
             
-                <h2 class="mb-5" id="title">Zero-knowledge</h2>
+                <h2 class="mb-5 summary" id="title">Get started with the Quickstart<div class='subtitle'>A quick introduction to building with Self</div></h2>
             
 
             
-            <div class="content"><p>An easy to use zero knowledge fact checker allows developers to ask the questions they really need an answer to, and receive anonymised answers.</p>
-<p>That means they need to worry less about running a secure compliant environment.</p>
-<h3 id="how-do-they-work">How do they work?</h3>
-<p>Intermediary fact checks are useful when you want to run a check of a user’s verified fact without having to gain access to that fact.</p>
-<p>Eg. You want to verify a user is over 18, but you don’t want to deal with their personal information. An intermediary fact check allows you to run a zero knowledge check on that information via a <strong>trusted intermediary</strong>.</p>
-<p>This is useful both for you and your users because you can prove a fact without ever directly interacting to them.</p>
+            <div class="content"><h2 id="introduction">Introduction</h2>
+<p>Let&rsquo;s try out the Self-Quickstart app by cloning the Quickstart app on your local machine. To do this, you will need API keys which can be obtained by registering on the Self Developer Portal.</p>
+<p>You have the option of obtaining credentials for two distinct environments, it is suggested to first develop and test your app on the sandbox environment, once it is stable and working as expected, you can then submit it for approval on the production environment, keep in mind that the approval process for production environment may take some time.</p>
+<table>
+<thead>
+<tr>
+<th>Environments</th>
+<th style="text-align:left"></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sandbox</td>
+<td style="text-align:left">Get started with test credentials and life-like data</td>
+<td style="text-align:center"><a href='https://developer.sandbox.joinself.com' targert='_new'><span class='ti-link'></span></a> </td>
+</tr>
+<tr>
+<td>Production</td>
+<td style="text-align:left">Launch your app with live credentials</td>
+<td style="text-align:center"><a href='https://developer.joinself.com' targert='_new'><span class='ti-link'></span></a> </td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>API Keys</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SELF_APP_ID</td>
+<td style="text-align:left">Public app identifier</td>
+</tr>
+<tr>
+<td>SELF_APP_DEVICE_SECRET</td>
+<td style="text-align:left">Private key</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="notices info" ><p>If you get stuck at any point in the Quickstart, help is just a click away! Check the Quickstart <a href='#'>troubleshooting guide</a>, ask other developers in our <a href='#'>Stack Overflow community</a> or submit a <a href='#'>Support ticket</a>.</p></div>
+<h2 id="setting-up-your-app">Setting up your app</h2>
+<p>Before we even get started with the code we need to have a valid Self-app credentials so the quick start can interact with the Self-network.</p>
+<p>This can be done through the developer portal, if you&rsquo;re just getting started you can get those from the <a href='https://developer.sandbox.joinself.com' targert='_new'>Sandbox Developer Portal</a>.</p>
+<p>This documentation site has a whole section describing <a href="https://docs.joinself.com/quickstart/app-setup/" title="how to create and tune your self-app">About</a> for your specific needs, check it out for more detailed information.</p>
+<h2 id="quickstart-setup">Quickstart setup</h2>
+<p>Once you have obtained your API keys, the next step is to execute the Self Quickstart on your local machine. The guidance provided below will assist you in duplicating the Quickstart repository, adjusting the ./examples/.env file with your own Self client ID and Sandbox secret, and ultimately, compiling and launching the application.</p>
+<p>The Self-Quickstart is available in both Docker and non-Docker options. If you don&rsquo;t have Docker installed on your system, you might want to use the non-Docker version, particularly for Windows users who do not have Docker installed. However, if you already have Docker installed, it is recommended to use the Docker option as it is more straightforward and simpler to execute the Quickstart. The instructions provided below will guide you through the process of setting up the Quickstart with both Docker and non-Docker configurations.</p>
+<p><a href='#' class='btn btn-info'>Non-Docker</a>
+<a href='#' class='btn btn-success'>Docker</a></p>
+<h2 id="setting-up-with-docker-recommended">Setting up with Docker (Recommended)</h2>
+<p>Docker is a platform and technology for building, shipping, and running distributed applications. It uses containerization, a method of packaging software in a way that ensures it runs consistently across different environments. Docker allows developers to package an application with all of its dependencies into a single container, which can then be easily deployed and run on any machine that has the Docker runtime installed. This makes it easy to manage and distribute applications, and helps ensure that the application will run consistently across different environments.</p>
+<p>Once you have Docker installed, open the Docker application, and then utilize the following commands in the command line interface to set up and execute the Quickstart. In case the &lsquo;demo&rsquo; commands do not function as expected, confirm that Docker is running. Depending on your system, it may be necessary to add &lsquo;sudo&rsquo; before the &lsquo;make&rsquo; commands.</p>
+<pre tabindex="0"><code># Note: If on Windows, run
+# git clone -c core.symlinks=true \
+# https://github.com/joinself/self-ruby-sdk.git
+# instead, to ensure correct symlink behavior
+
+$ git clone https://github.com/joinself/self-ruby-sdk.git
+$ cd self-ruby-sdk
+
+# Copy the ./examples/.env.example file to ./examples/.env, then fill out SELF_APP_ID 
+# and SELF_APP_DEVICE_SECRET in .env
+$ cp ./examples/.env.example ./examples/.env
+
+# start the container
+$ ./demo up
+
+# Finally run the quick start demo
+$ ./demo run
+</code></pre>
+
+<div class="notices info" ><p>Use the powershell script <em>demo.ps1</em> instead of <em>demo</em> if you&rsquo;re running Windows.</p></div>
+<p><img src="/images/quickstart.png" alt="quickstart-home"></p>
+
+
+<div class="notices tip" ><p>Stop the container with <strong>demo down</strong></p></div>
+<h2 id="setting-up-without-docker">Setting up without Docker</h2>
+<p>Self SDK comes with some dependencies on native libraries to manage encryption <a href="github.com/joinself/olm">libself_olm</a> and <a href="github.com/joinself/omemo">libself_omemo</a>.</p>
+<p>Below you&rsquo;ll find the instructions to get them working on your system.</p>
+<h3 id="debianubuntu">Debian/Ubuntu</h3>
+<pre tabindex="0"><code>$ curl -O https://download.joinself.com/olm/libself-olm_0.1.17_amd64.deb
+$ curl -O https://download.joinself.com/omemo/libself-omemo_0.1.2_amd64.deb
+$ apt install libsodium-dev
+$ apt install ./libself-olm_0.1.17_amd64.deb ./libself-omemo_0.1.2_amd64.deb
+</code></pre><h3 id="redhatcentos">Redhat/Centos</h3>
+<pre tabindex="0"><code>$ rpm -Uvh https://download.joinself.com/olm/libself-olm-0.1.14-1.x86_64.rpm
+$ rpm -Uvh https://download.joinself.com/omemo/libself-omemo-0.1.2-1.x86_64.rpm
+</code></pre><h3 id="mac-x86_64">Mac (x86_64)</h3>
+<pre tabindex="0"><code>$ brew tap joinself/crypto
+$ brew install libself-olm libself-omemo
+</code></pre><h3 id="mac-m1arm64">Mac (m1/arm64)</h3>
+<p>Brew on M1 macs currently lacks environment variables needed for the sdk to find the <code>olm</code> and <code>omemo</code> libraries, so you will need to add some additional configuration to your system:</p>
+<p>In your <code>~/.zshrc</code>, add:</p>
+<pre tabindex="0"><code>export C_INCLUDE_PATH=/opt/homebrew/include/
+export LIBRARY_PATH=$LIBRARY_PATH:/opt/homebrew/lib
+</code></pre><p>You should then be able to run:</p>
+<pre tabindex="0"><code>$ source ~/.zshrc
+$ brew tap joinself/crypto
+$ brew install --build-from-source libself-olm libself-omemo
+</code></pre><p>Note, you may also need to create <code>/usr/local/lib</code> if it does not exist:</p>
+<pre tabindex="0"><code>$ sudo mkdir /usr/local/lib
+</code></pre><h3 id="setting-up-quickstart">Setting up Quickstart</h3>
+<pre tabindex="0"><code># Note: If on Windows, run
+# git clone -c core.symlinks=true \
+# https://github.com/joinself/self-ruby-sdk.git
+# instead, to ensure correct symlink behavior
+
+$ git clone https://github.com/joinself/self-ruby-sdk.git
+$ cd self-ruby-sdk
+
+# Copy the ./examples/.env.example file to ./examples/.env, then fill out SELF_APP_ID 
+# and SELF_APP_DEVICE_SECRET in .env
+$ cp ./examples/.env.example ./examples/.env
+
+# start the container
+$ ./demo up
+
+# Finally run the quick start demo
+$ ./demo run
+</code></pre>
+
+<div class="notices info" ><p>Use the powershell script <em>demo.ps1</em> instead of <em>demo</em> if you&rsquo;re running Windows.</p></div>
+<h2 id="playing-with-the-examples">Playing with the examples</h2>
+<p>When you run the demo script for the first time, you&rsquo;ll be presented with a tty interface where you&rsquo;ll be able to test all the examples.</p>
+<p>Note you can modify any examples under the <a href="https://github.com/joinself/self-ruby-sdk/tree/main/examples">examples</a>.</p>
+<p>The script will be displaying you information about each of the features you&rsquo;re running and pointing you to the specific documentation on this site.</p>
 </div>
             
 
@@ -402,8 +512,7 @@
                            
                 
                            
-                                  
-                       
+                                        
                            
                            
                            
@@ -413,25 +522,26 @@
                            
                            
                            
-                                        
+                                  
+                       
                            
                            
                 
                   
               <a
                 class="nav nav-prev"
-                href="https://docs.joinself.com/notify/"
+                href="https://docs.joinself.com/voice/"
                 aria-label="Previous page"
                 ><i class="ti-arrow-left mr-2"></i>
-                <span class="d-none d-md-block">Notify</span></a
+                <span class="d-none d-md-block">Voice Calls</span></a
               >
                
               <a
                 class="nav nav-next"
-                href="https://docs.joinself.com/zero/blocking/"
+                href="https://docs.joinself.com/quickstart/sandbox/"
                 aria-label="Previous page"
               >
-                <span class="d-none d-md-block">Blocking requests</span
+                <span class="d-none d-md-block">Sandbox</span
                 ><i class="ti-arrow-right ml-2"></i
               ></a>
               
