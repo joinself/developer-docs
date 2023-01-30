@@ -46,9 +46,6 @@ Once you have obtained your API keys, the next step is to execute the Self Quick
 
 The Self-Quickstart is available in both Docker and non-Docker options. If you don't have Docker installed on your system, you might want to use the non-Docker version, particularly for Windows users who do not have Docker installed. However, if you already have Docker installed, it is recommended to use the Docker option as it is more straightforward and simpler to execute the Quickstart. The instructions provided below will guide you through the process of setting up the Quickstart with both Docker and non-Docker configurations.
 
-<a href='#' class='btn btn-info'>Non-Docker</a>
-<a href='#' class='btn btn-success'>Docker</a>
-
 ## Setting up with Docker (Recommended)
 
 Docker is a platform and technology for building, shipping, and running distributed applications. It uses containerization, a method of packaging software in a way that ensures it runs consistently across different environments. Docker allows developers to package an application with all of its dependencies into a single container, which can then be easily deployed and run on any machine that has the Docker runtime installed. This makes it easy to manage and distribute applications, and helps ensure that the application will run consistently across different environments.
