@@ -77,7 +77,7 @@ $ ./demo run
 {{< /notice >}}
 
 
-![quickstart-home](/images/quickstart.png)
+![quickstart-home](/images/quickstart_tty.png)
 
 
 {{% notice tip %}}
