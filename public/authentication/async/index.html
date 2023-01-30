@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <title>Async auth requests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.101.0" />
+  <meta name="description" content="Async auth requests - Joinself - Platform Documentation " />
+  
+  
+  <meta name="theme-name" content="dot-hugo" />
+
+  
+  
+  <link
+    rel="stylesheet"
+    href="https://docs.joinself.com/plugins/bootstrap/bootstrap.min.css"
+  />
+
+  
+  <link
+    rel="stylesheet"
+    href="https://docs.joinself.com/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://docs.joinself.com/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#0e1c42;
+      --body-color:#f9f9f9;
+      --text-color:#636363;
+      --text-color-dark:#0e1c42;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Barlow;
+    }
+  </style>
+
+  
+  
+  <link href="https://docs.joinself.com/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://docs.joinself.com/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://docs.joinself.com/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://docs.joinself.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://docs.joinself.com/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+   
+  
+  
+
+  
+     
+  <meta property="og:image" content="https://docs.joinself.com/images/logo.png" />
+    
+  <meta property="og:image:width" content="57" />
+  <meta property="og:image:height" content="35" />
+   
+  <meta
+    property="og:image:type"
+    content="image/png"
+  />
+  
+  <meta name="twitter:title" content="Async auth requests" />
+  <meta
+    name="twitter:description"
+    content="Joinself - Platform Documentation"
+  />
+    <meta property="og:title" content="Async auth requests" />
+<meta property="og:description" content="Joinself - Platform Documentation" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://docs.joinself.com/authentication/async/" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Async auth requests"/>
+<meta name="twitter:description" content="Joinself - Platform Documentation"/>
+
+</head>
+
+
+  <body>
+    
+    
+    <header class="sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <img class="img-fluid" src="https://docs.joinself.com/images/logo.png" alt="Joinself - Platform Documentation">
+      
+      
+    </a>
+    <span class='navbar_docs_title'>Docs</span>
+
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://www.joinself.com">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://www.joinself.com/contact-us">contact</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/setup/">Setup</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/users/">Users</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/messaging/">Messaging</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/authentication/">Authentication</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/facts/">Facts</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/zero/">Zero-knowledge</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/notify/">Notify</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/storageless/">Recurrent requests</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/documentsign/">Document sign</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/directconnection/">Direct connection</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+    </header>
+    
+     
+
+
+<section class="single section-sm pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="sidebar">
+            <div class="sidebar-all-docs">
+                <a href="/">
+                    <i class="ti-arrow-circle-left"></i>
+                    ALL DOCS
+                </a>
+            </div>
+
+            <div class="sidebar-title">
+                <i class=""></i>
+                Async auth requests
+            </div>
+
+            <ul class="list-styled">
+               
+               
+                   
+               
+                   
+               
+                   
+                            
+   
+  <li
+    data-nav-id="https://docs.joinself.com/authentication/"
+    title="Authentication"
+    class="sidelist
+    "
+  >
+    <a href="https://docs.joinself.com/authentication/">
+        Authentication
+    </a>
+    <nav id="TableOfContents"></nav>
+     
+    <ul>
+       
+         
+                  
+   
+  <li
+    data-nav-id="https://docs.joinself.com/authentication/blocking/"
+    title="Blocking auth requests"
+    class="sidelist
+    "
+  >
+    <a href="https://docs.joinself.com/authentication/blocking/">
+        Blocking auth requests
+    </a>
+    <nav id="TableOfContents"></nav>
+     
+  </li>
+    
+         
+       
+         
+                  
+   
+  <li
+    data-nav-id="https://docs.joinself.com/authentication/non-blocking/"
+    title="Non-blocking auth requests"
+    class="sidelist
+    "
+  >
+    <a href="https://docs.joinself.com/authentication/non-blocking/">
+        Non-blocking auth requests
+    </a>
+    <nav id="TableOfContents"></nav>
+     
+  </li>
+    
+         
+       
+         
+                  
+   
+  <li
+    data-nav-id="https://docs.joinself.com/authentication/async/"
+    title="Async auth requests"
+    class="sidelist
+    active"
+  >
+    <a href="https://docs.joinself.com/authentication/async/">
+        Async auth requests
+    </a>
+    <nav id="TableOfContents"></nav>
+     
+  </li>
+    
+         
+       
+         
+                  
+   
+  <li
+    data-nav-id="https://docs.joinself.com/authentication/custom/"
+    title="Custom auth requests"
+    class="sidelist
+    "
+  >
+    <a href="https://docs.joinself.com/authentication/custom/">
+        Custom auth requests
+    </a>
+    <nav id="TableOfContents"></nav>
+     
+  </li>
+    
+         
+       
+         
+                  
+   
+  <li
+    data-nav-id="https://docs.joinself.com/authentication/subscription/"
+    title="Subscribe to responses"
+    class="sidelist
+    "
+  >
+    <a href="https://docs.joinself.com/authentication/subscription/">
+        Subscribe to responses
+    </a>
+    <nav id="TableOfContents"></nav>
+     
+  </li>
+    
+         
+       
+         
+                  
+   
+  <li
+    data-nav-id="https://docs.joinself.com/authentication/facts/"
+    title="Auth with facts"
+    class="sidelist
+    "
+  >
+    <a href="https://docs.joinself.com/authentication/facts/">
+        Auth with facts
+    </a>
+    <nav id="TableOfContents"></nav>
+     
+  </li>
+    
+         
+       
+         
+                  
+   
+  <li
+    data-nav-id="https://docs.joinself.com/authentication/response/"
+    title="Dealing with responses"
+    class="sidelist
+    "
+  >
+    <a href="https://docs.joinself.com/authentication/response/">
+        Dealing with responses
+    </a>
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+     
+  </li>
+    
+         
+      
+    </ul>
+    
+  </li>
+    
+                   
+               
+                   
+               
+                   
+               
+                   
+               
+                   
+               
+                   
+               
+                   
+               
+                   
+               
+                   
+               
+                   
+               
+                
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="p-lg-5 p-4 bg-white" id="content">
+            
+                <h2 class="mb-5" id="title">Async auth requests</h2>
+            
+
+            
+            <div class="content"><p>This scenario is similar to non-blocking authentication, however, it’s not restricted to only one user.</p>
+<p>Sending an asynchronous authentication request is pretty straightforward, you can do it with the <em>async</em> option.</p>
+<p>This will return a conversation id identifying the authentication conversation, you should store it and catch it on a subscription, check <em>Receiving authentication response - Subscribe</em> section on how to manage this.</p>
+
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" title="Ruby">
+  <pre><code>cid = @client.
+    authentication.
+    request(&quot;1112223334&quot;, async: true)
+</code></pre>
+</div>
+<div class="tab-pane" title="Go">
+  <pre><code>client.
+    AuthenticationService().
+    RequestAsync(&quot;1112223334&quot;, &quot;conversation_id&quot;)
+</code></pre>
+</div>
+<div class="tab-pane" title="Typescript">
+  <pre><code>let res = await client.
+    authentication().
+    request(&quot;1112223334&quot;, { 'async': true })
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+            
+
+            <nav class="pagination mt-3">
+              
+                        
+                       
+                                    
+                           
+                           
+                           
+                
+                                        
+                           
+                
+                                  
+                       
+                           
+                            
+                    
+                       
+                           
+                           
+                           
+                
+                                        
+                           
+                           
+                           
+                           
+                           
+                           
+                
+                                        
+                           
+                           
+                           
+                
+                           
+                                        
+                           
+                           
+                           
+                           
+                
+                           
+                           
+                           
+                           
+                                        
+                           
+                
+                  
+              <a
+                class="nav nav-prev"
+                href="https://docs.joinself.com/authentication/non-blocking/"
+                aria-label="Previous page"
+                ><i class="ti-arrow-left mr-2"></i>
+                <span class="d-none d-md-block">Non-blocking auth requests</span></a
+              >
+               
+              <a
+                class="nav nav-next"
+                href="https://docs.joinself.com/authentication/custom/"
+                aria-label="Previous page"
+              >
+                <span class="d-none d-md-block">Custom auth requests</span
+                ><i class="ti-arrow-right ml-2"></i
+              ></a>
+              
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  
+  
+
+
+    
+<footer class="section pb-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8 text-md-left text-center">
+          <p class="mb-md-0 mb-4">© Self Group Ltd. 2022</p>
+        </div>
+        <div class="col-md-4 text-md-right text-center">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item">
+              <a
+                class="text-color d-inline-block p-2"
+                href="https://twitter.com/futureoftrust"
+                aria-label="Twitter"
+                ><i class="ti-twitter-alt"></i
+              ></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a
+                class="text-color d-inline-block p-2"
+                href="https://github.com/joinself/"
+                aria-label="Github"
+                ><i class="ti-github"></i
+              ></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a
+                class="text-color d-inline-block p-2"
+                href="https://www.linkedin.com/company/joinself/"
+                aria-label="Linkedin"
+                ><i class="ti-linkedin"></i
+              ></a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <style>
+       .form-control {
+            border-radius: 10px !important;
+        }
+        .banner {
+            background-color: #0e1c42 !important;
+        }
+        .overlay::before {
+            opacity: 0 !important;
+        }
+        .bg-cover {
+            background-size: contain;
+            background-position: right;
+        }
+
+  </style>
+
+  
+  
+  <script src="https://docs.joinself.com/js/script.min.js"></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>
+
+    function setCookie(key, value, expiry) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+        document.cookie = key + '=' + value + ';path=/' + ';expires=' + expires.toUTCString();
+    }
+
+    function getCookie(key) {
+        var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+        return keyValue ? keyValue[2] : null;
+    }
+
+
+    function defaultPageTabs(tabIndex) {
+        let tabs = $('.code-tabs')
+        for(var i = 0; i<tabs.length; i++) {
+            $(tabs[i]).find('.active').removeClass('active');
+            tab = $(tabs[i]).find('.tab-pane').eq(tabIndex);
+            $(tab).addClass('active');
+            tabHeader = $(tabs[i]).find('.nav-item').eq(tabIndex);
+            $(tabHeader).addClass('active');
+        }
+    }
+
+    $('document').ready(function(){
+        hljs.highlightAll();
+        mermaid.initialize({ startOnLoad: true });
+
+
+        $('.nav-tabs a').click(function (e) {
+            var tab = $(this).parent();
+            var tabIndex = tab.index();
+            defaultPageTabs(tabIndex);
+            setCookie('tabIndex', tabIndex, 200);
+        });
+
+        tabIndex = getCookie('tabIndex');
+        if (tabIndex != null) {
+            defaultPageTabs(tabIndex);
+        }
+
+    });
+  </script>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+  </body>
+</html>

@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <title>Joinself Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content="Hugo 0.101.0" />
+  <meta name="description" content="Joinself Docs - Joinself - Platform Documentation " />
+  
+  
+  <meta name="theme-name" content="dot-hugo" />
+
+  
+  
+  <link
+    rel="stylesheet"
+    href="https://docs.joinself.com/plugins/bootstrap/bootstrap.min.css"
+  />
+
+  
+  <link
+    rel="stylesheet"
+    href="https://docs.joinself.com/plugins/themify-icons/themify-icons.css"
+  />
+
+  
+  <link
+    rel="icon"
+    href="https://docs.joinself.com/images/favicon.png"
+    type="image/x-icon"
+  />
+
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Barlow:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
+  <style>
+    :root{
+      --primary-color:#0e1c42;
+      --body-color:#f9f9f9;
+      --text-color:#636363;
+      --text-color-dark:#0e1c42;
+      --white-color:#ffffff;
+      --light-color:#f8f9fa;
+      --font-family:Barlow;
+    }
+  </style>
+
+  
+  
+  <link href="https://docs.joinself.com/css/style.min.css" rel="stylesheet" media="screen" />
+
+  
+  
+  <script src="https://docs.joinself.com/plugins/jquery/jquery-1.12.4.js"></script>
+
+  
+  <script src="https://docs.joinself.com/plugins/jquery/jquery-ui.js"></script>
+
+  
+  <script src="https://docs.joinself.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+  
+  <script src="https://docs.joinself.com/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+   
+  
+  
+
+  
+     
+  <meta property="og:image" content="https://docs.joinself.com/images/logo.png" />
+    
+  <meta property="og:image:width" content="57" />
+  <meta property="og:image:height" content="35" />
+   
+  <meta
+    property="og:image:type"
+    content="image/png"
+  />
+  
+  <meta name="twitter:title" content="Joinself Docs" />
+  <meta
+    name="twitter:description"
+    content="Joinself - Platform Documentation"
+  />
+    <meta property="og:title" content="Joinself Docs" />
+<meta property="og:description" content="Joinself - Platform Documentation" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://docs.joinself.com/" />
+
+ <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Joinself Docs"/>
+<meta name="twitter:description" content="Joinself - Platform Documentation"/>
+
+</head>
+
+
+  <body>
+     
+    
+    <header
+      class="banner overlay bg-cover"
+      data-background="https://docs.joinself.com/images/header.png"
+    >
+      <nav class="navbar navbar-expand-md navbar-dark">
+  <div class="container px-2 px-md-0">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      
+      <img class="img-fluid" src="https://docs.joinself.com/images/logo_white.png "
+        alt="Joinself - Platform Documentation">
+      
+      
+    </a>
+    <span class='navbar_docs_title'>Docs</span>
+
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://www.joinself.com">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://www.joinself.com/contact-us">contact</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/setup/">Setup</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/users/">Users</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/messaging/">Messaging</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/authentication/">Authentication</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/facts/">Facts</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/zero/">Zero-knowledge</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/notify/">Notify</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/storageless/">Recurrent requests</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/documentsign/">Document sign</a>
+            
+            <a class="dropdown-item" href="https://docs.joinself.com/directconnection/">Direct connection</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+ 
+<div class="container section">
+  <div class="row">
+    <div class="col-lg-8 text-center mx-auto">
+      <h1 class="text-white mb-3">
+        Welcome to the Docs
+      </h1>
+      <p class="text-white mb-4">
+        Here you&rsquo;ll find guides, resources, and references to build with Self.
+      </p>
+      <div class="position-relative">
+        <input
+          id="search"
+          class="form-control"
+          placeholder="Have a question? Just ask here or enter terms"
+        />
+        <i class="ti-search search-icon"></i>
+        
+          
+        <script>
+          $.ui.autocomplete.filter = function (array, term) {
+              var matcher = new RegExp('(^| )' + $.ui.autocomplete.escapeRegex(term), 'i');
+              return $.grep(array, function (value) {
+                  return matcher.test(value.label) || matcher.test(value.value) || matcher.test(value);
+              });
+          };
+          
+          $(function() {
+          var projects = [
+          	
+          	{
+          		value: "Blocking auth requests",
+          		label: "<p>This approach sends an authentication request and waits for the user to respond before continuing the execution.\nThis approach is useful when you want to wait for a user to respond to the authentication before continuing, and you don’t have timeout limitations on your server. An example could be authenticating a user on your command line script.\nLets see how it works, the functions below show a full cycle for a blocking authentication.\nbegin\r@app.authentication.request(\u0026quot;1112223334\u0026quot;).accepted?\rrescue =\u0026gt; e # An exception will be raised in case of a timeout or internal error\rreturn false\rend\rresp, err != client.AuthenticationService().Request(\u0026quot;1112223334\u0026quot;)\rif err != nil {\rprintln(\u0026quot;authentication rejected\u0026quot;)\rreturn\r}\rprintln(resp.Accepted)\rtry {\rlet res = await client.authentication().request(\u0026quot;1112223334\u0026quot;)\rif(res.isAccepted() == true) {\rclient.logger.info(`${res.selfID} is now authenticated 🤘`)\r} else if(res.accepted == false) {\rclient.logger.warn(`${res.selfID} has rejected your authentication request`)\r} else {\rclient.logger.error(res.errorMessage)\r}\r} catch (error) {\rclient.logger.error(error.toString())\r}\r</p><p></p>",
+          		url:"https:\/\/docs.joinself.com\/authentication\/blocking\/"
+          	},
+          	
+          	{
+          		value: "Blocking fact request",
+          		label: "<p>Same as with authentication there are situations where you want to block your execution line until the user responds to your fact request. For example, you may want to block a user\u0026rsquo;s access to a certain space of your site until you verify its passport number.\nThis function blocks the execution line until the user responds with its verified email address.\ndef get_email(selfid)\rres = @client.facts.request(selfid, [:email_address])\rreturn \u0026quot;\u0026quot; unless res.accepted?\rres.attestation_values_for(:email_address).first\r\/\/ Refer to Receiving fact response - Deal with request for more info\rrescue =\u0026gt; e \/\/ An exception will be raised in case of a timeout or internal error\rreturn \u0026quot;\u0026quot;\rend\rreq := fact.FactRequest{\rSelfID: selfID,\rDescription: \u0026quot;info\u0026quot;,\rFacts: []fact.Fact{{ Fact: fact.FactEmail }},\rExpiry: time.Minute * 5,\r}\rresp, err := client.FactService().Request(\u0026amp;req) if err != nil { return \u0026quot;\u0026quot;, err }\naa, err := resp.AttestaionValuesFor(fact.FactEmail) if err != nil { return \u0026quot;\u0026quot;, err }\nprintln(aa[0]) try {\rlet res = await sdk.facts().request(selfID, [{ fact: \u0027email_address\u0027 }])\rif (!res) {\rsdk.logger.warn(`fact request has timed out`)\r} else if (res.status === \u0027accepted\u0027) {\rlet pn = res.attestationValuesFor(\u0027email_address\u0027)[0]\rsdk.logger.info(`${selfID} email address is \u0026amp;quot;${pn}\u0026amp;quot;`)\r} else {\rsdk.logger.warn(`${selfID} has rejected your authentication request`)\r}\r} catch (error) { sdk.logger.error(error.toString()) } </p><p>fact</p><p>facts</p><p>request</p><p>requests</p><p>name</p><p>email</p><p>blocking</p>",
+          		url:"https:\/\/docs.joinself.com\/facts\/blocking\/"
+          	},
+          	
+          	{
+          		value: "Connections",
+          		label: "<p>Permit connections Allows incoming messages from specified identities.\n@client.messaging.permit_connection \u0026quot;1234567890\u0026quot; err := selfsdk.MessagingService().PermitConnection(\u0026quot;1234567890\u0026quot;) let success = await sdk.messaging().permitConnection(\u0026quot;1234567890\u0026quot;) Permitting incomming connections only applies if you don\u0026rsquo;t have a global connection (*) permission. If you do, you have to revoke it first.\nPermit global connections You can permit connections from everyone using an “*”.\n@client.messaging.permit_connection \u0026quot;*\u0026quot; err := selfsdk.MessagingService().PermitConnection(\u0026quot;*\u0026quot;) let success = await sdk.messaging().permitConnection(\u0026quot;*\u0026quot;) Revoke specific connection You can also revoke connections from a specific self identifier with:\n@client.messaging.revoke_connection \u0026quot;1234567890\u0026quot; err := client.MessagingService().RevokeConnection(\u0026quot;1234567890\u0026quot;) let success = await sdk.messaging().revokeConnection(\u0026quot;1234567890\u0026quot;) Revoking a connection only applies if you don\u0026rsquo;t have a global connection (*) permission setup. If you do, you have to revoke it first.\nRevoke global connections Revoke connection permissions from everyone using an “*”.\n@client.messaging.revoke_connection \u0026quot;*\u0026quot; err := client.MessagingService().RevokeConnection(\u0026quot;*\u0026quot;) let success = await sdk.messaging().revokeConnection(\u0026quot;*\u0026quot;) Listing connections You can list your app allowed connections.\n@client.messaging.allowed_connections.each do |self_id| p \u0026quot;- \u0027#{self_id}\u0027\u0026quot; end connections, _ := client.MessagingService().ListConnections() log.Println(\u0026quot;connected to:\u0026quot;, connections) conns = await sdk.messaging().allowedConnections() sdk.logger.info(` - connections : ${conns.join(\u0026quot;,\u0026quot;)}`) </p><p>identity</p><p>app</p><p>connect</p><p>disconnect</p><p>permit</p><p>block</p>",
+          		url:"https:\/\/docs.joinself.com\/users\/connections\/"
+          	},
+          	
+          	{
+          		value: "Non-blocking fact request",
+          		label: "<p>The sdk also allows us to send a fact request without blocking the execution line.\nSame registration example we used for authentication works here, if you want to get a user verified fact but you don’t want the user to be blocked on the registration form, you can use this approach to continue with the execution line, and process the response as soon as it gets back.\nLet’s see how we can request a verified email address with a non-blocking request.\ndef get_email_in_background(selfid)\r@client.facts.request(user, [:email_address]) do |res|\rreturn \u0026quot;\u0026quot; unless res.accepted?\rreturn res.attestation_values_for(:email_address).first\r# Refer to Receiving fact response - Deal with request for more info\rend\rrescue =\u0026gt; e # An exception will be raised in case of a timeout or internal error\rreturn \u0026quot;\u0026quot;\rend\r\/\/ Use goroutines to build a non-blocking example based on the blocking one\rgo func() {\rreq := fact.FactRequest{\rSelfID: selfID,\rDescription: \u0026quot;info\u0026quot;,\rFacts: []fact.Fact{{ Fact: fact.FactEmail }},\rExpiry: time.Minute * 5,\r}\rresp, err := client.FactService().Request(\u0026amp;amp;req)\rif err != nil {\rreturn \u0026amp;quot;\u0026amp;quot;, err\r}\raa, err := resp.AttestaionValuesFor(fact.FactEmail)\rif err != nil {\rreturn \u0026amp;quot;\u0026amp;quot;, err\r}\rprintln(aa[0])\rif err != nil { \/\/ failed } \/\/ do something with email } async() =\u0026gt; {\rtry {\rlet res = await sdk.facts().request(selfID, [{ fact: \u0027email_address\u0027 }])\rif (!res) {\rsdk.logger.warn(`fact request has timed out`)\r} else if (res.status === \u0027accepted\u0027) {\rlet pn = res.attestationValuesFor(\u0027email_address\u0027)[0]\rsdk.logger.info(`${selfID} email address is \u0026amp;quot;${pn}\u0026amp;quot;`)\r} else {\rsdk.logger.warn(`${selfID} has rejected your authentication request`)\r}\r} catch (error) { sdk.logger.error(error.toString()) } } </p><p>fact</p><p>facts</p><p>request</p><p>requests</p><p>name</p><p>email</p><p>non-blocking</p>",
+          		url:"https:\/\/docs.joinself.com\/facts\/non-blocking\/"
+          	},
+          	
+          	{
+          		value: "Setup",
+          		label: "<p>What is self? Self is a free to use service that lets you prove you’re a real, live person and are who you say you are, all without revealing the detail of your identity. Self keeps your data safe, secure and anonymous.\nHow does it work? You download the Self mobile app for free and tell it some facts about you. Then you ask friends, family, colleagues or a recognised organisation (eg: a bank) to verify that your facts are true. Your name, age, location etc…\nThe facts are stored in your secret locker (personal data store) and are never shared with anyone, but when someone needs to know your age, Self can help you provide them with a verified answer, all while keeping your data safe, secure and anonymous.\n</p>",
+          		url:"https:\/\/docs.joinself.com\/setup\/"
+          	},
+          	
+          	{
+          		value: "Blocking requests",
+          		label: "<p>\rfacts = [{ sources: [SelfSDK::SOURCE_USER_SPECIFIED], fact: SelfSDK::FACT_EMAIL, operator: \u0027==\u0027, expected_value: \u0027test@test.org\u0027 }] res = @client.facts.request_via_intermediary(selfid, facts) # GOTO Receiving fact response - Deal with the response req := fact.IntermediaryFactRequest{ SelfID: selfID, Intermediary: intermediary, Description: \u0026quot;info\u0026quot;, Facts: []fact.Fact{ { Fact: fact.FactDateOfBirth, Sources: []string{fact.SourceUserSpecified}, Operator: \u0026quot;\u0026gt;=\u0026quot;, ExpectedValue: time.Now().Format(time.RFC3339), }, }, Expiry: time.Minute * 5, } resp, err := client.FactService().RequestViaIntermediary(\u0026amp;req) try { let res = await sdk.facts().requestViaIntermediary(selfID, [{ fact: \u0027phone_number\u0027, operator: \u0027==\u0027, sources: [\u0027user_specified\u0027], expected_value: \u0027\u002b44111222333\u0027 }]) if(!res) { sdk.logger.warn(`fact request has timed out`) } else if(res.status === \u0026quot;unauthorized\u0026quot;) { sdk.logger.warn(\u0026quot;you are unauthorized to run this action\u0026quot;) } else if (res.status === \u0027accepted\u0027) { sdk.logger.info(\u0026quot;your assertion is....\u0026quot;) sdk.logger.info(res.attestationValuesFor(\u0027phone_number\u0027)[0]) } else { sdk.logger.info(\u0026quot;your request has been rejected\u0026quot;) } } catch (error) { sdk.logger.error(error.toString()) } </p><p>fact</p><p>anonymous</p><p>zero knowledge</p><p>zero</p><p>intermediary</p><p>blocking</p>",
+          		url:"https:\/\/docs.joinself.com\/zero\/blocking\/"
+          	},
+          	
+          	{
+          		value: "Send and receive messages",
+          		label: "<p>Self SDK allows you to send messages to any identity on self network, this includes users, orgs and apps.\nThe interface used to interact with messaging is chat service, let\u0026rsquo;s see how can we create an app automatically responding all ping messages with a pong.\n@app.chat.on_message do |msg| if msg.body == \u0026quot;ping msg.message \u0026quot;pong\u0026quot; end end @app.chat.message user, \u0026quot;ready!\u0026quot; client.ChatService().OnMessage(func(cm *chat.Message) { if cm.Body == \u0026quot;ping\u0026quot; { cm.Message(\u0026quot;pong\u0026quot;) } }) @app.chat.message user, \u0026quot;ready!\u0026quot; sdk.chat().OnMessage(async (cm: ChatMessage) =\u0026gt; { if (cm.body == \u0026quot;ping\u0026quot;) { cm.message(\u0026quot;pong\u0026quot;) } }) @app.chat.message user, \u0026quot;ready!\u0026quot; Easy, isn\u0026rsquo;t it? As you can see, you can use the chat service message method to send messages to a specific user, and on_message to receive them.\nThe object representing a message has also some handy methods to interact with that message, included sending a new message to the same conversation with message(body).\nLet\u0026rsquo;s have a closer look at all the options you have when sending and receiving messages\nSending messages The interface for sending a normal message is quite simple, just provide the user and text you want to send and that\u0026rsquo;s it.\nHowever, the system provides some useful options you can pass to this method. Let\u0026rsquo;s have a look at the most important ones.\n@app.chat.message user, \u0026quot;ready!\u0026quot;, gid: \u0026quot;group_id\u0026quot;, rid: \u0026quot;uuid\u0026quot;, client.ChatService().Message(user, \u0026quot;ready!\u0026quot;, chat.MessageOptions{ GID: \u0026quot;group_id\u0026quot;, RID: \u0026quot;uuid, } client.chat().message user, \u0026quot;ready!\u0026quot;, { \u0026quot;gid\u0026quot;: \u0026quot;group_id\u0026quot;, \u0026quot;rid\u0026quot;: \u0026quot;uuid\u0026quot; } gid You\u0026rsquo;ll see gid option supported across different methods, gid refers to group id, and when provided will indicate the other client the current conversation is a group conversation instead of a 1 to 1 chat.\nUsually this id is not used directly through this method, and instead the message is sent through a helper on Group object, check Groups for more details.\nrid In this case rid is used to refer a previous message by it\u0026rsquo;s jti, once the other party receives a rid as part of the payload it will interpret is a direct response to a specific message, and it will be displayed accordingly.\nIf you\u0026rsquo;ve already received a message you want to respond, you can do it directly through the respond method like:\n@app.chat.on_message do |msg| msg.respond \u0026quot;I like this\u0026quot; end client.ChatService().OnMessage(func(cm *chat.Message) { cm.Respond(\u0026quot;I like this\u0026quot;) }) sdk.chat().OnMessage(async (cm: ChatMessage) =\u0026gt; { cm.respond(\u0026quot;I like this\u0026quot;) }) </p><p>messaging</p><p>message</p><p>messages</p>",
+          		url:"https:\/\/docs.joinself.com\/messaging\/text-messages\/"
+          	},
+          	
+          	{
+          		value: "Getting started",
+          		label: "<p>Requirements To build an app on self-network its required to have our app installed so you can log in to the Self Developer Portal.\nPlease visit the official app stores to download our official apps for Android and iOS\nCreate an account Visit Self Developer Portal and follow the steps to register. You\u0026rsquo;ll need a Self Identifier account to proceed.\nApp creation Self-apps are autonomous self identities able to interact with other identities on the Self-network.\nA developer can create an app through the developer portal. This app will be identified by a SELF_APP_ID and a SELF_APP_DEVICE_SECRET.\nSELF_APP_ID is your public identifier on the network and you can share it with other peers. You must keep SELF_APP_DEVICE_SECRET in a secure place.\nYou’ll see below how to use these two strings to initialize your client and start interacting with the Self-network.\nRemember — copy and store SELF_APP_DEVICE_SECRET, as we don\u0026rsquo;t have access to it.\nEnvironments Self provides a sandbox so you can try your app code before moving to production. You can register for a free developer account and create new test apps on the Sandbox developer portal here.\nOnce your app is ready you can create a new one on production here\n</p><p>setup</p><p>configuration</p><p>requirements</p>",
+          		url:"https:\/\/docs.joinself.com\/setup\/getting-started\/"
+          	},
+          	
+          	{
+          		value: "Identity types",
+          		label: "<p>Self network is formed of different entities with the ability to interact between them.\nWe name these entities identities and they own a self_id, an array of device ids and an array of public keys.\nAn identity can only communicate with another identity if IdentityA is a connection of IdentityB. If this connection is in place IdentityA will be able to request the IdentityB properties (device_ids and public keys) to interact with it.\nAt the moment identities can be divided into users and apps.\nGetting the public keys Every single identity on the Self network has at least one public key assigned to it. Lets see how you can get the public keys related to a Self user.\n@user = @client.identity.public_key \u0026quot;1112223334\u0026quot;, \u0026quot;1\u0026quot; identity, _ := client.IdentityService().GetPublicKey(\u0026quot;1112223334\u0026quot;, \u0026quot;1\u0026quot;) let key = await client.identity().publicKey(\u0026quot;1112223334\u0026quot;, \u0026quot;1\u0026quot;) Identity devices Same as with public keys each identity has at least one device.\n@devices = @client.identity.devices \u0026quot;1112223334\u0026quot; devices _ := client.IdentityService().GetDevices(\u0026quot;1112223334\u0026quot;) let devices = await client.identity().devices(\u0026quot;1112223334\u0026quot;) </p><p>identity</p><p>app</p><p>public keys</p><p>devices</p>",
+          		url:"https:\/\/docs.joinself.com\/users\/identity-types\/"
+          	},
+          	
+          	{
+          		value: "Non-blocking auth requests",
+          		label: "<p>In contrast to blocking auth requests, there are situations where you just want to continue your execution line and set up an observer to be executed as soon as a response is received.\nLet\u0026rsquo;s say you have a conventional registration process where you let your users register to your application by its email address but you delay the email confirmation until they get back to you. This allows your users to go through a quick registration process, while you delay the data confirmation process.\n# Request lets you pass a block to be executed once a response is received\r@client.authentication.request selfid do |auth|\rreturn auth.accepted? # The user has rejected the authentication\rend\r\/\/ Go language provides you with goroutines to\r\/\/ implement a non-blocking approach\rgo func() {\rres, err != client.AuthenticationService().Request(selfid)\rif err != nil {\rprintln(\u0026quot;authentication rejected\u0026quot;)\rreturn\r}\rprintln(res.Accepted)\r}()\rasync() =\u0026gt; {\rtry {\rlet res = await client.authentication().request(\u0026quot;1112223334\u0026quot;)\rif(res.isAccepted() == true) {\rclient.logger.info(`${res.selfID} is now authenticated 🤘`)\r} else if(res.accepted == false) {\rclient.logger.warn(`${res.selfID} has rejected your authentication request`)\r} else {\rclient.logger.error(res.errorMessage)\r}\r} catch (error) {\rclient.logger.error(error.toString())\r}\r}\r</p><p></p>",
+          		url:"https:\/\/docs.joinself.com\/authentication\/non-blocking\/"
+          	},
+          	
+          	{
+          		value: "System dependencies",
+          		label: "<p>Self SDK depends on some native libraries to manage encryption libself_olm and libself_omemo. Below you\u0026rsquo;ll find the instructions to get them working on your system.\nDebian\/Ubuntu $ curl -O https:\/\/download.joinself.com\/olm\/libself-olm_0.1.17_amd64.deb $ curl -O https:\/\/download.joinself.com\/omemo\/libself-omemo_0.1.2_amd64.deb $ apt install libsodium-dev $ apt install .\/libself-olm_0.1.17_amd64.deb .\/libself-omemo_0.1.2_amd64.deb Redhat\/Centos $ rpm -Uvh https:\/\/download.joinself.com\/olm\/libself-olm-0.1.14-1.x86_64.rpm $ rpm -Uvh https:\/\/download.joinself.com\/omemo\/libself-omemo-0.1.2-1.x86_64.rpm Mac (x86_64) $ brew tap joinself\/crypto $ brew install libself-olm libself-omemo Mac (m1\/arm64) Brew on M1 macs currently lacks environment variables needed for the sdk to find the olm and omemo libraries, so you will need to add some additional configuration to your system:\nIn your ~\/.zshrc, add:\nexport C_INCLUDE_PATH=\/opt\/homebrew\/include\/ export LIBRARY_PATH=$LIBRARY_PATH:\/opt\/homebrew\/lib You should then be able to run:\n$ source ~\/.zshrc $ brew tap joinself\/crypto $ brew install --build-from-source libself-olm libself-omemo Note, you may also need to create \/usr\/local\/lib if it does not exist:\n$ sudo mkdir \/usr\/local\/lib </p><p>setup</p><p>configuration</p><p>requirements</p>",
+          		url:"https:\/\/docs.joinself.com\/setup\/dependencies\/"
+          	},
+          	
+          	{
+          		value: "Users \/ Apps",
+          		label: "<p>This feature allows you to manage your connections by permitting and revoking incoming messages from specific identities.\nDuring the app creation process you can define if your app permits connections from everyone, or just you. You can tweak this behaviour as shown below.\n</p>",
+          		url:"https:\/\/docs.joinself.com\/users\/"
+          	},
+          	
+          	{
+          		value: "Message actions",
+          		label: "<p>In this section we will review what actions we can take to modify the message state.\nMark as received When your app receives a message the sdk is marking it as received by default. This behavior can be changed by modifying passing a specific parameter to on_message, at the same time you can mark a message as read on your convenience, let\u0026rsquo;s see how.\n@app.chat.on_message mark_as_delivered: false do |msg| msg.mark_as_delivered # explicitly mark the message as delivered end client.ChatService().OnMessage(func(cm *chat.Message) { cm.MarkAsDelivered() }, chat.OnMessageOptions{ MarkAsDelivered: false }) sdk.chat().OnMessage(async (cm: ChatMessage) =\u0026gt; { cm.markAsDelivered() }, { \u0027mark_as_delivered\u0027: false }) Default behavior for on_message is to mark the message as received as soon as it\u0026rsquo;s received.\nMark as read Similarly to the previous example, you can modify on_message to automatically mark all messages as read with a specific option.\n@app.chat.on_message mark_as_read: true do |msg| # ... end client.ChatService().OnMessage(func(cm *chat.Message) { \/\/ ... }, chat.OnMessageOptions{ MarkAsRead: true }) sdk.chat().OnMessage(async (cm: ChatMessage) =\u0026gt; { \/\/ ... }, { \u0027mark_as_read\u0027: true }) Additionally you can explicitly mark a received message as read with your own logic.\n@app.chat.on_message do |msg| msg.mark_as_read end client.ChatService().OnMessage(func(cm *chat.Message) { cm.MarkAsRead() }) sdk.chat().OnMessage(async (cm: ChatMessage) =\u0026gt; { cm.MarkAsRead() }) Edit For a message you\u0026rsquo;ve already sent you can modify its body.\nm = @app.chat.message user, \u0026quot;one\u0026quot; m.edit \u0026quot;two\u0026quot; m := @app.chat.message user, \u0026quot;one\u0026quot; m.Edit(\u0026quot;two\u0026quot;) let m = @app.chat.message user, \u0026quot;one\u0026quot; m.Edit(\u0026quot;two\u0026quot;) You\u0026rsquo;re only allowed to modify your own messages.\nDelete Deleting a message is as simple as modifying it, but using delete method instead.\nm = @app.chat.message user, \u0026quot;one\u0026quot; m.delete m := @app.chat.message user, \u0026quot;one\u0026quot; m.Delete() let m = @app.chat.message user, \u0026quot;one\u0026quot; m.Delete() You\u0026rsquo;re only allowed to delete your own messages.\n</p><p>messaging</p><p>message</p><p>messages</p><p>attachments</p><p>read</p><p>delivered</p><p>edit</p><p>delete</p><p>remove</p>",
+          		url:"https:\/\/docs.joinself.com\/messaging\/actions\/"
+          	},
+          	
+          	{
+          		value: "Non-blocking requests",
+          		label: "<p>\r@client.facts.request_via_intermediary(selfid, facts) do |res| # GOTO Receiving fact response - Deal with the response end \/\/ use language built in goroutines go func() { \/\/ ... } \/\/ use language built in async async() =\u0026gt; { \/\/ ... } </p><p>fact</p><p>anonymous</p><p>zero knowledge</p><p>zero</p><p>intermediary</p><p>non-blocking</p>",
+          		url:"https:\/\/docs.joinself.com\/zero\/non-blocking\/"
+          	},
+          	
+          	{
+          		value: "Async auth requests",
+          		label: "<p>This scenario is similar to non-blocking authentication, however, it’s not restricted to only one user.\nSending an asynchronous authentication request is pretty straightforward, you can do it with the async option.\nThis will return a conversation id identifying the authentication conversation, you should store it and catch it on a subscription, check Receiving authentication response - Subscribe section on how to manage this.\ncid = @client.\rauthentication.\rrequest(\u0026quot;1112223334\u0026quot;, async: true)\rclient.\rAuthenticationService().\rRequestAsync(\u0026quot;1112223334\u0026quot;, \u0026quot;conversation_id\u0026quot;)\rlet res = await client.\rauthentication().\rrequest(\u0026quot;1112223334\u0026quot;, { \u0027async\u0027: true })\r</p><p></p>",
+          		url:"https:\/\/docs.joinself.com\/authentication\/async\/"
+          	},
+          	
+          	{
+          		value: "Asynchronous fact request",
+          		label: "<p>The asynchronous approach can be used in scenarios like the previous one, however it has a subtle difference, you have a single observer for all information requests, which can be useful in some situations as you can have all the logic centralized on a single point.\ncid = @client.facts.request(selfid, [SelfSDK::FACT_EMAIL], async: true)\rreq := fact.FactRequestAsync{\rSelfID: selfID,\rDescription: \u0026quot;info\u0026quot;,\rFacts: []fact.Fact{{ Fact: fact.FactEmail }},\rExpiry: time.Minute * 5,\rCID: \u0026quot;conversation_id\u0026quot;,\r}\rresp, err := client.FactService().RequestAsync(\u0026amp;req) if err != nil { return \u0026quot;\u0026quot;, err } let res = await sdk.facts().request(selfID, [{ fact: \u0027email_address\u0027 }], { async: true })\r</p><p>fact</p><p>facts</p><p>request</p><p>requests</p><p>name</p><p>email</p><p>async</p>",
+          		url:"https:\/\/docs.joinself.com\/facts\/async\/"
+          	},
+          	
+          	{
+          		value: "Authentication",
+          		label: "<p>One of the core features of Self is the ability to authenticate identities.\nThere are different ways to approach authentication. Lets see how we can achieve this.\nBy default authentication requests will expire after 5 minutes, you can change this defaults with Expiry option.\n</p>",
+          		url:"https:\/\/docs.joinself.com\/authentication\/"
+          	},
+          	
+          	{
+          		value: "Custom auth requests",
+          		label: "<p>Providing a cid allows you to override the randomly generated conversation id with your own, this is useful to keep track of conversations with a preset identifier, let’s see the asynchronous example using a custom cid.\nInstead of using the randomly generated conversation identifier, we can force the system to use our own unique id.\n@client.\rauthentication.\rrequest(\u0026quot;1112223334\u0026quot;, cid: \u0026quot;conversation_id\u0026quot;)\rclient.\rAuthenticationService().\rRequestAsync(\u0026quot;1112223334\u0026quot;, \u0026quot;conversation_id\u0026quot;)\rlet res = await client.\rauthentication().\rrequest(\u0026quot;1112223334\u0026quot;, { \u0027cid\u0027: \u0026quot;conversation_id\u0026quot; })\r</p><p></p>",
+          		url:"https:\/\/docs.joinself.com\/authentication\/custom\/"
+          	},
+          	
+          	{
+          		value: "Asynchronous",
+          		label: "<p>\rres = @client.facts.request_via_intermediary(selfid, facts, async: true) req := fact.IntermediaryFactRequest{ SelfID: os.Args[1], Intermediary: intermediary, Description: \u0026quot;info\u0026quot;, Facts: []fact.Fact{ { Fact: fact.FactEmail, Sources: []string{fact.SourceUserSpecified}, Operator: \u0026quot;==\u0026quot;, ExpectedValue: \u0026quot;test@example.com\u0026quot;, }, }, Expiry: time.Minute * 5, } factService := client.FactService()\nresp, err := factService.RequestViaIntermediary(\u0026amp;req) if err != nil { log.Fatal(\u0026quot;fact request returned with: \u0026quot;, err) }\nfor _, f := range resp.Facts { if f.Result() != true { log.Fatal(\u0026quot;intermediary could not verify the required facts\u0026quot;) } log.Printf(\u0026quot;Your assertion that %s %s is %t\\n\u0026quot;, f.Fact, f.Operator, f.Result()) } let res = await sdk.facts().requestViaIntermediary(selfID, facts, { \u0027async\u0027: true } This will return a conversation id identifying the fact request conversation, you should store it and catch it on a subscription, as described on the next section.\n</p><p>fact</p><p>anonymous</p><p>zero knowledge</p><p>zero</p><p>intermediary</p><p>async</p>",
+          		url:"https:\/\/docs.joinself.com\/zero\/async\/"
+          	},
+          	
+          	{
+          		value: "Group management",
+          		label: "<p>Managing group conversations is something really simple with Self SDK, let\u0026rsquo;s see an end to end example to understand how they work.\n@groups = {} @app.chat.on_invite do |group| @groups[group.gid] = group group.join group.message(\u0026quot;hi\u0026quot;) end @app.chat.on_join do |msg| @groups[msg[:gid]].members \u0026lt;\u0026lt; msg[:iss] end @app.chat.on_leave do |msg| @groups[msg[:gid]].members.delete(msg[:iss]) end @app.chat.on_message do |msg| return if msg.gid.nil? puts \u0026quot;[#{@groups[msg.gid].name}] #{msg.from}: #{msg.body}\u0026quot; end groups := make(map[string]*chat.Group, 0) chat.ChatService().OnInvite(func(g *chat.Group) { g.Join() groups[g.GID] = g g.Message(\u0026quot;hey!\u0026quot;) }) cs.OnLeave(func(iss, gid string) { delete(groups, gid) }) chat.ChatService().OnJoin(func(iss, gid string) { if _, ok := groups[gid]; ok { groups[gid].Members = append(groups[gid].Members, iss) } }) chat.ChatService().OnMessage(func(cm *chat.Message) { if len(cm.GID) == 0 { return } fmt.Printf(\u0026quot;[%s] %s: %s\u0026quot;, groups[cm.GID].Name, cm.Iss, cm.Body) }) let groups = {} sdk.chat().onInvite(async (g: ChatGroup) =\u0026gt; { g.join() groups[g.gid] = g await groups[g.gid].message(\u0026quot;hey!\u0026quot;) }) sdk.chat().onJoin(async (iss: string, gid: string) =\u0026gt; { groups[gid].members.push(iss) }) sdk.chat().onLeave(async (iss: string, gid: string) =\u0026gt; { delete groups[gid].members[iss] }) sdk.chat().OnMessage(async (cm: ChatMessage) =\u0026gt; { if (len(cm.gid) \u0026gt; 0) { console.log(`[${groups[cm.gid].name}] ${cm.iss}: ${cm.body}`) } }) As you can see this example manages every group incoming message, to keep an in memory updated list of groups with its members.\nCreating a group Your app is als also able to create a group by calling invite method. members = [user1, user2, user3] @app.chat.invite \u0026quot;my_gid\u0026quot;, \u0026quot;Group name\u0026quot;, members members = []string{user1, user2, user3} client.ChatService().Invite(\u0026quot;my_gid\u0026quot;, \u0026quot;Group name\u0026quot;, members) let members = [user1, user2, user3] sdk.chat().Invite(\u0026quot;my_gid\u0026quot;, \u0026quot;Group name\u0026quot;, members) Have in mind you can send messages to a newly created group, but those messages will only be delivered to the group members that have decided to join the group.\nGroups can also have an image as avatar, you can pass a file contents as parameter to chat invite to provide that image. members = [user1, user2, user3] URI.open(\u0026quot;https:\/\/www.avasflowers.net\/img\/prod_img\/avasflowers-dreaming-of-tuscany-bouquet.jpg\u0026quot;) do |image| @groups[gid] = @app.chat.invite(gid, \u0026quot;MagicGroup\u0026quot;, members, { data: image.read, mime: \u0026quot;image\/jpg\u0026quot; }) end members = []string{user1, user2, user3} data, err := os.ReadFile(\u0026quot;\/tmp\/dat\u0026quot;) check(err) client.ChatService().Invite(\u0026quot;my_gid\u0026quot;, \u0026quot;Group name\u0026quot;, members, chat.InviteOptions{ Data: data, Mime: \u0026quot;image.gif\u0026quot;, }) import * as fs from \u0027fs\u0027; let data = fs.readFileSync(\u0027foo.txt\u0027,\u0027utf8\u0027); let members = [user1, user2, user3] sdk.chat().Invite(\u0026quot;my_gid\u0026quot;, \u0026quot;Group name\u0026quot;, members, { \u0026quot;data\u0026quot;: data, \u0026quot;mime\u0026quot;: \u0026quot;image\/gif\u0026quot;, }) Messaging and groups Sending messages to a group is as easy as calling the message method on that group. Additionally once you receive a message on a group you will have access to all its helpers to continue the conversation without having to care about the group itself.\n</p><p>messaging</p><p>message</p><p>messages</p><p>attachments</p><p>read</p><p>delivered</p><p>edit</p><p>delete</p><p>remove</p>",
+          		url:"https:\/\/docs.joinself.com\/messaging\/groups\/"
+          	},
+          	
+          	{
+          		value: "Initializing your client",
+          		label: "<p>Install your client $ gem install \u0026quot;selfsdk\u0026quot; $ go get github.com\/joinself\/self-go-sdk $ npm install self-sdk We currently offer support for some basic clients. We are always happy to receive contributions to review - send us a PR, or contact us at info@joinself.com to share what you have built with us!\nLanguage URL Go https:\/\/github.com\/joinself\/self-go-sdk Ruby https:\/\/github.com\/joinself\/self-ruby-sdk\/ Typescript https:\/\/github.com\/joinself\/self-typescript-sdk\/ Referencing the SDK SelfSDK is referenced like any other library for each specific language.\nrequire \u0026quot;selfsdk\u0026quot; import \u0026quot;github.com\/joinself\/self-go-sdk\u0026quot; import SelfSDK from \u0027self-sdk\u0027 Storage key generation Self-SDK locally persists session and account information needed for end to end encryption. A SELF_STORAGE_KEY is required to securely encrypt this information. It is recommended that you use a large random string for your SELF_STORAGE_KEY. You can generate a random string through the command line with:\n$ LC_ALL=C tr -dc \u0027[:alnum:]\u0027 \u0026lt; \/dev\/urandom | head -c64\nKeep that key in a secure place as you’ll need it to initialize a connection.\nBasic connection A basic connection to Self network only requires your SELF_APP_ID, SELF_APP_DEVICE_SECRET, SELF_STORAGE_KEY and SELF_STORAGE_DIR.\nYou may want to add SELF_APP_ID, SELF_APP_DEVICE_SECRET, SELF_STORAGE_KEY and SELF_STORAGE_DIR as environment variables.\n@client = SelfSDK::App.new(ENV[\u0026quot;SELF_APP_ID\u0026quot;], ENV[\u0026quot;SELF_APP_DEVICE_SECRET\u0026quot;], ENV[\u0026quot;SELF_STORAGE_KEY\u0026quot;], ENV[\u0026quot;SELF_STORAGE_DIR\u0026quot;]) client, err := selfsdk.New(selfsdk.Config{ SelfAppD: os.Getenv(\u0026quot;SELF_APP_ID\u0026quot;), SelfAppDeviceSecret: os.Getenv(\u0026quot;SELF_APP_DEVICE_SECRET\u0026quot;), StorageKey: os.Getenv(\u0026quot;SELF_STORAGE_KEY\u0026quot;), StorageDir: os.Getenv(\u0026quot;SELF_STORAGE_DIR\u0026quot;), }) const client = await SelfSDK.build( os.Getenv(\u0026quot;SELF_APP_ID\u0026quot;), os.Getenv(\u0026quot;SELF_APP_DEVICE_SECRET\u0026quot;), os.Getenv(\u0026quot;SELF_STORAGE_KEY\u0026quot;), os.Getenv(\u0026quot;SELF_STORAGE_DIR\u0026quot;), Custom environment When you’re debugging your app, you may want to point to the sandbox environment instead of production to run your tests. You can define the environment by passing additional parameters to the Self client initialization.\n@client = SelfSDK::App.new(ENV[\u0026quot;SELF_APP_ID\u0026quot;], ENV[\u0026quot;SELF_APP_DEVICE_SECRET\u0026quot;], ENV[\u0026quot;SELF_STORAGE_KEY\u0026quot;], ENV[\u0026quot;SELF_STORAGE_DIR\u0026quot;], environmnent: :sandbox) client, err := selfsdk.New(selfsdk.Config{ SelfAppD: os.Getenv(\u0026quot;SELF_APP_ID\u0026quot;), SelfAppDeviceSecret: os.Getenv(\u0026quot;SELF_APP_DEVICE_SECRET\u0026quot;), StorageKey: os.Getenv(\u0026quot;SELF_STORAGE_KEY\u0026quot;), StorageDir: os.Getenv(\u0026quot;SELF_STORAGE_DIR\u0026quot;), Environment:\t\u0026quot;sandbox\u0026quot;, }) const client = await SelfSDK.build( os.Getenv(\u0026quot;SELF_APP_ID\u0026quot;), os.Getenv(\u0026quot;SELF_APP_DEVICE_SECRET\u0026quot;), os.Getenv(\u0026quot;SELF_STORAGE_KEY\u0026quot;), os.Getenv(\u0026quot;SELF_STORAGE_DIR\u0026quot;), { \u0027env\u0027: \u0027sandbox\u0027 }) Reconnection Self-SDK keeps a websocket connection open to self-messaging, but eventually, that connection may drop. By default Self-SDK will try to reconnect, but you can override this behaviour by passing custom parameters to initialization.\n@client = SelfSDK::App.new(ENV[\u0026quot;SELF_APP_ID\u0026quot;], ENV[\u0026quot;SELF_APP_DEVICE_SECRET\u0026quot;], ENV[\u0026quot;SELF_STORAGE_KEY\u0026quot;], ENV[\u0026quot;SELF_STORAGE_DIR\u0026quot;], auto_reconnect: false) client, err := selfsdk.New(selfsdk.Config{ SelfAppD: os.Getenv(\u0026quot;SELF_APP_ID\u0026quot;), SelfAppDeviceSecret: os.Getenv(\u0026quot;SELF_APP_DEVICE_SECRET\u0026quot;), StorageKey: os.Getenv(\u0026quot;SELF_STORAGE_KEY\u0026quot;), StorageDir: os.Getenv(\u0026quot;SELF_STORAGE_DIR\u0026quot;), ReconnectAttempts:\t-1, }) const client = await SelfSDK.build( os.Getenv(\u0026quot;SELF_APP_ID\u0026quot;), os.Getenv(\u0026quot;SELF_APP_DEVICE_SECRET\u0026quot;), os.Getenv(\u0026quot;SELF_STORAGE_KEY\u0026quot;), os.Getenv(\u0026quot;SELF_STORAGE_DIR\u0026quot;), { \u0027autoReconnect\u0027: false }) </p><p>install</p><p>setup</p><p>initialisation</p>",
+          		url:"https:\/\/docs.joinself.com\/setup\/initialize\/"
+          	},
+          	
+          	{
+          		value: "Facts",
+          		label: "<p>A Facts is a statement about an identity. Verified facts are facts that have been attested to by trusted issuer(s).\nA single fact can be verified by multiple issuers and so have multiple assertions. Verified facts are held by identities and can be shared with other identities (relying parties) who require them.\nFacts and related attestations are stored on the user’s device, so the user has full control over who can access its information.\nEach fact has the following properties:\nSources A fact’s source represents where this fact comes from, for example a DOB can come from different sources such as a passport or a driving license. By default this field is set with a wildcard “*” and the user will select the source on their device. Same happens if you specify multiple sources.\nAt the moment there are three different sources user_specified, passport and driving_license.\nAs this list is always growing, you can check the possible values on your SDK ruby-sdk and go-sdk.\nFact This is the name of the fact you want to request like display_name, email_address or phone_number.\nThe list of values by source is:\nuser_specified: display_name, email_address and phone_number passport and _identity-card _: document_number, surname, given_names, date_of_birth, date_of_expiration, sex, nationality, _country_of_issuance. driving_license : document_number, surname, given_names, date_of_birth, date_of_issuance, date_of_expiration, address, issuing_authority, place_of_birth, country_of_issuance. Attestations A list of verified attestations signed by an issuer. This only has content on fact request responses, and it contains a list of attestations for the current fact.\nExpected value When you send an intermediary fact check you expect the value of a user’s fact to be compared with an expected value, this field is where you will provide that value.\nOperator On an intermediary fact check this field contains the operator used to compare the expected value against the expected value. Valid operators can be found here\nFact requests Fact requests allow your app to request specific facts from identities on the Self-network.\nOnly verified facts can be requested\nThe approaches to request facts are similar to authentication, so let\u0026rsquo;s have a look at them.\nBy default fact requests will expire after 15 minutes, you can change this defaults with `Expiry` option.\r</p>",
+          		url:"https:\/\/docs.joinself.com\/facts\/"
+          	},
+          	
+          	{
+          		value: "Modifiers for fact requests",
+          		label: "<p>A fact request accepts some modifiers for example\nCID Passing the cid or conversation id, you\u0026rsquo;ll be able to modify the default random uuid for that request, and easily identify the related response.\nexp_timeout Timeout in seconds after which the request will expire. Useful if you want your fact request to be valid just for a specific period of time. It defaults to 900 seconds.\nallowed_for Providing this option with a number of seconds, your app will be allowed to request the same data without user confirmation for the specified time.\nThis is quite useful if you intend to use some data recurrently but don\u0026rsquo;t want to store it on your end.\nNote this option is not compatible with auth modifier for security reasons.\nauth Boolean representing if you want to display this fact request as an authentication with facts or not, it will default to false.\n</p><p>fact</p><p>facts</p><p>request</p><p>requests</p><p>name</p><p>email</p><p>modifiers</p><p>options</p>",
+          		url:"https:\/\/docs.joinself.com\/facts\/modifiers\/"
+          	},
+          	
+          	{
+          		value: "Attachments \/ objects",
+          		label: "<p>Sharing an image, a document or just a gif is an important part of your users daily messaging, the SDK allows your app to send this kind of messages as well. Let\u0026rsquo;s see how.\nPublic objects Most of the time we only share public images, and in this case we don\u0026rsquo;t require the document to be encrypted, so we can directly share the URL.\nopts = { objects: [{ link: \u0026quot;https:\/\/user-images.githubusercontent.com\/14011726\/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif\u0026quot;, name: \u0026quot;homer\u0026quot;, mime: \u0026quot;image\/gif\u0026quot;, }] } client.message user, \u0026quot;ready!\u0026quot;, opts obj := chat.MessageObject{ Name: \u0026quot;Hello\u0026quot;, Link: \u0026quot;https:\/\/user-images.githubusercontent.com\/14011726\/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif\u0026quot;, Mime: \u0026quot;image\/gif\u0026quot;, } m, err = client.ChatService().Message([]string{os.Args[1]}, \u0026quot;no way...\u0026quot;, chat.MessageOptions{ Objects: []chat.MessageObject{obj}, }) opts = { \u0026quot;objects\u0026quot;: [{ \u0026quot;link\u0026quot;: \u0026quot;https:\/\/user-images.githubusercontent.com\/14011726\/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif\u0026quot;, \u0026quot;name\u0026quot;: \u0026quot;homer\u0026quot;, \u0026quot;mime\u0026quot;: \u0026quot;image\/gif\u0026quot;, }]} client.chat().message user, \u0026quot;ready!\u0026quot;, opts) Non-public objects All non-public objects shared between identities are encrypted by default using Poly1305. This encryption layer is built on the SDK, so should be transparent for end users. Let\u0026rsquo;s see how we can send a local file.\nURI.open(path) do |image| name = \u0026quot;image.#{path.split(\u0026quot;.\u0026quot;).last}\u0026quot; mime = \u0026quot;image\/#{path.split(\u0026quot;.\u0026quot;).last}\u0026quot; msg.message(\u0026quot;your image sir...\u0026quot;, objects: [{ name: name, data: image.read, mime: mime }]) end data, err := os.ReadFile(\u0026quot;\/tmp\/dat\u0026quot;) check(err) m, err = cs.Message([]string{os.Args[1]}, \u0026quot;your file sir...\u0026quot;, chat.MessageOptions{ Objects: []chat.MessageObject{chat.MessageObject{ Name: \u0026quot;image.gif\u0026quot;, Data: data, Mime: \u0026quot;image\/gif\u0026quot;, }}, }) import * as fs from \u0027fs\u0027; let data = fs.readFileSync(\u0027foo.txt\u0027,\u0027utf8\u0027); client.chat().message user, \u0026quot;your file sir...\u0026quot;, { \u0026quot;objects\u0026quot;: [{ \u0026quot;data\u0026quot;: data, \u0026quot;name\u0026quot;: \u0026quot;image.gif\u0026quot;, \u0026quot;mime\u0026quot;: \u0026quot;image\/gif\u0026quot;, }]}) </p><p>messaging</p><p>message</p><p>messages</p><p>attachments</p><p>object</p><p>image</p><p>file</p>",
+          		url:"https:\/\/docs.joinself.com\/messaging\/objects\/"
+          	},
+          	
+          	{
+          		value: "Subscribe to zero knowledge fact check",
+          		label: "<p>A subscription to an intermediary fact check response behaves exactly the same as a basic fact response.\n</p><p>fact</p><p>anonymous</p><p>zero knowledge</p><p>zero</p><p>intermediary</p><p>subscribe</p>",
+          		url:"https:\/\/docs.joinself.com\/zero\/subscribe\/"
+          	},
+          	
+          	{
+          		value: "Disconnecting",
+          		label: "<p>You should gracefully manage the client disconnection by calling close method. If a connection is not gracefully closed Self messaging servers will kill that connection after one minute.\n@client.close client.Close() client.close() </p><p>setup</p><p>disconnecting</p><p>shut down</p><p>stop</p><p>close</p>",
+          		url:"https:\/\/docs.joinself.com\/setup\/disconnect\/"
+          	},
+          	
+          	{
+          		value: "Messaging",
+          		label: "<p>Messaging is the core of Self and we want to provide you with a flexible library to interact with your users.\nOn this section you\u0026rsquo;ll find tools to send an receive messages, manage groups or share documents.\n</p>",
+          		url:"https:\/\/docs.joinself.com\/messaging\/"
+          	},
+          	
+          	{
+          		value: "Subscribe to responses",
+          		label: "<p>Users can respond to authentication requests by accepting or rejecting them. On the other hand, you won’t receive asynchronous notifications for requests which have timed out.\nYou can subscribe to authentication responses with this snippet\n@client.authentication.subscribe do |auth_res|\rputs resp.status\rend\rclient.MessagingService().Subscribe(\u0026quot;identities.authenticate.req\u0026quot;, func(m *messaging.Message)) {\r\/\/ manage the response\r}\rclient.messaging().subscribe(\u0026quot;identities.authenticate.req\u0026quot;, (res: any): any =\u0026gt; {\r\/\/ manage the response\r})\r</p><p></p>",
+          		url:"https:\/\/docs.joinself.com\/authentication\/subscription\/"
+          	},
+          	
+          	{
+          		value: "Zero knowledge fact responses",
+          		label: "<p>This is similar to the fact request, the only difference in this case is that the attestation.value will always be a boolean indicating if your check is accomplished or not.\n</p><p>fact</p><p>anonymous</p><p>zero knowledge</p><p>zero</p><p>intermediary</p><p>response</p>",
+          		url:"https:\/\/docs.joinself.com\/zero\/response\/"
+          	},
+          	
+          	{
+          		value: "Notify",
+          		label: "<p>It prompts the user with a push notification or badge with a specific message. The message will be available on the notifications screen.\n@client.messaging.notify \u0026quot;1234567890\u0026quot;, \u0026quot;Hello world!\u0026quot; err := client.MessagingService().Notify(\u0026quot;1234567890\u0026quot;, \u0026quot;Hello world!\u0026quot;) await sdk.messaging().notify(\u0026quot;1234567890\u0026quot;, \u0026quot;Hello world!\u0026quot;) </p><p>notify</p><p>notifications</p><p>push notification</p>",
+          		url:"https:\/\/docs.joinself.com\/notify\/"
+          	},
+          	
+          	{
+          		value: "Subscribe to fact response",
+          		label: "<p>As the user also has the option to accept or reject a fact request, the response also comes with a status property and some helpers like the authentication response.\nAdditionally a fact response comes with a list of attestations for the requested fact.\nSubscribing to a facts response is similar to authentication.\n@client.facts.subscribe do |resp|\r# GOTO Deal with the response for details\rend\r\/\/ TBD\rsdk.facts().subscribe((res: any): any =\u0026gt; {\r\/\/ GOTO Deal with the response for details\r})\r</p><p>fact</p><p>facts</p><p>request</p><p>requests</p><p>name</p><p>email</p><p>subscribe</p><p>response</p>",
+          		url:"https:\/\/docs.joinself.com\/facts\/subscribe\/"
+          	},
+          	
+          	{
+          		value: "Auth with facts",
+          		label: "<p>Many times, specially on a registration process you want your users to authenticate and at the same time you require some sort of specific facts, for example name or email.\nFacts service allows you to send a fact request with the form of an authentication, with the option auth\ncid = @client.facts.request(selfid, [SelfSDK::FACT_EMAIL], async: true, auth: true)\rreq := fact.FactRequestAsync{\rSelfID: selfID,\rDescription: \u0026quot;info\u0026quot;,\rFacts: []fact.Fact{{ Fact: fact.FactEmail }},\rExpiry: time.Minute * 5,\rCID: \u0026quot;conversation_id\u0026quot;,\rAuth: true,\r}\rresp, err := client.FactService().RequestAsync(\u0026amp;req) if err != nil { return \u0026quot;\u0026quot;, err } let res = await sdk.facts().request(selfID, [{ fact: \u0027email_address\u0027 }], { async: true, auth: true })\r</p><p>auth</p><p>facts</p><p>request</p><p>registration</p>",
+          		url:"https:\/\/docs.joinself.com\/authentication\/facts\/"
+          	},
+          	
+          	{
+          		value: "Dealing with responses",
+          		label: "<p>\rif resp.accepted?\rp \u0026quot;accepted\u0026quot;\relsif resp.rejected?\rp \u0026quot;rejected\u0026quot;\relsif resp.unauthorized?\rp \u0026quot;unauthorized\u0026quot;\relsif resp.errored?\rp \u0026quot;errored\u0026quot;\relse\rp \u0026quot;unkonwn status\u0026quot;\rend\r\/\/ Or simply access the status string p resp.status \/\/ Go SDK will return an error for unsuccessful\r\/\/ responses\rerr = authService.Request(\u0026quot;1112223334\u0026quot;)\rif err != nil {\rlog.Fatal(\u0026quot;auth returned with: \u0026quot;, err)\r}\rlog.Println(\u0026quot;authentication succeeded\u0026quot;) try {\rlet res = await client.authentication().request(\u0026quot;1112223334\u0026quot;)\rif(res.isAccepted() == true) {\rclient.logger.info(`${res.selfID} is now authenticated 🤘`)\r} else if(res.accepted == false) {\rclient.logger.warn(`${res.selfID} has rejected your authentication request`)\r} else {\rclient.logger.error(res.errorMessage)\r}\r} catch (error) {\rclient.logger.error(error.toString())\r}\rThe interesting field in an authentication response is status. Valid values for status are:\naccepted The user has accepted the authentication request, so you can proceed authenticating it on your app.\nrejected The user has rejected the authentication request.\nunauthorized You’re unauthorized to interact with this user, let it know it needs to be connected to your app before continuing with an authentication process.\nerrored An internal error happened.\nDepending on the SDK there are different ways you can deal with different status, see some examples below\n</p><p></p>",
+          		url:"https:\/\/docs.joinself.com\/authentication\/response\/"
+          	},
+          	
+          	{
+          		value: "Fact response",
+          		label: "<p>The fact response will comes with a status and the same list of helpers as we described on authentication to deal with it.\nAdditionally each fact of the response has a list of attestations let’s see how to process them.\nresp.facts.each do |fact|\rp fact.name\rfact.attestations do |a|\rp \u0026quot;received #{a.value} from #{a.source}\/#{a.fact} signed by #{a.origin}\u0026quot;\rend\rend\rfor _, f := range resp.Facts {\rlog.Println(f.Fact, \u0026quot;:\u0026quot;, f.AttestedValues())\r}\rsdk.logger.info(res.attestationValuesFor(\u0027phone_number\u0027)[0])\r</p><p>fact</p><p>facts</p><p>request</p><p>requests</p><p>name</p><p>email</p><p>response</p>",
+          		url:"https:\/\/docs.joinself.com\/facts\/response\/"
+          	},
+          	
+          	{
+          		value: "Zero-knowledge",
+          		label: "<p>An easy to use zero knowledge fact checker allows developers to ask the questions they really need an answer to, and receive anonymised answers.\nThat means they need to worry less about running a secure compliant environment.\nHow do they work? Intermediary fact checks are useful when you want to run a check of a user’s verified fact without having to gain access to that fact.\nEg. You want to verify a user is over 18, but you don’t want to deal with their personal information. An intermediary fact check allows you to run a zero knowledge check on that information via a trusted intermediary.\nThis is useful both for you and your users because you can prove a fact without ever directly interacting to them.\n</p>",
+          		url:"https:\/\/docs.joinself.com\/zero\/"
+          	},
+          	
+          	{
+          		value: "Custom facts",
+          		label: "<p>Self Core Facts are useful for general purpose, but the process of adding new core facts is slow and not flexible enough to support app custom facts.\nCustom facts will allow you to:\nCreate custom facts. Store facts on the user\u0026rsquo;s device. Consume custom facts. Share custom facts with other apps. Interact with other apps on the Self ecosystem. All this is basically accomplished by using the user\u0026rsquo;s device as secure storage for critical information.\nIssuing facts Groups Facts are presented to the user in groups. Groups have name and icon properties.\nparam description required name The name of the group as it will be displayed to the user. true icon The icon to be displayed close to the group name false Self App supports all material UI icons, you can search all available icons on google fonts.\nThis is how we can create a group.\nmy_group = SelfSDK::Services::Facts::Group.new( \u0026quot;Trip to Venice\u0026quot;, \u0026quot;airplanemode_active\u0026quot; ) g := fact.FactGroup{ Name: \u0026quot;Trip to Shangai\u0026quot;, Icon: \u0026quot;airplanemode_active\u0026quot;, } let group = new Group(\u0026quot;group name\u0026quot;, \u0026quot;plane\u0026quot;) Facts Facts are composed of a key, a value and a source.\nparam description required key is the id for the fact, it will allow other apps to request your facts by id. true value It\u0026rsquo;s stored as a string by default true source it groups facts from the same source, it allows other apps to use it as filters. true group if group is not provided facts will end under on the ungrouped section on the user\u0026rsquo;s device false type it defines how the fact has to be processed by other clients, it defaults to string, but can also be set as password or delegation_certificate false my_fact = SelfSDK::Services::Facts::Fact.new( \u0026quot;confirmation_code\u0026quot;, \u0026quot;CD128763\u0026quot;, \u0026quot;source12\u0026quot;, group: my_group) f := fact.FactToIssue{ Key: \u0026quot;BCN-SIN-cc\u0026quot;, Value: \u0026quot;CD128763\u0026quot;, Source: source, Group: \u0026amp;g, } let fact = new FactToIssue(\u0026quot;foo\u0026quot;, \u0026quot;bar\u0026quot;, source, { group: group }) Issuing facts Once you have your fact defined, it\u0026rsquo;s time to send it to your user\u0026rsquo;s device. You can do this by calling issue method on the facts service.\nparam description required user the user you\u0026rsquo;re signing and sending facts to true facts an array with the facts you want to issue true viewers an array of app identifiers related to apps apps that can consume this facts false @app.facts.issue(user, my_fact], viewers: [appID1, appID2]) client.FactService().Issue(selfid, []fact.FactToIssue{f}, []string{}) await sdk.facts().issue(selfID, [fact]) Retrieving facts Retrieving facts is pretty much the same as we do for accessing core facts, the only difference is we must specify what issuers are we going to be accepting on our request, let\u0026rsquo;s see an example.\nmyAppID = ENV[\u0026quot;SELF_APP_ID\u0026quot;] @app.facts.request(user, [{ fact: my_fact.key, issuers: [myAppID] }]) do |res| if res.status == \u0026quot;rejected\u0026quot; puts \u0027Information request rejected\u0027 exit! end k = my_fact.key.to_sym a = res.attestation_values_for(k) puts \u0026quot;Your stored fact is #{a.first}!\u0026quot; end resp, err := client.FactService().Request(\u0026amp;fact.FactRequest{ SelfID: selfid, Description: \u0026quot;We need access to your flight confirmation codes to reschedule your flights\u0026quot;, Facts: []fact.Fact{ { Fact: f[0].Key, Sources: []string{source}, Issuers: []string{appID}, }, }, Expiry: time.Minute * 5, }) let res = await sdk.facts().request(selfID, [{ fact: fact.key, issuers: [ appID ] }]) Scope and facts Custom facts scope is configurable by the developer by using viewers and issuers parameters to facts.issue and facts.request. This makes it possible to create private, protected and public custom facts.\nPrivate By specifying yourself as the only viewers on a facts.issue you will be creating facts you\u0026rsquo;re the only one able to consume.\nProtected Specifying multiple app ids as viewers you\u0026rsquo;ll make those facts available only to a subset of apps.\nPublic When viewers parameter is not provided, issued facts become public.\n</p><p>fact</p><p>facts</p><p>request</p><p>requests</p><p>custom</p>",
+          		url:"https:\/\/docs.joinself.com\/facts\/customfacts\/"
+          	},
+          	
+          	{
+          		value: "Recurrent requests",
+          		label: "<p>As we\u0026rsquo;ve seen on Facts section you can request user\u0026rsquo;s verified sensible data through facts service.\nThis becomes really useful when you can use the data at the moment. However, if you need to access the same data periodically or some time in the future, you\u0026rsquo;ll be forced to store it.\nSelf recurrent requests feature allows you to access the same data for a specific period of time without having to wait for user\u0026rsquo;s acceptance, so you don\u0026rsquo;t need to store it on your servers.\nRecurrent requests looks exactly the same as a regular fact request, except it makes use of allowed_for modifier, let\u0026rsquo;s see an example.\nten_days = 10 * 60 * 60 * 60 # Request email, with recurrent requests enabled for ten days res = @client.facts.request(user, [:email_address], allowed_for: ten_days) # At this point the user will be prompted with a confirmation box to # allow access its email for the next 10 days. # # If we send the same request again, it will be automatically shared by the device # without user interaction. res = @client.facts.request(user, [:email_address]) \/\/ Request email, with recurrent requests enabled for ten days resp, err := client.FactService().Request(\u0026amp;fact.FactRequest{ SelfID: selfID, Description: \u0026quot;info\u0026quot;, Facts: []fact.Fact{{ Fact: fact.FactEmail }}, Expiry: time.Minute * 5, AllowedFor: time.Day * 10, }) check(err) \/\/ At this point the user will be prompted with a confirmation box to \/\/ allow access its email for the next 10 days. \/\/ \/\/ If we send the same request again, it will be automatically shared by the device \/\/ without user interaction. resp, err := client.FactService().Request(\u0026amp;fact.FactRequest{ SelfID: selfID, Description: \u0026quot;info\u0026quot;, Facts: []fact.Fact{{ Fact: fact.FactEmail }}, Expiry: time.Minute * 5, }) check(err) let tenDays = 10 * 60 * 60 * 60 \/\/ Request email, with recurrent requests enabled for ten days let res = await sdk.facts().request(user, [{ fact: \u0026rsquo;email_address\u0026rsquo;, allowed_for: tenDays }]) \/\/ At this point the user will be prompted with a confirmation box to \/\/ allow access its email for the next 10 days. \/\/ \/\/ If we send the same request again, it will be automatically shared by the device \/\/ without user interaction. let res = await sdk.facts().request(user, [{ fact: \u0026rsquo;email_address\u0026rsquo; }]) Given the user is always able to cancel this recurrent requests at any time, it\u0026rsquo;s highly recommended to include the allowed for modifier on every request.\nEven the responses to your fact requests are automated by the user, have in mind the request always hits the user\u0026rsquo;s device, so the response can take some time to get back to you..\n</p>",
+          		url:"https:\/\/docs.joinself.com\/storageless\/"
+          	},
+          	
+          	{
+          		value: "Document sign",
+          		label: "<p>As an app developer you may want my users to provide signatures on specific texts or documents, and have proof they agree on those documents.\nMost common case is accepting your service terms and conditions.\nPlain text signatures Sometimes a short text is enough, so you don\u0026rsquo;t really need to share a PDF to be signed, in those cases you can send a document signature request like:\n@app.docs.request_signature ARGV[0], terms, [] do |resp| puts \u0026quot;Document signature : #{resp.status}\u0026quot; end res := client.DocsService().RequestSignature(os.Args[1], terms, []documents.InputObjects) log.Println(res) let resp = await sdk.docs().requestSignature(selfID, terms, []) console.log(`Document signature : ${resp[\u0026quot;status\u0026quot;]}`) Object based signatures In case you want users to sign a document (like a PDF) you can attach objects to your request, and get a list of signed objects on the response.\nobjects = [] File.open(\u0027.\/sample.pdf\u0027) do |f| objects \u0026lt;\u0026lt; { name: \u0026quot;Terms and conditions\u0026quot;, data: f.read, mime: \u0027application\/pdf\u0027 } end @app.docs.request_signature ARGV[0], terms, objects do |resp| if resp.status == \u0027accepted\u0027 puts \u0026quot;Document signed!\u0026quot;.green puts \u0026quot;\u0026quot; puts \u0026quot;signed documents: \u0026quot; resp.signed_objects.each do |so| puts \u0026quot;- Name: #{so[:name]}\u0026quot; puts \u0026quot; Link: #{so[:link]}\u0026quot; puts \u0026quot; Hash: #{so[:hash]}\u0026quot; end puts \u0026quot;\u0026quot; puts \u0026quot;full signature:\u0026quot; puts resp.input else puts \u0026quot;Document signature #{\u0027rejected\u0027.red}\u0026quot; end exit end # Check the full example on: # https:\/\/github.com\/joinself\/self-ruby-sdk\/examples\/document_sign\/app.rb ds := client.DocsService() content, err := ioutil.ReadFile(\u0026quot;.\/sample.pdf\u0026quot;) if err != nil { log.Fatal(err) } objects := make([]documents.InputObject, 0) objects = append(objects, documents.InputObject{ Name: \u0026quot;Terms and conditions\u0026quot;, Data: content, Mime: \u0026quot;application\/pdf\u0026quot;, }) log.Println(\u0026quot;sending document sign request\u0026quot;) resp, err := ds.RequestSignature(os.Args[1], \u0026quot;Read and sign this documents\u0026quot;, objects) if err != nil { log.Println(err.Error()) } if resp.Status == \u0026quot;accepted\u0026quot; { fmt.Println(\u0026quot;Document has been signed\u0026quot;) fmt.Println(\u0026quot;\u0026quot;) fmt.Println(\u0026quot;signed documents:\u0026quot;) spew.Dump(resp.SignedObjects) for _, o := range resp.SignedObjects { fmt.Println(\u0026quot;- Name: \u0026quot; \u002b o.Name) fmt.Println(\u0026quot; Link: \u0026quot; \u002b o.Link) fmt.Println(\u0026quot; Hash: \u0026quot; \u002b o.Hash) } fmt.Println(\u0026quot;\u0026quot;) fmt.Println(\u0026quot;full signature:\u0026quot;) fmt.Println(resp.Signature) } let resp = await sdk.docs().requestSignature(selfID, terms, docs) if (resp[\u0026quot;status\u0026quot;] == \u0026quot;accepted\u0026quot;) { console.log(\u0026quot;Document signed!\u0026quot;) console.log(\u0026quot;\u0026quot;) console.log(\u0026quot;signned documents: \u0026quot;) for (var i=0; i \u0026lt; resp[\u0026quot;signed_objects\u0026quot;].length; i\u002b\u002b) { console.log(`- Name : ${resp[\u0026quot;signed_objects\u0026quot;][\u0026quot;name\u0026quot;]}`) console.log(` Link : ${resp[\u0026quot;signed_objects\u0026quot;][\u0026quot;link\u0026quot;]}`) console.log(` Hash : ${resp[\u0026quot;signed_objects\u0026quot;][\u0026quot;hash\u0026quot;]}`) } console.log(\u0026quot;\u0026quot;) console.log(\u0026quot;full signature\u0026quot;) console.log(resp[\u0026quot;input\u0026quot;]) } As you can see the signed response will come with a SHA256 hash of the original document, so you can verify the document has been signed.\n</p><p>document</p><p>sign</p><p>signature</p>",
+          		url:"https:\/\/docs.joinself.com\/documentsign\/"
+          	},
+          	
+          	{
+          		value: "App direct connection",
+          		label: "<p>With this feature you\u0026rsquo;ll be able to allow users to connect with your app offline (through a QR code or a dynamic link).\nIn addition to a regular connection, you\u0026rsquo;ll receive a callback notification once a user is connected with your app, which means you can use that callback as an entry point to build your business logic, like sending a welcome message.\nLet\u0026rsquo;s see an example for building this feature\nGenerating a QR code # Generates a QR code for the connection request @app.chat .generate_connection_qr .as_png(border: 0, size: 400) .save(\u0027\/tmp\/qr.png\u0027, :interlace =\u0026gt; true) qrdata, _ := s.chat.GenerateConnectionQR(chat.ConnectionConfig{ Expiry: time.Minute * 5, }) \/\/ Generates a QR code for the connection request let buf = sdk.chat().generateConnectionQR() const fs = require(\u0026lsquo;fs\u0026rsquo;).promises; await fs.writeFile(\u0026rsquo;\/tmp\/qr.png\u0026rsquo;, buf); Generating a dynamic link link = @app.chat.generate_connection_deep_link(\u0026quot;\u0026quot;) link, err := s.chat.GenerateConnectionDeepLink(chat.ConnectionConfig{ Expiry: time.Minute * 5, \/\/ this is required ? }) let link = sdk.chat().generateConnectionDeepLink(\u0026quot;\u0026quot;) Subscribing to new connections # Register an observer for a connection response @app.chat.on_connection do |res| if res.status == \u0026quot;accepted\u0026quot; p \u0026quot;successfully connected\u0026quot; @app.chat.message(res.from, \u0026quot;Hey there! We\u0027re connected!\u0026quot;) end end s.chat.OnConnection(func(iss, status string) { log.Println(\u0026quot;Response received from \u0026quot; \u002b iss \u002b \u0026quot; with status \u0026quot; \u002b status) parts := strings.Split(iss, \u0026quot;:\u0026quot;) s.chat.Message([]string{parts[0]}, \u0026quot;Hi there!\u0026quot;) }) sdk.chat().onConnection((res: any): any =\u0026gt; { sdk.logger.info(`connection request ${res.status} by ${res.data.display_name}(${res.iss})`) sdk.chat().message(res.iss, \u0026quot;hi there!\u0026quot;) exit() }) </p><p>connection</p><p>connect</p><p>qr</p>",
+          		url:"https:\/\/docs.joinself.com\/directconnection\/"
+          	},
+          	
+          	{
+          		value: "Voice Calls",
+          		label: "<p>The Voice library is a subset of helpers to allow your app to act as proxy between two connected users.\nVoice call negotiation at self follow a workflow like this:\nstart starting messages instruct an identity to start a call with the issuer of the message using the same cid. accept the voice call has been accepted by the recipient, who responds with the details to start the voice call. busy notifies call issuer the recipient is busy and cannot answer the call. stop notifies the call has been ended by one of the users. SDK helpers SDKs provide helpers to subscribe and send all voice negotiation messages, so you can build things like a calling proxy. Let\u0026rsquo;s see an example on how you could build a proxy.\n@voice = client.Voice() @voice.on_start do |issuer, payload| call = Call.find_by(cid: payload[:cid]) customer = call.connection operator = call.user puts \u0026quot;[voice_proxy] received start from #{issuer}, redirecting...\u0026quot; @voice.start customer.selfid, payload[:cid], payload[:call_id], payload[:peer_info], { operator_name: operator.name } end @voice.on_accept do |issuer, payload| call = Call.find_by(cid: payload[:cid]) next if call.nil? customer = call.connection operator = call.user puts \u0026amp;quot;[voice_proxy] received acceptation from #{issuer}, redirecting...\u0026amp;quot; @voice.accept operator.selfid, payload[:cid], payload[:call_id], payload[:peer_info] end @voice.on_stop do |issuer, payload| call = Call.find_by(cid: payload[:cid]) next if call.nil? customer = call.connection operator = call.user if issuer == operator.selfid puts \u0026amp;quot;[voice_proxy] received stop from #{issuer}, redirecting to operator\u0026amp;quot; @voice.stop customer.selfid, payload[:cid], payload[:call_id] else puts \u0026amp;quot;[voice_proxy] received stop from #{issuer}, redirecting to customer\u0026amp;quot; @voice.stop operator.selfid, payload[:cid], payload[:call_id] end end @voice.on_busy do |issuer, payload| call = Call.find_by(cid: payload[:cid]) next if call.nil? customer = call.connection operator = call.user puts \u0026amp;quot;[voice_proxy] received busy from #{issuer}, redirecting...\u0026amp;quot; if issuer == operator.selfid @voice.busy customer.selfid, payload[:cid], payload[:call_id] else @voice.busy operator.selfid, payload[:cid], payload[:call_id] end end voice := client.Voice() operator := \u0026quot;1112223334\u0026quot; customer := \u0026quot;1111111111\u0026quot; voice.OnStart(func(iss, cid, callID, peerInfo string, data interface{}){ voice.Start(customer, cid, callID, peerInfo, map[string]string{ \u0026amp;quot;operator_name\u0026amp;quot;: \u0026amp;quot;Bob\u0026amp;quot;, }) }) voice.OnAccept(func(iss, cid, callID, peerInfo string, data interface{}){ voice.Accept(operator, cid, callID, peerInfo, map[string]interface{}) }) voice.OnStop(func(iss, cid, callID string) { if iss == operator { voice.Stop(customer, cid, callID) } else { voice.Stop(operator, cid, callID) } }) voice.OnBusy(func(iss, cid, callID string) { if iss == operator { voice.Busy(customer, cid, callID) } else { voice.Busy(operator, cid, callID) } }) let voice = client.Voice() let operator = \u0026quot;1112223334\u0026quot; let customer = \u0026quot;1111111111\u0026quot; voice.onStart((iss: string, cid: string, call_id: string, peer_info: string, data: any) =\u0026gt; { voice.start(customer, cid, call_id, peer_info, { \u0026quot;operator_name\u0026quot;: \u0026quot;Bob\u0026quot;, }) }) voice.onAccept((iss: string, cid: string, call_id: string, peer_info: string, data: any) =\u0026amp;gt; { voice.accept(operator, cid, call_id, peer_info, data) }) voice.onStop((iss: string, cid: string, call_id: string) =\u0026amp;gt; { if (iss == operator) { voice.stop(customer, cid, call_id) } else { voice.stop(operator, cid, call_id) } }) voice.onBusy((iss: string, cid: string, call_id: string) =\u0026amp;gt; { if (iss == operator) { voice.busy(customer, cid, call_id) } else { voice.busy(operator, cid, call_id) } }) </p><p>voice</p>",
+          		url:"https:\/\/docs.joinself.com\/voice\/"
+          	},
+          	
+          	{
+          		value: "Introes",
+          		label: "<p></p>",
+          		url:"https:\/\/docs.joinself.com\/intro\/"
+          	},
+          	
+          	{
+          		value: "Joinself Docs",
+          		label: "<p></p>",
+          		url:"https:\/\/docs.joinself.com\/"
+          	},
+          	
+          	{
+          		value: "QuickStart",
+          		label: "<p> Want more video tutorials? The full getting started guide for the Quickstart app is available on YouTube.\nDon\u0026rsquo;t want to write code? The Quickstart SDK examples for a no-code way to get started with Self\u0026rsquo;s SDKs.\nIntroduction Let\u0026rsquo;s try out the Self-Quickstart app by cloning the Quickstart app on your local machine. To do this, you will need API keys which can be obtained by registering on the Self Developer Portal.\nYou have the option of obtaining credentials for two distinct environments, it is suggested to first develop and test your app on the sandbox environment, once it is stable and working as expected, you can then submit it for approval on the production environment, keep in mind that the approval process for production environment may take some time.\nEnvironments Sandbox Get started with test credentials and life-like data Production Launch your app with live credentials API Keys SELF_APP_ID Public app identifier SELF_APP_DEVICE_SECRET Private key If you get stuck at any point in the Quickstart, help is just a click away! Check the Quickstart troubleshooting guide, ask other developers in our Stack Overflow community or submit a Support ticket.\nQuickstart setup Once you have obtained your API keys, the next step is to execute the Self Quickstart on your local machine. The guidance provided below will assist you in duplicating the Quickstart repository, adjusting the .env file with your own Self client ID and Sandbox secret, and ultimately, compiling and launching the application.\nThe Self-Quickstart is available in both Docker and non-Docker options. If you don\u0026rsquo;t have Docker installed on your system, you might want to use the non-Docker version, particularly for Windows users who do not have Docker installed. However, if you already have Docker installed, it is recommended to use the Docker option as it is more straightforward and simpler to execute the Quickstart. The instructions provided below will guide you through the process of setting up the Quickstart with both Docker and non-Docker configurations.\nNon-Docker Docker\nSetting up with Docker Docker is a platform and technology for building, shipping, and running distributed applications. It uses containerization, a method of packaging software in a way that ensures it runs consistently across different environments. Docker allows developers to package an application with all of its dependencies into a single container, which can then be easily deployed and run on any machine that has the Docker runtime installed. This makes it easy to manage and distribute applications, and helps ensure that the application will run consistently across different environments.\nOnce you have Docker installed, open the Docker application, and then utilize the following commands in the command line interface to set up and execute the Quickstart. In case the \u0026lsquo;make\u0026rsquo; commands do not function as expected, confirm that Docker is running. Depending on your system, it may be necessary to add \u0026lsquo;sudo\u0026rsquo; before the \u0026lsquo;make\u0026rsquo; commands.\n# Note: If on Windows, run # git clone -c core.symlinks=true \\ # https:\/\/github.com\/joinself\/quickstart.git # instead, to ensure correct symlink behavior $ git clone https:\/\/github.com\/joinself\/quickstart.git $ cd quickstart # Copy the .env.example file to .env, then fill out SELF_APP_ID # and SELF_APP_DEVICE_SECRET in .env $ cp .env.example .env # start the container $ make up # Finally go to http:\/\/localhost:3000 Visit localhost and log in with Sandbox Self mobile client, by scanning the QR code from your device.\nCheck container logs with make logs\nStop the container with make stop\nSetting up without Docker Self SDK comes with some dependencies on native libraries to manage encryption libself_olm and libself_omemo.\nBelow you\u0026rsquo;ll find the instructions to get them working on your system.\nDebian\/Ubuntu $ curl -O https:\/\/download.joinself.com\/olm\/libself-olm_0.1.17_amd64.deb $ curl -O https:\/\/download.joinself.com\/omemo\/libself-omemo_0.1.2_amd64.deb $ apt install libsodium-dev $ apt install .\/libself-olm_0.1.17_amd64.deb .\/libself-omemo_0.1.2_amd64.deb Redhat\/Centos $ rpm -Uvh https:\/\/download.joinself.com\/olm\/libself-olm-0.1.14-1.x86_64.rpm $ rpm -Uvh https:\/\/download.joinself.com\/omemo\/libself-omemo-0.1.2-1.x86_64.rpm Mac (x86_64) $ brew tap joinself\/crypto $ brew install libself-olm libself-omemo Mac (m1\/arm64) Brew on M1 macs currently lacks environment variables needed for the sdk to find the olm and omemo libraries, so you will need to add some additional configuration to your system:\nIn your ~\/.zshrc, add:\nexport C_INCLUDE_PATH=\/opt\/homebrew\/include\/ export LIBRARY_PATH=$LIBRARY_PATH:\/opt\/homebrew\/lib You should then be able to run:\n$ source ~\/.zshrc $ brew tap joinself\/crypto $ brew install --build-from-source libself-olm libself-omemo Note, you may also need to create \/usr\/local\/lib if it does not exist:\n$ sudo mkdir \/usr\/local\/lib Setting up Quickstart # Note: If on Windows, run # git clone -c core.symlinks=true \\ # https:\/\/github.com\/joinself\/quickstart.git # instead, to ensure correct symlink behavior $ git clone https:\/\/github.com\/joinself\/quickstart.git $ cd quickstart # Copy the .env.example file to .env, then fill out SELF_APP_ID # and SELF_APP_DEVICE_SECRET in .env $ cp .env.example .env # Install dependencies $ bundle # Start the backend app $ .\/start.sh # Finally go to http:\/\/localhost:3000 User interaction Now everything is setup you can start interacting with other identities on the Self network.\nFirst screen you see on the demo app implements an authentication \u002b fact request. This will be basically requesting the user to authenticate on your app by providing its verified email address.\nThis is a pretty flexible request and you can choose what verified facts the user should provide to authenticate it, you can check more details on Authenticating with Self page.\nIn order to authenticate you must scan the QR code presented by the quickstart demo. That should guide you through the email verification process on your phone (unless you have an email already verified) and log you in once you accept to share it.\nOnce you\u0026rsquo;re logged in, the web app will provide you examples for the different features you can implement on your app with Self.\n</p>",
+          		url:"https:\/\/docs.joinself.com\/intro\/quickstart\/"
+          	},
+          	
+          	{
+          		value: "Categories",
+          		label: "<p></p>",
+          		url:"https:\/\/docs.joinself.com\/categories\/"
+          	},
+          	
+          	{
+          		value: "Glossary",
+          		label: "<p>Other Self terminology \u0026nbsp\nACL - Access Control List An access control list (ACL) is a list of permissions attached to an object. An ACL specifies which users or system processes are granted access to objects, as well as what operations are allowed on given objects. Each entry in a typical ACL specifies a subject and an operation.\n\u0026nbsp\nAISP - Account Information Service Provider Account Information Service Provider (AISP) lets you see all of your account information from different bank accounts in one place online or in a mobile app. AISPs can include budgeting apps and price comparison websites offering budgeting help and product recommendations. An AISP needs your explicit consent to provide you with these services.\n\u0026nbsp\nAML - Anti Money Laundering Refers to all policies and pieces of legislation that force financial institutions to proactively monitor their clients in order to prevent money laundering and corruption.\n\u0026nbsp\nAPI - Application Programming Interface API (application programming interface) is a set of subroutine definitions, communication protocols, and tools for building software. In general terms, it is a set of clearly defined methods of communication among various components. \u0026nbsp\nAttestation The act of an individual or organisational SelfID to attest \/ confirm \/ authenticate \/ validate \/ prove true another individual or organisational SelfIDs claim. \u0026nbsp\nAure Self’s native token, used for paying for transactions on Self Blockchain A growing list of records, called blocks, which are linked using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data (generally represented as a merkle tree root hash). a blockchain is typically managed by a peer-to-peer network collectively adhering to a protocol for inter-node communication and validating new blocks. Once recorded, the data in any given block cannot be altered retroactively without alteration of all subsequent blocks, which requires consensus of the network majority. \u0026nbsp\nCertificate Authority A Certificate Authority (CA) is an entity that issues digital certificates. Claim A declaration by an individual or organisational SeflID of some information about itself, or an asset it owns, that is sent to one or more other individual or organisational SelfIDs to attest to. \u0026nbsp\nCLI - Command Line Interface A text-based interface that is used to operate software and operating systems while allowing the user to respond to visual prompts by typing single commands into the interface and receiving a reply in the same way. \u0026nbsp\nCold Storage Cold storage is an offline wallet provided for storing cryptocurrencies. With cold storage, the digital wallet is stored on a platform that is not connected to the internet, thereby, protecting the wallet from unauthorised access, cyber hacks, and other vulnerabilities that a system connected to the internet is susceptible to. \u0026nbsp\nDID - Decentralised Identifier Decentralised Identifiers (DIDs) are a new type of identifier for verifiable, \u0022self-sovereign\u0022 digital identity. DIDs are fully under the control of the DID subject, independent from any centralised registry, identity provider, or certificate authority. DIDs are URLs that relate a DID subject to means for trustable interactions with that subject. DIDs resolve to DID Documents — simple documents that describe how to use that specific DID. Each DID Document contains at least three things: cryptographic material, authentication suites, and service endpoints. Cryptographic material combined with authentication suites provide a set of mechanisms to authenticate as the DID subject (e.g., public keys, pseudonymous biometric protocols, etc.). Service endpoints enable trusted interactions with the DID subject. \u0026nbsp\nDigital Certificate The digital certificate also known as public key certificate, or identity certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or assertions made by the private key that corresponds to the public key that is certified. \u0026nbsp\nDLT - Distributed Ledger Technology A distributed ledger is a database that is consensually shared and synchronised across network spread across multiple sites, institutions or geographies. It allows transactions to have public \u0022witnesses,\u0022 thereby making a cyberattack more difficult. The participant at each node of the network can access the recordings shared across that network and can own an identical copy of it. Further, any changes or additions made to the ledger are reflected and copied to all participants in a matter of seconds or minutes. \u0026nbsp\nDRI - Directly Responsible Individual Directly Responsible Individual relates to the person who is allocated as the owner of an Epic or a specific task. \u0026nbsp\nDUNS Number The DUNS number is a nine-digit number, issued and regulated by D\u0026B (Dun \u0026 Bradstreet - a company that provides commercial data, analytics, and insights for businesses). It is assigned to a single business entity, having a unique, separate, and distinct operation for the purpose of identifying them. \u0026nbsp\nE2E - End-to-end End to End encryptions allows only the users communicating can read the messages. \u0026nbsp\nEpic Epics represent the specific tasks or a body of work that can be broken down into use cases. Milestones consist of a number of Epics to be completed. \u0026nbsp\nFCA - Financial Conduct Authority The Financial Conduct Authority is a financial regulatory body in the United Kingdom, but operates independently of the UK Government. \u0026nbsp\nHash Encoding of data in to a small and generally fixed size \u0026nbsp\nHLF - Hyperledger Fabric A Fabric permissioned blockchain network is a technical infrastructure that provides ledger services to application consumers and administrators. In most cases, multiple organisations come together as a consortium to form the network and their permissions are determined by a set of policies that are agreed to by the consortium when the network is originally configured. Moreover, network policies \u0026nbsp\nHorizon API Server Horizon is an API server for the Stellar ecosystem. It acts as the interface between stellar-core and applications that want to access the Stellar network. It allows you to submit transactions to the network, check the status of accounts, subscribe to event streams, etc. \u0026nbsp\nHot Storage Hot storage is online wallet provided for storing cryptocurrencies. With hot storage, the digital wallet is stored on a platform that is connected to the internet. Differently from a cold storage, a hot storage is subjected to unauthorised access, cyber hacks, and other vulnerabilities that a system connected to the internet is susceptible to. \u0026nbsp\nHyperledger Hyperledger is a multi-project open source collaborative effort hosted by The Linux Foundation. We are using it to store the self ID into a public key mapping, and potentially to store the SelfID score too. \u0026nbsp\nJWE - JSON Web Encryption JSON Web Encryption is an IETF standard providing a standardised syntax for the exchange of encrypted data, based on JSON and Base64. It forms part of the JavaScript Object Signing and Encryption (JOSE) suite of protocols. \u0026nbsp\nJWS - JSON Web Signature JSON Web Signature is an IETF proposed standard [RFC7515] for signing arbitrary data. JWS is a way to ensure integrity of information in a highly serialisable, machine-readable format. That means that it is information, along with proof that the information hasn\u0027t changed since being signed. It can be used for sending information from one web site to another, and is especially aimed at communications on the web. It even contains a compact form optimised for applications like URI query parameters. \u0026nbsp\nJWT - JSON Web Tokens JWT - JSON Web Tokens is a JSON-based open standard (RFC 7519) for creating access tokens that assert a certain number of claims. For example, a server could generate a token that has the claim \u0022logged in as admin\u0022 and provide that to a client. The client could then use that token to prove that it is logged in as admin. \u0026nbsp\nK8S The container orchestration tool that hosts the Self platform. \u0026nbsp\nKYC - Know Your Customer Know your Customer (Client) checks allows businesses to verify the identity of their clients. Guidelines are often dictated by government or financial authorities such as the FCA. \u0026nbsp\nNode A node is a device on a blockchain network, that is in essence the foundation of the technology, allowing it to function and survive. The role of a node is to support the network by maintaining a copy of a blockchain and, in some cases, to process transactions. \u0026nbsp\nOAuth - Open Authorisation OAuth is a simple way to interact with private data, allowing third parties limited access to a web-service via access tokens at the authorisation of the account owner. \u0026nbsp\nOpen Banking The use of open API’s to enable third parties access to details from an individual\u0027s bank account. \u0026nbsp\nOracle An oracle, in the context of blockchains and smart contracts, is an agent that finds and verifies real-world occurrences and submits this information to a blockchain to be used by smart contracts. ... An oracle is a data feed – provided by third party service – designed for use in smart contracts on the blockchain. In the case of Self\/Biler a good example is the Client Payment Oracle\/Fiat Currency Gateway. This gets notified by webhook from the bank (ideally) of the deposit of fiat currency into a client money account, it then credits the deposited fiat funds with a corresponding tokenized form of the currency which can be controlled by a User’s private keys. \u0026nbsp\nP2P - Peer-to-peer Peer-to-peer computing is a distributed application architecture that partitions workloads between peers. \u0026nbsp\nPDS - Personal Data Store A platform where people can securely store, manage and share their data. \u0026nbsp\nPIFI - Personally Identifiable Financial Information Personally identifiable financial information (PIFI) is any type of personally identifiable information (PII) that is linked to that person\u0027s finances. A credit card number is a prime example of PIFI. \u0026nbsp\nPII - Personally Identifiable Information Personally identifiable information (PII) is any data that could potentially identify a specific individual. Any information that can be used to distinguish one person from another and can be used for de-anonymising anonymous data can be considered PII. PII can be sensitive or non-sensitive. Non-sensitive PII is information that can be transmitted in an unencrypted form without resulting in harm to the individual. Non-sensitive PII can be easily gathered from public records, phone books, corporate directories and websites.\nSensitive PII is information which, when disclosed, could result in harm to the individual whose privacy has been breached. Sensitive PII should, therefore, be encrypted in transit and when data is at rest. Such information includes biometric information, medical information, personally identifiable financial information (PIFI) and unique identifiers such as passport or Social Security numbers.\n\u0026nbsp\nPISP - Payment Initiation Service Provider A Payment Initiation Service Provider (PISP) lets you pay companies directly from your bank account rather than using your debit or credit card through a third-party such as Visa or MasterCard. A PISP needs your explicit consent before providing you with this kind of service. \u0026nbsp\nPKI - Public Key Infrastructure A public key infrastructure (PKI) is a set of roles, policies, and procedures needed to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. \u0026nbsp\nRipple Ripple is a real-time gross settlement system, currency exchange and remittance network created by Ripple Labs Inc. that provides one frictionless experience to send money globally using the power of blockchain and the XRP token. \u0026nbsp\nSC - Smart Contract Smart contracts are self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code. The code and the agreements contained therein exist across a distributed, decentralised blockchain network. A smart contract is a computer protocol intended to digitally facilitate, verify, or enforce the negotiation or performance of a contract. Smart contracts allow the performance of credible transactions without third parties. These transactions are trackable and irreversible. Stablecoin\/Stable Token\nA stablecoin is a cryptocurrency designed to minimise the price volatility. Stablecoins are used as stores of value or units of account, as well as in other use cases where volatile cryptocurrencies may be less desirable. Authors of stablecoins use different designs to achieve price stability. The value of a stablecoin can be pegged to fiat currencies, or to exchange traded commodities (such as gold, silver, other precious and industrial metals, etc). Stablecoins can be centralised where they can be backed by fiat and exchange-traded commodities directly, or in a decentralised fashion via leveraging other cryptocurrency projects in different ways.\n\u0026nbsp\nStellar Stellar is an open-source, decentralised protocol for digital currency to fiat currency transfers which allows cross-border transactions between any pair of currencies using the XLM token. \u0026nbsp\nToken Crypto tokens are special kind of virtual currency tokens that reside on their own blockchains and represent an asset or utility. For example, one can have a crypto token that represents x number of customer loyalty points on a blockchain that is used to manage such details for a retail chain. \u0026nbsp\nTrustLine (Stellar\/Ripple Specific) The Trustlines Network is the original Ripple idea built on Ethereum. The Trustlines Network targets the problem of fair access to money by implementing money as bilateral peer-to-peer issued blockchain-based credit. We are developing an open source protocol, including a mobile app empowering end-users to make global payments based on their existing trusted social network. \u0026nbsp\nUID - Unique Identifier A unique identifier (UID) is a numeric or alphanumeric string that is associated with a single entity within a given system. UIDs make it possible to address that entity so that it can be accessed and interacted with. \u0026nbsp\nUse Case Use Cases are a list of actions or event steps between a role and a system to achieve a goal, and typically consist of a set of possible scenarios between the two. \u0026nbsp\nVerifier The party who needs to trust a claim \u0026nbsp\nVoIP - Voice over IP Voice over Internet Protocol delivers voice communications over the internet, likely meaning it is lower cost. An example of this would be Skype. \u0026nbsp\nWOT - Web of Trust a web of trust is a concept used in PGP, GnuPG, and other OpenPGP-compatible systems to establish the authenticity of the binding between a public key and its owner. Its decentralised trust model is an alternative to the centralised trust model of a public key infrastructure (PKI), which relies exclusively on a certificate authority (or a hierarchy of such). As with computer networks, there are many independent webs of trust, and any user (through their identity certificate) can be a part of, and a link between, multiple webs. \u0026nbsp\nZKP - Zero Knowledge Proofs A zero-knowledge protocol is a method by which one party (the prover) can prove to another party (the verifier) that something is true, without revealing any information apart from the fact that this specific statement is true. </p>",
+          		url:"https:\/\/docs.joinself.com\/intro\/glossary\/"
+          	},
+          	
+          	{
+          		value: "Tags",
+          		label: "<p></p>",
+          		url:"https:\/\/docs.joinself.com\/tags\/"
+          	},
+          	
+          ];
+          $( "#search" ).autocomplete({
+          	source: projects
+          })
+          .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+          	return $( "<li>" )
+          	.append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.value + "</a>" + item.label )
+          	.appendTo( ul );
+          };
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </header>
+    
+     
+
+  
+
+
+  
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              <i class="ti-rocket icon text-primary d-block mb-4"></i>
+              <h3 class="mb-3 mt-0">Quickstart</h3>
+              <p class="mb-0">Learn about Self's key concepts and run a starter code</p>
+            </a>
+          </div>
+        
+
+        
+        <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              <i class="ti-ruler-alt-2 icon text-primary d-block mb-4"></i>
+              <h3 class="mb-3 mt-0">SDK Reference</h3>
+              <p class="mb-0">Explore client-side SDK libraries and integrate with your product.</p>
+            </a>
+          </div>
+        
+
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Explore Products</h2>
+        </div>
+        
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/setup/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-settings icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Setup</h3>
+              
+                <p class="mb-0">Learn how to create and setup your Self app</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/users/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-user icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Users / Apps</h3>
+              
+                <p class="mb-0">Connect, disconnect and request public information about users and apps</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/authentication/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-lock icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Authentication</h3>
+              
+                <p class="mb-0">Primary &amp; Multi-factor authentication</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/facts/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-files icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Facts</h3>
+              
+                <p class="mb-0">Request access to user&rsquo;s sensible data</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/messaging/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-comment icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Messaging</h3>
+              
+                <p class="mb-0">Interact with your users through messaging</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/notify/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-bell icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Notify</h3>
+              
+                <p class="mb-0">Send notifications to your users</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/zero/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-shield icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Zero-knowledge</h3>
+              
+                <p class="mb-0">Check users facts without accessing sensible data</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/storageless/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-loop icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Recurrent requests</h3>
+              
+                <p class="mb-0">Do not store sensible data, request it</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/documentsign/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-check-box icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Document sign</h3>
+              
+                <p class="mb-0">Request document signatures</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/directconnection/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-plug icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">App direct connection</h3>
+              
+                <p class="mb-0">Allow your customers to easily connect your app.</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/voice/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-headphone-alt icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Voice Calls</h3>
+              
+                <p class="mb-0">Interact with voice call negotiation between users.</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/intro/quickstart/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-rocket icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">QuickStart</h3>
+              
+                <p class="mb-0">Get started with the Quickstart</p>
+              
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a href="https://docs.joinself.com/intro/glossary/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
+              
+                <i class="ti-rocket icon text-primary d-block mb-4"></i>
+              
+              <h3 class="mb-3 mt-0">Glossary</h3>
+              
+                <p class="mb-0">Get started with the Quickstart</p>
+              
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+  
+
+
+  
+  
+    
+      
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section px-3 bg-white shadow text-center">
+                <h2 class="mb-4">Didn&rsquo;t find an answer to your question?</h2>
+                <p class="mb-4">Want to know how the Self Network can solve problems specific to your business?</p>
+                
+                  
+                    <a href="https://www.joinself.com/contact-us" class="btn btn-primary">contact us</a>
+                  
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+  
+
+
+    
+<footer class="section pb-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8 text-md-left text-center">
+          <p class="mb-md-0 mb-4">© Self Group Ltd. 2022</p>
+        </div>
+        <div class="col-md-4 text-md-right text-center">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item">
+              <a
+                class="text-color d-inline-block p-2"
+                href="https://twitter.com/futureoftrust"
+                aria-label="Twitter"
+                ><i class="ti-twitter-alt"></i
+              ></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a
+                class="text-color d-inline-block p-2"
+                href="https://github.com/joinself/"
+                aria-label="Github"
+                ><i class="ti-github"></i
+              ></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a
+                class="text-color d-inline-block p-2"
+                href="https://www.linkedin.com/company/joinself/"
+                aria-label="Linkedin"
+                ><i class="ti-linkedin"></i
+              ></a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <style>
+       .form-control {
+            border-radius: 10px !important;
+        }
+        .banner {
+            background-color: #0e1c42 !important;
+        }
+        .overlay::before {
+            opacity: 0 !important;
+        }
+        .bg-cover {
+            background-size: contain;
+            background-position: right;
+        }
+
+  </style>
+
+  
+  
+  <script src="https://docs.joinself.com/js/script.min.js"></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>
+
+    function setCookie(key, value, expiry) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+        document.cookie = key + '=' + value + ';path=/' + ';expires=' + expires.toUTCString();
+    }
+
+    function getCookie(key) {
+        var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+        return keyValue ? keyValue[2] : null;
+    }
+
+
+    function defaultPageTabs(tabIndex) {
+        let tabs = $('.code-tabs')
+        for(var i = 0; i<tabs.length; i++) {
+            $(tabs[i]).find('.active').removeClass('active');
+            tab = $(tabs[i]).find('.tab-pane').eq(tabIndex);
+            $(tab).addClass('active');
+            tabHeader = $(tabs[i]).find('.nav-item').eq(tabIndex);
+            $(tabHeader).addClass('active');
+        }
+    }
+
+    $('document').ready(function(){
+        hljs.highlightAll();
+        mermaid.initialize({ startOnLoad: true });
+
+
+        $('.nav-tabs a').click(function (e) {
+            var tab = $(this).parent();
+            var tabIndex = tab.index();
+            defaultPageTabs(tabIndex);
+            setCookie('tabIndex', tabIndex, 200);
+        });
+
+        tabIndex = getCookie('tabIndex');
+        if (tabIndex != null) {
+            defaultPageTabs(tabIndex);
+        }
+
+    });
+  </script>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+  </body>
+</html>

@@ -3,7 +3,7 @@ title: "Document sign"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-check-box"
 description: "Request document signatures"
-type : "docs"
+type : "product"
 keywords: ["document", "sign", "signature"]
 weight: 9
 ---

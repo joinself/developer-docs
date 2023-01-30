@@ -3,7 +3,7 @@ title: "Authentication"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-lock"
 description: "Primary & Multi-factor authentication"
-type : "docs"
+type : "product"
 weight: 3
 ---
 

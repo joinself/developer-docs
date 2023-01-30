@@ -67,8 +67,8 @@ copyright = "&copy; Self Group Ltd. 2022"
 
 # banner
 [Languages.en.params.banner]
-title = "Platform Documentation"
-subtitle = "Here you'll find documentation about our APIs and SDKs"
+title = "Welcome to the Docs"
+subtitle = "Here you'll find guides, resources, and references to build with Self."
 bg_image = "images/header.png"
 placeholder = "Have a question? Just ask here or enter terms"
 

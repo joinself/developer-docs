@@ -3,7 +3,7 @@ title: "Notify"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-bell"
 description: "Send notifications to your users"
-type : "docs"
+type : "product"
 keywords: ["notify", "notifications", "push notification"]
 weight: 6
 ---
