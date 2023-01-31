@@ -3,7 +3,7 @@ title: "Recurrent requests"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-loop"
 description: "Do not store sensible data, request it"
-type : "product"
+type : "docs"
 weight: 8
 ---
 

@@ -6,6 +6,7 @@ weight: 4
 draft: false
 # search related keywords
 keywords: ["messaging", "message", "messages", "attachments", "object", "image", "file"]
+toc: true
 ---
 
 Sharing an image, a document or just a gif is an important part of your users daily messaging, the SDK allows your app to send this kind of messages as well. Let's see how.

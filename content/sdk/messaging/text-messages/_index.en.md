@@ -6,6 +6,7 @@ weight: 1
 draft: false
 # search related keywords
 keywords: ["messaging", "message", "messages"]
+toc: true
 ---
 
 Self SDK allows you to send messages to any identity on self network, this includes users, orgs and apps.

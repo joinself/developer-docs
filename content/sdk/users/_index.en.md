@@ -1,9 +1,9 @@
 ---
-title: "Users / Apps"
+title: "Connections"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-user"
 description: "Connect, disconnect and request public information about users and apps"
-type : "product"
+type : "docs"
 weight: 2
 ---
 

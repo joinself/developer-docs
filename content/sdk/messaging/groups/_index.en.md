@@ -6,6 +6,7 @@ weight: 3
 draft: false
 # search related keywords
 keywords: ["messaging", "message", "messages", "attachments", "read", "delivered", "edit", "delete", "remove"]
+toc: true
 ---
 
 Managing group conversations is something really simple with Self SDK, let's see an end to end example to understand how they work.

@@ -99,11 +99,17 @@
   <!-- /details page -->
 
   <!-- templates -->
-  {{ define "section-tree-nav" }} {{ $showvisitedlinks := .showvisitedlinks }} {{
-  $currentNode := .currentnode }} {{with .sect}} {{safeHTML .Params.head}} {{
-  $fileUniqueID := "" }} {{ with .File }}{{ $fileUniqueID = .UniqueID }}{{ end }}
-  {{ $currentNodeFileUniqueID := "" }} {{ with $currentNode.File }}{{
-  $currentNodeFileUniqueID = .UniqueID }}{{ end }}
+  {{ define "section-tree-nav" }} 
+    {{ $showvisitedlinks := .showvisitedlinks }} 
+    {{ $level := int .level }}{{ with .sect }}{{ end }}
+    {{ $currentNode := .currentnode }} 
+        {{ with .sect }} {{safeHTML .Params.head}}
+        {{ $fileUniqueID := "" }} {{ with .File }}{{ $fileUniqueID = .UniqueID }}
+    {{ end }}
+  {{ $currentNodeFileUniqueID := "" }} {{ with $currentNode.File }}
+        {{ $currentNodeFileUniqueID = .UniqueID }}
+  {{ end }}
+
   <li
     data-nav-id="{{.Permalink}}"
     title="{{.Title}}"
@@ -123,14 +129,17 @@
     
     {{ $numberOfPages := (add (len .Pages) (len .Sections)) }} {{ if ne
     $numberOfPages 0 }}
-    <ul>
-      {{ range .Pages.ByWeight }} 
-        {{ if and .Params.hidden (not $.showhidden) }}
-        {{else}} 
-            {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }} 
-        {{end}} 
-      {{end}}
-    </ul>
+    {{ $level := add $level 1 }}
+        {{ if or (.Page.IsAncestor $currentNode) (lt $level 2) (eq .Page $currentNode) }}
+        <ul>
+        {{ range .Pages.ByWeight }} 
+            {{ if and .Params.hidden (not $.showhidden) }}
+            {{else}} 
+                {{ template "section-tree-nav" (dict "sect" . "currentnode" $currentNode "level" $level) }}
+            {{end}} 
+        {{end}}
+        </ul>
+        {{ end}}
     {{ end }}
   </li>
   {{ end }} {{ end }}

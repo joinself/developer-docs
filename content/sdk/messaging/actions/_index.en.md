@@ -6,6 +6,7 @@ weight: 2
 draft: false
 # search related keywords
 keywords: ["messaging", "message", "messages", "attachments", "read", "delivered", "edit", "delete", "remove"]
+toc: true
 ---
 
 In this section we will review what actions we can take to modify the message state. 

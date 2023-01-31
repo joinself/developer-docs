@@ -6,6 +6,7 @@ description: "Allow your customers to easily connect your app."
 type : "product"
 keywords: ["connection", "connect", "qr"]
 weight: 10
+toc: true
 ---
 
 With this feature you'll be able to allow users to connect with your app offline (through a QR code or a dynamic link). 

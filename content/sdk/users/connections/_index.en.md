@@ -6,6 +6,7 @@ weight: 1
 draft: false
 # search related keywords
 keywords: ["identity", "app", "connect", "disconnect", "permit", "block"]
+toc: true
 ---
 
 ### Permit connections
