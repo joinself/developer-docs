@@ -25,6 +25,10 @@ li.sidelist a, li.sidelist>a {
     padding: 0px;
 }
 
+#TableOfContents ul ul {
+    margin-bottom: 0px;
+}
+
 #TableOfContents ul {
     list-style-type: none;
     margin-left: 10px;
@@ -95,6 +99,9 @@ div.sidebar-all-docs {
 }
 
 li.sidelist {
+    margin-bottom: 0px;
+}
+li.sidelist ul {
     margin-bottom: 20px;
 }
 

@@ -28,9 +28,12 @@ You have the option of obtaining credentials for two distinct environments, it i
 
 
 
+<!--
+TODO: define developer support paths
 {{< notice info >}}
-  If you get stuck at any point in the Quickstart, help is just a click away! Check the Quickstart <a href='#'>troubleshooting guide</a>, ask other developers in our <a href='#'>Stack Overflow community</a> or submit a <a href='#'>Support ticket</a>.
+  If you get stuck at any point in the Quickstart, help is just a click away! Check the Quickstart <a href='#'>troubleshooting guide</a>, ask other developers in our <a href='https://stackoverflow.com/questions/tagged/joinself'>Stack Overflow community</a> or submit a <a href='#'>Support ticket</a>.
 {{< /notice >}}
+-->
 
 ## Setting up your app
 
@@ -38,7 +41,13 @@ Before we even get started with the code we need to have a valid Self-app creden
 
 This can be done through the developer portal, if you're just getting started you can get those from the <a href='https://developer.sandbox.joinself.com' targert='_new'>Sandbox Developer Portal</a>. 
 
-This documentation site has a whole section describing [About]({{< ref "app-setup" >}} "how to create and tune your self-app") for your specific needs, check it out for more detailed information.
+This documentation site has a whole section describing [how to create and tune your self-app]({{< ref "app-setup" >}} ) for your specific needs, check it out for more detailed information. 
+In order to prepare your app to run all the examples you should configure it properly on the portal:
+- Mark the app as listed
+- Mark it as allows messaging
+- Mark it as allows voice
+
+Additionally, you must connect to your app on your device, so you can interact with it
 
 ## Quickstart setup
 
@@ -50,14 +59,12 @@ The Self-Quickstart is available in both Docker and non-Docker options. If you d
 
 Docker is a platform and technology for building, shipping, and running distributed applications. It uses containerization, a method of packaging software in a way that ensures it runs consistently across different environments. Docker allows developers to package an application with all of its dependencies into a single container, which can then be easily deployed and run on any machine that has the Docker runtime installed. This makes it easy to manage and distribute applications, and helps ensure that the application will run consistently across different environments.
 
-Once you have Docker installed, open the Docker application, and then utilize the following commands in the command line interface to set up and execute the Quickstart. In case the 'demo' commands do not function as expected, confirm that Docker is running. Depending on your system, it may be necessary to add 'sudo' before the 'make' commands.
+Once you have Docker installed, open the Docker application, and then utilize the following commands in the command line interface to set up and execute the Quickstart. In case the 'demo' commands do not function as expected, confirm that Docker is running. 
 
 ```
-# Note: If on Windows, run
-# git clone -c core.symlinks=true \
-# https://github.com/joinself/self-ruby-sdk.git
-# instead, to ensure correct symlink behavior
+# Notes for MacOS / Linux
 
+# Clone self-ruby-sdk
 $ git clone https://github.com/joinself/self-ruby-sdk.git
 $ cd self-ruby-sdk
 
@@ -72,9 +79,30 @@ $ ./demo up
 $ ./demo run
 ```
 
-{{< notice info >}}
-  Use the powershell script *./demo.ps1* instead of *demo* if you're running Windows.
-{{< /notice >}}
+```
+# Notes for Windows
+
+# Clone self-ruby-sdk
+$ docker run -it --rm -v ${PWD}:/git alpine/git clone https://github.com/joinself/self-ruby-sdk
+$ cd self-ruby-sdk
+
+# Copy the ./examples/.env.example file to ./examples/.env
+$ cp .\examples\.env.example .\examples\.env
+
+# Add SELF_APP_ID and SELF_APP_DEVICE_SECRET to .env
+$ notepad .\examples\.env
+
+# required in order to run local scripts
+Set-ExecutionPolicy RemoteSigned
+
+# start the container
+$ .\demo.ps1 up
+
+# Finally run the quick start demo
+$ .\demo.ps1 run
+
+Set-ExecutionPolicy Restricted
+```
 
 
 ![quickstart-home](/images/quickstart_tty.png)
