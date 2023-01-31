@@ -32,7 +32,11 @@
             </a>
             <div class="dropdown-menu">
               {{ range .Children }}
-              <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                {{ if eq (.URL) ("") }}
+                    <div class="separator">{{ .Name }}</div>
+                {{ else }}
+                    <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                {{ end }}
               {{ end }}
             </div>
           </li>

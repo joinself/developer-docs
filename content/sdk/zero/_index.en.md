@@ -3,7 +3,7 @@ title: "Zero-knowledge"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-shield"
 description: "Check users facts without accessing sensible data"
-type : "docs"
+type : "product"
 weight: 7
 ---
 

@@ -179,3 +179,9 @@ table.languages td {
     border: 0px;
     background-color: white;
 }
+
+div.separator {
+    padding: 10px 25px;
+    font-size: 10px;
+    font-weight: bold;
+}

@@ -103,60 +103,60 @@ hasChildren = true
 
   [[Languages.en.menu.main]]
   parent = "docs"
-  name = "Setup"
-  url = "setup/"
+  name = "Quick Start"
+  url = "quickstart/"
   weight = 1
 
   [[Languages.en.menu.main]]
   parent = "docs"
-  name = "Users"
-  url = "users/"
+  name = "SDK Reference"
+  url = "sdk/"
   weight = 2
 
   [[Languages.en.menu.main]]
   parent = "docs"
-  name = "Messaging"
-  url = "messaging/"
+  name = "Products"
+  url = ""
   weight = 3
 
   [[Languages.en.menu.main]]
   parent = "docs"
   name = "Authentication"
-  url = "authentication/"
+  url = "sdk/authentication/"
   weight = 4
 
   [[Languages.en.menu.main]]
   parent = "docs"
-  name = "Facts"
-  url = "facts/"
+  name = "Messaging"
+  url = "sdk/messaging/"
   weight = 5
 
   [[Languages.en.menu.main]]
   parent = "docs"
-  name = "Zero-knowledge"
-  url = "zero/"
+  name = "Facts"
+  url = "sdk/facts/"
   weight = 6
 
   [[Languages.en.menu.main]]
   parent = "docs"
-  name = "Notify"
-  url = "notify/"
+  name = "Zero-knowledge"
+  url = "sdk/zero/"
   weight = 7
 
   [[Languages.en.menu.main]]
   parent = "docs"
-  name = "Recurrent requests"
-  url = "storageless/"
-  weight = 8
-
-  [[Languages.en.menu.main]]
-  parent = "docs"
   name = "Document sign"
-  url = "documentsign/"
+  url = "sdk/documentsign/"
   weight = 9
 
   [[Languages.en.menu.main]]
   parent = "docs"
   name = "Direct connection"
-  url = "directconnection/"
+  url = "sdk/directconnection/"
+  weight = 10
+
+  [[Languages.en.menu.main]]
+  parent = "docs"
+  name = "Voice calls"
+  url = "sdk/voice/"
   weight = 10
