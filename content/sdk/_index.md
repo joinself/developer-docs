@@ -101,8 +101,8 @@ Self SDKs are divided on different services, each service matches one of the pro
                     <li><a href="{{< relref "authentication/request" >}}">Request</a></li>
                     <li><a href="{{< relref "authentication/modifiers/" >}}">Request modifiers</a></li>
                     <li><a href="{{< relref "authentication/response/" >}}">Response</a></li>
-                    <li><a href="{{< relref "authentication" >}}">QR</a></li>
-                    <li><a href="{{< relref "authentication" >}}">Dynamic Links</a></li>
+                    <li><a href="{{< relref "authentication/qr" >}}">QR</a></li>
+                    <li><a href="{{< relref "authentication/dynamic_link" >}}">Dynamic Links</a></li>
                 </ul>
             </td>
         </tr>
