@@ -5,10 +5,14 @@ icon: "ti-lock"
 description: "Primary & Multi-factor authentication"
 type : "product"
 weight: 3
+custom_title: "Authentication<div class='subtitle'>Multi-Factor and Biometric Authentication</div>"
+toc: true
 ---
 
-One of the core features of Self is the ability to authenticate identities.
+Authentication is the process of verifying the identity of a user. 
 
-There are different ways to approach authentication. Lets see how we can achieve this.
+It usually involves the presentation of credentials (such as username and password), which are then checked against an authentication database to ensure that the user is who they claim to be. 
+
+Self authentication system allows you to build a biometric authentication system without effort, avoiding passwords or codes, and allowing you to verify you're logging in the right person straight from its phone.
 
 {{< notice note >}}By default authentication requests will expire after 5 minutes, you can change this defaults with `Expiry` option.{{</ notice >}}

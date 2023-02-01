@@ -98,9 +98,11 @@ Self SDKs are divided on different services, each service matches one of the pro
             </td>
             <td class="Row_contents__EJTwh">
                 <ul>
-                    <li><a href="{{< relref "authentication" >}}">Request</a></li>
-                    <li><a href="{{< relref "authentication" >}}">Request modifiers</a></li>
+                    <li><a href="{{< relref "authentication/request" >}}">Request</a></li>
+                    <li><a href="{{< relref "authentication/modifiers/" >}}">Request modifiers</a></li>
                     <li><a href="{{< relref "authentication/response/" >}}">Response</a></li>
+                    <li><a href="{{< relref "authentication" >}}">QR</a></li>
+                    <li><a href="{{< relref "authentication" >}}">Dynamic Links</a></li>
                 </ul>
             </td>
         </tr>
@@ -118,8 +120,10 @@ Self SDKs are divided on different services, each service matches one of the pro
                     <li><a href="{{< relref "facts/response/" >}}">Response</a></li>
                     <li><a href="{{< relref "facts/customfacts/" >}}">Custom facts</a></li>
                     <li><a href="{{< relref "facts/recurrent/" >}}">Recurrent</a></li>
-                    <li><a href="{{< relref "authentication/facts/" >}}">Auth combination</a></li>
+                    <li><a href="{{< relref "facts/auth/" >}}">Auth combination</a></li>
                     <li><a href="{{< relref "facts/response/" >}}">Response</a></li>
+                    <li><a href="{{< relref "facts" >}}">QR</a></li>
+                    <li><a href="{{< relref "facts" >}}">Dynamic Links</a></li>
                 </ul>
             </td>
         </tr>

@@ -1,12 +1,42 @@
 ---
-title: "Dealing with responses"
+title: "Response"
 date: 2022-02-15T11:02:05+06:00
 lastmod: 2022-02-15T11:02:05+06:00
-weight: 7
+weight: 3
 draft: false
 # search related keywords
 keywords: [""]
+custom_title: "Authentication responses<div class='subtitle'>How to subscribe and process authentication responses</div>"
+toc: true
 ---
+
+### Subscribe
+
+Users can respond to authentication requests by accepting or rejecting them. On the other hand, you won’t receive asynchronous notifications for requests which have timed out.
+
+You can subscribe to authentication responses with this snippet
+
+{{% tabs groupId="language" %}}
+    {{% tab "Ruby" %}}
+    @client.authentication.subscribe do |auth_res|
+        puts resp.status
+    end
+    {{% /tab %}}
+
+    {{% tab "Go" %}}
+    client.MessagingService().Subscribe("identities.authenticate.req", func(m *messaging.Message)) {
+        // manage the response
+    }
+    {{% /tab %}}
+
+    {{% tab "Typescript" %}}
+    client.messaging().subscribe("identities.authenticate.req", (res: any): any => {
+        // manage the response
+    })
+    {{% /tab %}}
+{{% /tabs %}}
+
+### Processing the response
 
 {{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
