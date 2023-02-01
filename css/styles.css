@@ -185,3 +185,8 @@ div.separator {
     font-size: 10px;
     font-weight: bold;
 }
+
+code {
+    font-size: 12px;
+    font-style: italic;
+}
