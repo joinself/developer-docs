@@ -190,3 +190,40 @@ code {
     font-size: 12px;
     font-style: italic;
 }
+
+.code-tabs {
+    border: 0px;
+}
+.code-tabs div.tab-content {
+    padding: 0px;
+}
+
+.code-tabs div.tab-content pre {
+    padding:10px;
+    margin: 0px;
+    border: 1px solid #dee2e6;
+}
+
+.code-tabs .nav-tabs .nav-item {
+    background-color: #eee;
+    border: 1px solid #dee2e6;
+}
+
+.code-tabs .nav-tabs .nav-item.active {
+    background: white;
+    border-bottom: 0px;
+}
+
+.code-tabs .nav-tabs .nav-item .nav-link {
+    font-size: 11px;
+    color: #666;
+}
+
+.code-tabs .nav-tabs .nav-item.active .nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.code-tabs .tab-content .tab-pane {
+    margin-top: -1px;
+}
