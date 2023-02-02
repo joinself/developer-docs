@@ -115,13 +115,12 @@ Self SDKs are divided on different services, each service matches one of the pro
             </td>
             <td class="Row_contents__EJTwh">
                 <ul>
-                    <li><a href="{{< relref "facts" >}}">Request</a></li>
-                    <li><a href="{{< relref "facts" >}}">Request modifiers</a></li>
+                    <li><a href="{{< relref "facts/request/" >}}">Request</a></li>
+                    <li><a href="{{< relref "facts/modifiers" >}}">Request modifiers</a></li>
                     <li><a href="{{< relref "facts/response/" >}}">Response</a></li>
-                    <li><a href="{{< relref "facts/customfacts/" >}}">Custom facts</a></li>
+                    <li><a href="{{< relref "facts/custom/" >}}">Custom facts</a></li>
                     <li><a href="{{< relref "facts/recurrent/" >}}">Recurrent</a></li>
-                    <li><a href="{{< relref "facts/auth/" >}}">Auth combination</a></li>
-                    <li><a href="{{< relref "facts/response/" >}}">Response</a></li>
+                    <li><a href="{{< relref "facts/combined/" >}}">Auth combination</a></li>
                     <li><a href="{{< relref "facts" >}}">QR</a></li>
                     <li><a href="{{< relref "facts" >}}">Dynamic Links</a></li>
                 </ul>

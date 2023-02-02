@@ -12,7 +12,7 @@ toc: true
 
 ### Async
 
-We've already covered this modifier on the <a href='{{< relref "request#asynchronous-requests" >}}'>Asynchronous authentication requests</a>.
+We've already covered this modifier on the <a href='{{< relref "sdk/authentication/request#asynchronous-requests" >}}'>Asynchronous authentication requests</a>.
 
 It basically allows you to send an authentication request and ignore any responses.
 

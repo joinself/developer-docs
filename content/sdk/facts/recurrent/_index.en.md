@@ -4,7 +4,9 @@ date: 2022-02-15T11:02:05+06:00
 icon: "ti-loop"
 description: "Do not store sensible data, request it"
 type : "docs"
-weight: 8
+weight: 6
+custom_title: "Recurrent request<div class='subtitle'>Allow recurrent requests for a defined period of time</div>"
+toc: true
 ---
 
 As we've seen on [Facts](facts/) section you can request user's verified sensible data through facts service.

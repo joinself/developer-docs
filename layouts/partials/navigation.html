@@ -1,21 +1,22 @@
 <nav class="navbar navbar-expand-md {{ if .IsHome }}navbar-dark{{ else }}navbar-light{{ end }}">
     <div class="container px-2 px-md-0">
-      <a class="navbar-brand px-2" href="{{ site.BaseURL | relLangURL }}">
-        {{ $logo:= site.Params.logo }}
-        {{ $logoWhite:= site.Params.logo_white }}
-        {{ if (or $logo $logoWhite) }}
-        {{ if .IsHome }}
-        <img class="img-fluid" src="{{if $logoWhite }}{{ $logoWhite | absURL }} {{ else }} {{ $logo | absURL }}{{ end }}"
-          alt="{{ site.Title }}">
-        {{ else }}
-        <img class="img-fluid" src="{{ $logo | absURL }}" alt="{{ site.Title }}">
-        {{ end }}
-        {{ else }}
-        {{ site.Title }}
-        {{ end }}
-      </a>
-      <span class='navbar_docs_title'>Docs</span>
-  
+        <div class="navbar-brand-container">
+            <a class="navbar-brand px-2" href="{{ site.BaseURL | relLangURL }}">
+                {{ $logo:= site.Params.logo }}
+                {{ $logoWhite:= site.Params.logo_white }}
+                {{ if (or $logo $logoWhite) }}
+                {{ if .IsHome }}
+                <img class="img-fluid" src="{{if $logoWhite }}{{ $logoWhite | absURL }} {{ else }} {{ $logo | absURL }}{{ end }}"
+                alt="{{ site.Title }}">
+                {{ else }}
+                <img class="img-fluid" src="{{ $logo | absURL }}" alt="{{ site.Title }}">
+                {{ end }}
+                {{ else }}
+                {{ site.Title }}
+                {{ end }}
+                <i class='navbar_docs_title'>Docs</i>
+            </a>
+      </div>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,6 +48,9 @@
           {{ end }}
           {{ end }}
         </ul>
+        <div class="btn-get-keys">
+            <a href='https://developer.sandbox.joinself.com' target='_blank' class="btn">GET API Keys</a>
+        </div>
         <!-- Language List -->
         {{- if site.IsMultiLingual }}
         <select class="lang-list {{ if not .IsHome }}dark mb-3 mb-md-0{{ end }}" id="select-language"

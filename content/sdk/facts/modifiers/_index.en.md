@@ -1,11 +1,13 @@
 ---
-title: "Modifiers for fact requests"
+title: "Modifiers"
 date: 2022-02-15T11:02:05+06:00
 lastmod: 2022-02-15T11:02:05+06:00
-weight: 4
+weight: 2
 draft: false
 # search related keywords
 keywords: ["fact", "facts", "request", "requests", "name", "email", "modifiers", "options"]
+custom_title: "Fact request modifiers<div class='subtitle'>Explore the different options a fact request sdk offers</div>"
+toc: true
 ---
 
 A fact request accepts some modifiers for example

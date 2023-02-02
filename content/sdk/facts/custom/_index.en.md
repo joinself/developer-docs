@@ -1,10 +1,12 @@
 ---
-title: "Custom facts"
+title: "Custom"
 date: 2022-02-15T11:02:05+06:00
 date: 2022-02-15T11:02:05+06:00
-weight: 8
+weight: 5
 draft: false
 keywords: ["fact", "facts", "request", "requests", "custom"]
+custom_title: "Working with custom facts<div class='subtitle'>Store and share custom facts on your user's device</div>"
+toc: true
 ---
 
 Self Core Facts are useful for general purpose, but the process of adding new core facts is slow and not flexible enough to support app custom facts.

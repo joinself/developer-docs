@@ -1,11 +1,12 @@
 ---
-title: "Auth with facts"
+title: "Combined"
 date: 2022-02-15T11:02:05+06:00
 lastmod: 2022-02-15T11:02:05+06:00
 weight: 7
 draft: false
 # search related keywords
 keywords: ["auth", "facts", "request", "registration"]
+custom_title: "Combine with authentication<div class='subtitle'>Combine authentication and fact request on a single action</div>"
 ---
 
 Many times, specially on a registration process you want your users to authenticate and at the same time you require some sort of specific facts, for example name or email.

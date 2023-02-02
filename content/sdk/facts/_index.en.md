@@ -15,7 +15,7 @@ Facts and related attestations are stored on the user’s device, so the user ha
 
 Each fact has the following properties:
 
-#### Sources
+### Sources
 
 A fact’s source represents where this fact comes from, for example a DOB can come from different sources such as a passport or a driving license. By default this field is set with a wildcard _“*”_ and the user will select the source on their device. Same happens if you specify multiple sources.
 
@@ -23,7 +23,7 @@ At the moment there are three different sources _user_specified_, _passport_ and
 
 As this list is always growing, you can check the possible values on your SDK [ruby-sdk](https://github.com/joinself/self-ruby-sdk/blob/master/lib/sources.rb#L6) and [go-sdk](https://github.com/joinself/self-go-sdk/blob/a027b7567d6d7d74ad2bbbf7219a24c57742b839/fact/fact.go#L20).
 
-#### Fact
+### Fact
 
 This is the name of the fact you want to request like _display_name_, _email_address_ or _phone_number_.
 
@@ -33,15 +33,15 @@ The list of values by source is:
 *   **_passport_** and **_identity-card _**: _document_number_, _surname_, _given_names_, _date_of_birth_, _date_of_expiration_, _sex_, _nationality_, _country_of_issuance.
 *   **_driving_license_** : _document_number_, _surname_, _given_names_, _date_of_birth_, _date_of_issuance_, _date_of_expiration_, _address_, _issuing_authority_, _place_of_birth_, _country_of_issuance_.
 
-#### Attestations
+### Attestations
 
 A list of **verified** **attestations** signed by an **issuer**. This only has content on _fact request_ responses, and it contains a list of **attestations** for the current fact.
 
-#### Expected value
+### Expected value
 
 When you send an **intermediary** fact check you expect the value of a user’s fact to be compared with an expected value, this field is where you will provide that value.
 
-#### Operator
+### Operator
 
 On an intermediary fact check this field contains the operator used to compare the expected value against the expected value. Valid operators can be found [here](https://github.com/joinself/self-ruby-sdk/blob/master/lib/sources.rb#L34)
 
