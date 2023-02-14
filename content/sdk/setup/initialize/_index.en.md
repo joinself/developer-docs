@@ -79,7 +79,7 @@ You may want to add _SELF_APP_ID_, _SELF_APP_DEVICE_SECRET_, _SELF_STORAGE_KEY_ 
 
     {{% tab "Go" %}}
     client, err := selfsdk.New(selfsdk.Config{
-        SelfAppD:            os.Getenv("SELF_APP_ID"),
+        SelfAppID:           os.Getenv("SELF_APP_ID"),
         SelfAppDeviceSecret: os.Getenv("SELF_APP_DEVICE_SECRET"),
         StorageKey:          os.Getenv("SELF_STORAGE_KEY"),
         StorageDir:          os.Getenv("SELF_STORAGE_DIR"),
@@ -112,7 +112,7 @@ When you’re debugging your app, you may want to point to the _sandbox environm
 
     {{% tab "Go" %}}
     client, err := selfsdk.New(selfsdk.Config{
-        SelfAppD:            os.Getenv("SELF_APP_ID"),
+        SelfAppID:           os.Getenv("SELF_APP_ID"),
         SelfAppDeviceSecret: os.Getenv("SELF_APP_DEVICE_SECRET"),
         StorageKey:          os.Getenv("SELF_STORAGE_KEY"),
         StorageDir:          os.Getenv("SELF_STORAGE_DIR"),
@@ -145,7 +145,7 @@ Self-SDK keeps a websocket connection open to self-messaging, but eventually, th
 
     {{% tab "Go" %}}
     client, err := selfsdk.New(selfsdk.Config{
-        SelfAppD:            os.Getenv("SELF_APP_ID"),
+        SelfAppID:           os.Getenv("SELF_APP_ID"),
         SelfAppDeviceSecret: os.Getenv("SELF_APP_DEVICE_SECRET"),
         StorageKey:          os.Getenv("SELF_STORAGE_KEY"),
         StorageDir:          os.Getenv("SELF_STORAGE_DIR"),
