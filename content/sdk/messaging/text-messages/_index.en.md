@@ -63,8 +63,8 @@ However, the system provides some useful options you can pass to this method. Le
     {{% tab "Go" %}}
     client.ChatService().Message(user, "ready!", chat.MessageOptions{
         GID: "group_id",
-        RID: "uuid,
-    }
+        RID: "uuid",
+    })
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
