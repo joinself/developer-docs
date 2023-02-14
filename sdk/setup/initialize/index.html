@@ -26,7 +26,7 @@ It is recommended that you use a large random string for your SELF_STORAGE_KEY. 
                            ENV[&quot;SELF_STORAGE_KEY&quot;], 
                            ENV[&quot;SELF_STORAGE_DIR&quot;])
 </code></pre></div><div class=tab-pane title=Go><pre><code>client, err := selfsdk.New(selfsdk.Config{
-    SelfAppD:            os.Getenv(&quot;SELF_APP_ID&quot;),
+    SelfAppID:           os.Getenv(&quot;SELF_APP_ID&quot;),
     SelfAppDeviceSecret: os.Getenv(&quot;SELF_APP_DEVICE_SECRET&quot;),
     StorageKey:          os.Getenv(&quot;SELF_STORAGE_KEY&quot;),
     StorageDir:          os.Getenv(&quot;SELF_STORAGE_DIR&quot;),
@@ -42,7 +42,7 @@ It is recommended that you use a large random string for your SELF_STORAGE_KEY. 
                            ENV[&quot;SELF_STORAGE_DIR&quot;],
                            environmnent: :sandbox)
 </code></pre></div><div class=tab-pane title=Go><pre><code>client, err := selfsdk.New(selfsdk.Config{
-    SelfAppD:            os.Getenv(&quot;SELF_APP_ID&quot;),
+    SelfAppID:           os.Getenv(&quot;SELF_APP_ID&quot;),
     SelfAppDeviceSecret: os.Getenv(&quot;SELF_APP_DEVICE_SECRET&quot;),
     StorageKey:          os.Getenv(&quot;SELF_STORAGE_KEY&quot;),
     StorageDir:          os.Getenv(&quot;SELF_STORAGE_DIR&quot;),
@@ -60,7 +60,7 @@ It is recommended that you use a large random string for your SELF_STORAGE_KEY. 
                            ENV[&quot;SELF_STORAGE_DIR&quot;],
                            auto_reconnect: false)
 </code></pre></div><div class=tab-pane title=Go><pre><code>client, err := selfsdk.New(selfsdk.Config{
-    SelfAppD:            os.Getenv(&quot;SELF_APP_ID&quot;),
+    SelfAppID:           os.Getenv(&quot;SELF_APP_ID&quot;),
     SelfAppDeviceSecret: os.Getenv(&quot;SELF_APP_DEVICE_SECRET&quot;),
     StorageKey:          os.Getenv(&quot;SELF_STORAGE_KEY&quot;),
     StorageDir:          os.Getenv(&quot;SELF_STORAGE_DIR&quot;),
