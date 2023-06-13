@@ -47,7 +47,7 @@ SelfSDK is referenced like any other library for each specific language.
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
-    import SelfSDK from 'self-sdk'
+    const SelfSDK = require("self-sdk");
     {{% /tab %}}
 {{% /tabs %}}
 
