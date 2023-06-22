@@ -107,7 +107,7 @@ When you’re debugging your app, you may want to point to the _sandbox environm
                                ENV["SELF_APP_DEVICE_SECRET"], 
                                ENV["SELF_STORAGE_KEY"], 
                                ENV["SELF_STORAGE_DIR"],
-                               environmnent: :sandbox)
+                               env: :sandbox)
     {{% /tab %}}
 
     {{% tab "Go" %}}
