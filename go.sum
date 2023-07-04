@@ -1,2 +1,6 @@
+github.com/gethugothemes/hugo-modules/shortcodes/notice v0.0.0-20230618103508-54805e19264d h1:00D/WvQq0mmot0Kl14qGkMFaP5LirsFG7ijtr4WH6n4=
+github.com/gethugothemes/hugo-modules/shortcodes/notice v0.0.0-20230618103508-54805e19264d/go.mod h1:ljWyMJx82WA+6SlKjbGFhEdxcriyvUTCjXkJHDa4lho=
+github.com/gethugothemes/hugo-modules/shortcodes/tabs v0.0.0-20230618103508-54805e19264d h1:D7llFJy9SjpnEDVI/Jmrv0/du96EuG2oWbPv2Zi460g=
+github.com/gethugothemes/hugo-modules/shortcodes/tabs v0.0.0-20230618103508-54805e19264d/go.mod h1:zaQhvQgsSOWfSm/zP3NbWWEfrxgrcdpBblljz2IA2vA=
 github.com/themefisher/dot-hugo-documentation-theme v2.0.0+incompatible h1:s1HcQ3xeebCP2KcHaKWhmE9x/m+ryJbnoXq4DxLTRm4=
 github.com/themefisher/dot-hugo-documentation-theme v2.0.0+incompatible/go.mod h1:PNlmL35EnRSDEupzN/eaDI5jKDxXyX8eUlK0P1p+vPc=

@@ -1,0 +1,5 @@
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/notice"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/tabs"
