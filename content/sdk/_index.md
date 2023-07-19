@@ -218,3 +218,9 @@ Self offers official SDK libraries for different programming languages, which ar
 </table>
 
 </div>
+
+### Self hosted HTTP service
+
+In addition to the official SDKs we also provide a [self hosted HTTP Self service](https://github.com/joinself/restful-client) that allows you to interact with the Self Network through a Rest API.
+
+
