@@ -1,7 +1,8 @@
 ---
 title: "SDK Reference"
 date: 2022-02-15T11:02:05+06:00
-icon: "ti-rocket"
+font: "material"
+icon: "rocket_launch"
 description: "Self SDK reference"
 type : "docs"
 custom_title: "Self SDK reference<div class='subtitle'>Comprehensive reference for integrating with Self SDK</div>"

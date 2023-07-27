@@ -1,7 +1,8 @@
 ---
 title: "QuickStart"
 date: 2022-02-15T11:02:05+06:00
-icon: "ti-rocket"
+font: "material"
+icon: "rocket_launch"
 description: "Get started with the Quickstart"
 type : "docs"
 custom_title: "Get started with the Quickstart<div class='subtitle'>A quick introduction to building with Self</div>"

@@ -12,7 +12,11 @@
             </div>
 
             <div class="sidebar-title">
+                {{ if eq .Params.font "material" }}
+                <span class="material-icons material-sidebar">{{ .Params.icon }}</span>
+                {{ else }}
                 <i class="{{ .Params.icon }}"></i>
+                {{ end }}
                 {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML
               .Params.Post}}
             </div>
