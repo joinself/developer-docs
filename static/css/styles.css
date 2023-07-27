@@ -297,3 +297,11 @@ code {
   .material-sidebar {
     font-size: 24px;
   }
+
+  .beta {
+    background: #EE0000;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 5px;
+  }

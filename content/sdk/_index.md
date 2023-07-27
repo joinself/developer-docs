@@ -79,7 +79,7 @@ Self SDKs are divided on different services, each service matches one of the pro
         <tr>
             <td>
                 <div class="section_title">
-                    <a href="{{< relref "documentsign" >}}">Document signature</a>
+                    <a href="{{< relref "documentsign" >}}">Document signature <span class="beta">beta</span></a>
                 </div>
                 <div class='section_subtitle'>Interacting with users through chat</div>
             </td>

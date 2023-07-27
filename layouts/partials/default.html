@@ -11,6 +11,10 @@
                 </a>
             </div>
 
+            {{ if eq .Params.beta true }}
+            <span class="beta">beta</span>
+            {{ end }}
+
             <div class="sidebar-title">
                 {{ if eq .Params.font "material" }}
                 <span class="material-icons material-sidebar">{{ .Params.icon }}</span>
@@ -44,7 +48,12 @@
             {{ if .Params.Custom_Title }}
                 <h2 class="mb-5 summary" id="title">{{ safeHTML .Params.Custom_Title }}</h2>
             {{ else }}
-                <h2 class="mb-5" id="title">{{ .Title }}</h2>
+                <h2 class="mb-5" id="title">
+                    {{ .Title }}
+                    {{ if eq .Params.beta true }}
+                        <span class="beta">beta</span>
+                    {{ end }}    
+                </h2>
             {{ end }}
 
             {{ if .Content }}
