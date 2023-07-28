@@ -123,4 +123,4 @@ If there is any conflict or ambiguity between the provisions of this DPA and the
 
 ---
 
-[Download as PDF](/docs/Data_Processing_Agreement.pdf)
+<a href="/docs/Data_Processing_Agreement.pdf" class="btn btn-info" target="_blank">Download as PDF</a>

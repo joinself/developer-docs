@@ -409,4 +409,4 @@ This Agreement constitutes the entire agreement and understanding of the parties
 
 ---
 
-[Download as PDF](/docs/Commercial_terms_and_conditions_v1.3.pdf)
+<a href="/docs/Commercial_terms_and_conditions_v1.3.pdf" class="btn btn-info" target="_blank">Download as PDF</a>

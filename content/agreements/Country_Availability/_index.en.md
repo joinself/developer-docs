@@ -72,4 +72,4 @@ Asia Pacific (6)
 
 ---
 
-[Download as PDF](/docs/Country_Availability.pdf)
+<a href="/docs/Country_Availability.pdf" class="btn btn-info" target="_blank">Download as PDF</a>
