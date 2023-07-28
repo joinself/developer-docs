@@ -36,10 +36,9 @@
   
     <!-- material UI icons -->
     <link 
-      href="https://fonts.googleapis.com/icon?family=Material+Icons" 
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+    rel="stylesheet"
     />
-  
   
     <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
@@ -73,7 +72,6 @@
   
     <!-- match-height JS -->
     <script src="{{ `plugins/match-height/jquery.matchHeight-min.js` | absURL }}"></script>
-  
   
     {{ template "_internal/google_analytics.html" . }} {{ if templates.Exists (
     printf "partials/overrides/header.html" ) }} {{ partial
