@@ -64,6 +64,9 @@
                 <i class="{{.}} icon text-primary d-block mb-4"></i>
               {{end}}
               <h3 class="mb-3 mt-0">{{ .Title }}</h3>
+              {{ if .Params.beta }}
+              <span class="beta">beta</span>
+              {{ end }}
               {{with .Params.description}}
                 <p class="mb-0">{{. | markdownify}}</p>
               {{end}}
