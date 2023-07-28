@@ -1,7 +1,8 @@
 ---
 title: "SDK Reference"
 date: 2022-02-15T11:02:05+06:00
-icon: "ti-rocket"
+font: "material"
+icon: "rocket_launch"
 description: "Self SDK reference"
 type : "docs"
 custom_title: "Self SDK reference<div class='subtitle'>Comprehensive reference for integrating with Self SDK</div>"
@@ -78,7 +79,7 @@ Self SDKs are divided on different services, each service matches one of the pro
         <tr>
             <td>
                 <div class="section_title">
-                    <a href="{{< relref "documentsign" >}}">Document signature</a>
+                    <a href="{{< relref "documentsign" >}}">Document signature <span class="beta">beta</span></a>
                 </div>
                 <div class='section_subtitle'>Interacting with users through chat</div>
             </td>
