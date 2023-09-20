@@ -2,7 +2,7 @@
 title: "Document signing"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-check-box"
-description: "Request and manage document signatures"
+description: "Request and manage digital signatures"
 type : "product"
 keywords: ["document", "sign", "signature"]
 weight: 9
