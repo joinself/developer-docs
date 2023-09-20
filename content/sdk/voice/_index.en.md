@@ -2,25 +2,24 @@
 title: "Voice Calls"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-headphone-alt"
-description: "Interact with voice call negotiation between users."
+description: "End-to-end encrypted voice calling with verified ID"
 type : "product"
 keywords: ["voice"]
 weight: 11
 ---
 
-The Voice library is a subset of helpers to allow your app to act as proxy between two connected users.
+The Voice library allows an organization's employees to communicate securely with users.
 
-Voice call negotiation at self follow a workflow like this:
+Calls follow this flow:
 
-- *start* starting messages instruct an identity to start a call with the issuer of the message using the same cid.
-- *accept* the voice call has been accepted by the recipient, who responds with the details to start the voice call.
-- *busy* notifies call issuer the recipient is busy and cannot answer the call.
-- *stop* notifies the call has been ended by one of the users.
+- *start* a start message instructs an identity to initiate a call with the issuer of the message using the same cid.
+- *accept* the incoming call is accepted by the call recipient who must respond with the details to start the call.
+- *busy* notifies the call issuer that the recipient is busy and cannot answer the call.
+- *stop* signals that the call has been ended by one of the participants.
 
 ### SDK helpers
 
-SDKs provide helpers to subscribe and send all voice negotiation messages, so you can build things like a calling proxy.
-Let's see an example on how you could build a proxy.
+The following example demonstrates how to build a proxy:
 
 {{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}

@@ -2,7 +2,7 @@
 title: "Zero-knowledge"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-shield"
-description: "Check users facts without accessing sensible data"
+description: "Check user's verified facts without accessing their PII"
 type : "product"
 weight: 7
 ---

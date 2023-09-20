@@ -2,7 +2,7 @@
 title: "Authentication"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-lock"
-description: "Primary & Multi-factor authentication"
+description: "Biometric & Multi-factor authentication"
 type : "product"
 weight: 3
 custom_title: "Authentication<div class='subtitle'>Multi-Factor and Biometric Authentication</div>"

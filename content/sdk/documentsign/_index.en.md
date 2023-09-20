@@ -1,8 +1,8 @@
 ---
-title: "Document sign"
+title: "Document signing"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-check-box"
-description: "Request document signatures"
+description: "Request and manage digital signatures"
 type : "product"
 keywords: ["document", "sign", "signature"]
 weight: 9
@@ -10,13 +10,13 @@ toc: true
 beta: true
 ---
 
-As an app developer you may want my users to provide signatures on specific texts or documents, and have proof they agree on those documents. 
+Self allows you to request and manage digital signatures.
 
-Most common case is accepting your service terms and conditions.
+For example, you may need a user to digitally sign to indicate their agreement to your terms and conditions.
 
 ### Plain text signatures
 
-Sometimes a short text is enough, so you don't really need to share a PDF to be signed, in those cases you can send a document signature request like:
+Self allows the signing of arbitrary text as demonstrated below:
 
 {{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
@@ -40,7 +40,7 @@ Sometimes a short text is enough, so you don't really need to share a PDF to be 
 
 ### Object based signatures
 
-In case you want users to sign a document (like a PDF) you can attach objects to your request, and get a list of signed objects on the response.
+Self allows the signing of BLOBs (like PDFs). The BLOBs are submitted in the request. The response will contain a list of signed objects.   
 
 {{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
@@ -126,5 +126,5 @@ In case you want users to sign a document (like a PDF) you can attach objects to
     {{% /tab %}}
 {{% /tabs %}}
 
-As you can see the signed response will come with a SHA256 hash of the original document, so you can verify the document has been signed.
+The signed response will contain a SHA256 hash of the original BLOB which can be used to verify the integrity of the document.
 
