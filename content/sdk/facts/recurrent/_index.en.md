@@ -2,20 +2,20 @@
 title: "Recurrent requests"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-loop"
-description: "Do not store sensitive data, request it"
+description: "Do not store PII, request it"
 type : "docs"
 weight: 6
 custom_title: "Recurrent request<div class='subtitle'>Allow recurrent requests for a defined period of time</div>"
 toc: true
 ---
 
-As we've seen on [Facts](facts/) section you can request a user's verified data through the facts service.
+As illustrated in [Facts](facts/) a user's verified data can be requested using the Facts service.
 
-This becomes really useful when you can use the data at the moment. However, if you need to access the same data periodically or some time in the future, you'll be forced to store it.
+This becomes really useful if accurate data is needed in real time.
 
-Self recurrent requests feature allows you to **access the same data for a specific period of time** without having to wait for user's acceptance, so you don't need to store it on your servers.
+If data is required periodically, Self's recurrent requests allow the same data to be accessed for a specified period without requiring re-authorization by the user. This avoids the organization needing to store and protect the data.
 
-Recurrent requests looks exactly the same as a regular fact request, except it makes use of allowed_for modifier, let's see an example.
+Recurrent requests are exactly the same as regular fact requests, except for the addition of an allowed_for modifier as demonstrated below:
 
 {{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}

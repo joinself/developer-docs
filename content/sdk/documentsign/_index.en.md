@@ -16,7 +16,7 @@ For example, you may need a user to digitally sign to indicate their agreement t
 
 ### Plain text signatures
 
-Sometimes, a short text is enough, so you don't need to share a PDF to be signed; in those cases, you can send a document signature request as illustrated by the example below:
+Self allows the signing of arbitrary text as demonstrated below:
 
 {{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
@@ -40,7 +40,7 @@ Sometimes, a short text is enough, so you don't need to share a PDF to be signed
 
 ### Object based signatures
 
-If you need users to sign a blob (like a PDF) you can attach objects to your request, and your response will contain a list of signed objects.
+Self allows the signing of BLOBs (like PDFs). The BLOBs are submitted in the request. The response will contain a list of signed objects.   
 
 {{% tabs groupId="language" %}}
     {{% tab "Ruby" %}}
@@ -126,5 +126,5 @@ If you need users to sign a blob (like a PDF) you can attach objects to your req
     {{% /tab %}}
 {{% /tabs %}}
 
-The signed response will contain a SHA256 hash of the original blob, so you can verify the document has been signed.
+The signed response will contain a SHA256 hash of the original BLOB which can be used to verify the integrity of the document.
 
