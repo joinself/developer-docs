@@ -2,14 +2,14 @@
 title: "Recurrent requests"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-loop"
-description: "Do not store sensible data, request it"
+description: "Do not store sensitive data, request it"
 type : "docs"
 weight: 6
 custom_title: "Recurrent request<div class='subtitle'>Allow recurrent requests for a defined period of time</div>"
 toc: true
 ---
 
-As we've seen on [Facts](facts/) section you can request user's verified sensible data through facts service.
+As we've seen on [Facts](facts/) section you can request a user's verified data through the facts service.
 
 This becomes really useful when you can use the data at the moment. However, if you need to access the same data periodically or some time in the future, you'll be forced to store it.
 

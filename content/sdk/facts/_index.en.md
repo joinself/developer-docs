@@ -2,7 +2,7 @@
 title: "Facts"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-files"
-description: "Request access to user's sensible data"
+description: "Request access to user's verified data"
 type : "product"
 weight: 4
 ---

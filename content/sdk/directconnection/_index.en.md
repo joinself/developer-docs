@@ -1,19 +1,19 @@
 ---
-title: "App direct connection"
+title: "Out of band Self Connection"
 date: 2022-02-15T11:02:05+06:00
 icon: "ti-plug"
-description: "Allow your customers to easily connect your app."
+description: "Allow customers to connect to your app using a QR code or magic link."
 type : "product"
 keywords: ["connection", "connect", "qr"]
 weight: 10
 toc: true
 ---
 
-With this feature you'll be able to allow users to connect with your app offline (through a QR code or a dynamic link). 
+This feature allows users to connect with your app through a QR code or a dynamic link.
 
-In addition to a regular connection, you'll receive a callback notification once a user is connected with your app, which means you can use that callback as an entry point to build your business logic, like sending a welcome message.
+In addition to a regular connection, you'll receive a callback notification once a user is connected to your app. The callback is an entry point to build your business logic, e.g., sending a welcome message.
 
-Let's see an example for building this feature
+Let's see an example:
 
 ### Generating a QR code
 
