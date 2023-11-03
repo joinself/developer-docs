@@ -9,6 +9,28 @@ weight: 5
 
 ### Send Messages
 {{% tabs groupId="language" %}}
+    {{% tab "Kotlin" %}}    
+    val chatMsg = ChatMessage.Builder()
+        .setToIdentifier("24520674618")
+        .setMessage("hello")        
+        .build()
+    account.send(message = chatMsg) {
+    }
+    {{% /tab %}}
+
+    {{% tab "Swift" %}}
+    let chatMsg = ChatMessage.Builder()
+        .toIdentifier("58141443814")
+        .withMessage("hello")        
+        .build()                
+    account.send(message: chatMsg, onAcknowledgement: {error in        
+    })
+    {{% /tab %}}    
+{{% /tabs %}}
+
+### Attachments
+
+{{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
     val attachment = Attachment.Builder()
         .setData("test data".toByteArray())
@@ -42,7 +64,6 @@ weight: 5
     {{% /tab %}}    
 {{% /tabs %}}
 
-### Attachments
 
 #### Upload
 

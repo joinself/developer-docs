@@ -9,7 +9,7 @@ weight: 1
 
 ### Install the library
 #### Android
-Add the following to gradle configuration.
+Add the following codes to gradle configuration.
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
     repositories {
@@ -36,9 +36,9 @@ Use snapshot version, available on [Maven Central](https://s01.oss.sonatype.org/
 
 
 #### iOS
-Add the following to `Pod` file
+Add the following codes to CocoaPods `Pod` file
 {{% tabs groupId="language" %}}
     {{% tab "Swift" %}}      
-    pod 'SelfMobileSDK'
+      pod 'self-embedded-ios', :git => 'https://github.com/joinself/self-embedded-ios.git'
     {{% /tab %}}    
 {{% /tabs %}}

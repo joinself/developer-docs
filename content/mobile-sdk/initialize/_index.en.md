@@ -7,8 +7,10 @@ type : "docs"
 weight: 2
 ---
 
+Self SDK need to initialize before using its api. 
+
 ### Android
-Self SDK need to initialize before using its api. Add the following to App `onCreate`
+Add the following codes to App `onCreate`
 
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
