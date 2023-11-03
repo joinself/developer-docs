@@ -4,7 +4,7 @@ date: 2023-10-31T13:34:14+07:00
 icon: "ti-settings"
 description: "Send and receive messages"
 type : "docs"
-weight: 4
+weight: 5
 ---
 
 ### Send Messages

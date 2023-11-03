@@ -4,7 +4,7 @@ date: 2023-10-31T13:34:14+07:00
 icon: "ti-settings"
 description: "Request a fact and response to a fact request"
 type : "docs"
-weight: 5
+weight: 6
 ---
 
 ### Fact Request

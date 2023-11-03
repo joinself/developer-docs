@@ -4,7 +4,7 @@ date: 2023-10-31T13:34:14+07:00
 icon: "ti-settings"
 description: "Setup liveness check"
 type : "docs"
-weight: 2
+weight: 4
 ---
 
 ### Install the library

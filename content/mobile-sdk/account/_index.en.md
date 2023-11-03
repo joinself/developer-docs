@@ -7,7 +7,10 @@ type : "docs"
 weight: 3
 ---
 
+
+
 ### Create an account
+
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
     val selfId = account.register(attestation)    
