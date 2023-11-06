@@ -1,5 +1,5 @@
 ---
-title: "Facts"
+title: "Attestations"
 date: 2023-10-31T13:34:14+07:00
 icon: "ti-settings"
 description: "Request a fact and response to a fact request"
@@ -7,7 +7,7 @@ type : "docs"
 weight: 6
 ---
 
-### Fact Request
+### Attestation Request
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
     val fact = Fact.Builder()
@@ -35,7 +35,7 @@ weight: 6
     {{% /tab %}}    
 {{% /tabs %}}
 
-### Response Fact Resquest
+### Response to Attestation Request
 
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
@@ -47,8 +47,8 @@ weight: 6
     {{% /tab %}}    
 {{% /tabs %}}
 
-### Subscribe to Fact Request
-Subscribing to a fact request
+### Subscribe to Attestation Request
+Subscribing to a attestation request
 
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
@@ -69,8 +69,8 @@ Subscribing to a fact request
 {{% /tabs %}}
 
 
-### Subscribe to Fact Response
-Subscribing to a fact response
+### Subscribe to Attestation Responses
+Subscribing to a attestation responses
 
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
