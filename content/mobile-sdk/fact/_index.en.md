@@ -35,15 +35,59 @@ weight: 6
     {{% /tab %}}    
 {{% /tabs %}}
 
-### Fact Response
+### Response Fact Resquest
 
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
-    val selfId = account.register(attestation)    
+    
     {{% /tab %}}
 
     {{% tab "Swift" %}}
-    let selfId = await account.register(attestation: attestation)
-    log.debug("SelfId: \(selfId)")
+    
     {{% /tab %}}    
 {{% /tabs %}}
+
+### Subscribe to Fact Request
+Subscribing to a fact request
+
+{{% tabs groupId="language" %}}
+    {{% tab "Kotlin" %}}
+    account.setOnRequestListener { message ->        
+        if (message is AttestationRequest) {
+            Timber.d("AttestationRequest from:${message.fromIdentifier()} - facts: ${message.facts().map { it.name() }}")
+        }
+    }
+    {{% /tab %}}
+
+    {{% tab "Swift" %}}
+    self.account.setOnRequestListener { msg in     
+        if let request = msg as? AttestationRequest {
+            log.debug("AttestationRequest from:\(request.fromIdentifier()) - fact:\(request.facts().map{$0.name()})")
+        }
+    }
+    {{% /tab %}}    
+{{% /tabs %}}
+
+
+### Subscribe to Fact Response
+Subscribing to a fact response
+
+{{% tabs groupId="language" %}}
+    {{% tab "Kotlin" %}}
+    account.setOnResponseListener { message ->        
+        if (message is AttestationResponse) {
+            Timber.d("AttestationRequest from:${message.fromIdentifier()} - attestation: ${message.attestations().size}")
+        }
+    }
+    {{% /tab %}}
+
+    {{% tab "Swift" %}}
+    self.account.setOnResponseListener { msg in        
+        if let response = msg as? AttestationResponse {
+            log.debug("AttestationResponse from:\(response.fromIdentifier()) - status:\(response.status().rawValue) - attestation:\(response.attestations().map{$0.fact().value()})")
+        }
+    }
+    {{% /tab %}}    
+{{% /tabs %}}
+
+

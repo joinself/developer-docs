@@ -8,8 +8,12 @@ weight: 3
 ---
 
 
+Account is the main interface to Self network.  
+Account holds SelfId and keypair that used to interact with other accounts in Self network.
+
 
 ### Create an account
+By creating an account, Self network will generate a SelfId for this account.
 
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
@@ -24,6 +28,7 @@ weight: 3
 
 
 ### Close account
+Self network will delete SelfId in the Self network and clean up local storage.
 
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}

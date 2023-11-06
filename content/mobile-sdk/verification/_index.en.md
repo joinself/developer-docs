@@ -2,12 +2,14 @@
 title: "Verification"
 date: 2023-10-31T13:34:14+07:00
 icon: "ti-settings"
-description: "Request a fact and response to a fact request"
+description: "Documentation verification"
 type : "docs"
 weight: 7
 ---
 
-### Fact Request
+### Verification Request
+Sending a verification request to Self verification server.
+
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
     val fact = Fact.Builder()
@@ -25,7 +27,7 @@ weight: 7
     .withName("email")
     .build()
     let factRequest = AttestationRequest.Builder()
-        .toIdentifier(recipient)
+        .toIdentifier("24520674618")
         .withFacts([fact])
         .build()
     Task {
@@ -35,15 +37,23 @@ weight: 7
     {{% /tab %}}    
 {{% /tabs %}}
 
-### Fact Response
+### Verification Response
+Subscribing to responses from Self verification server.
 
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
-    val selfId = account.register(attestation)    
+    account.setOnResponseListener { message ->        
+        if (message is VerificationResponse) {
+            Timber.d("VerificationResponse from:${message.fromIdentifier()} - attestation: ${message.attestations().size}")
+        }
+    }
     {{% /tab %}}
 
     {{% tab "Swift" %}}
-    let selfId = await account.register(attestation: attestation)
-    log.debug("SelfId: \(selfId)")
+    self.account.setOnResponseListener { msg in        
+        if let response = msg as? VerificationResponse {
+            log.debug("VerificationResponse from:\(response.fromIdentifier()) - status:\(response.status().rawValue) - attestation:\(response.attestations().map{$0.fact().value()})")
+        }
+    }
     {{% /tab %}}    
 {{% /tabs %}}

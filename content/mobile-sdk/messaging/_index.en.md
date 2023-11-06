@@ -29,6 +29,7 @@ weight: 5
 {{% /tabs %}}
 
 ### Attachments
+Self allows to attach an array of attachments to a chat message. An attachment can be any file such as image, documentation.
 
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
@@ -64,7 +65,66 @@ weight: 5
     {{% /tab %}}    
 {{% /tabs %}}
 
+### Receive Messages
+Subscribing to messaging stream from Self server.
+
+{{% tabs groupId="language" %}}
+    {{% tab "Kotlin" %}}    
+    account.setOnMessageListener { message ->            
+        if (message is ChatMessage) {
+            Timber.d("chatMessage sender:${message.fromIdentifier()} - content: ${message.message()} - attachments: ${message.attachments().size}")
+        }
+    }
+    {{% /tab %}}
+
+    {{% tab "Swift" %}}
+    self.account.setOnMessageListener { msg in     
+        if let chatMsg = msg as? ChatMessage {
+            log.debug("chatMessage sender:\(msg.fromIdentifier()) - content:\(chatMsg.message()) - attachments: \(chatMsg.attachments().count)")
+        }
+    }
+    {{% /tab %}}    
+{{% /tabs %}}
+
+### Files
+Self object server allows to store files in 7 days, the maximum size is 20MB.
 
 #### Upload
+Upload data object to Self object server.
+
+{{% tabs groupId="language" %}}
+    {{% tab "Kotlin" %}}    
+    // upload a simple text file
+    val dataObject = DataObject.Builder()
+        .setData("hello".toByteArray())
+        .setContentType("text/plain")
+        .build()
+    val dataLink = account.upload(dataObject)
+    {{% /tab %}}
+
+    {{% tab "Swift" %}}
+    // upload a simple text file
+    if let data = "hello".data(using: .utf8) {
+        let dataObject = DataObject.Builder()
+            .withData(data)
+            .withContentType("text/plain")
+            .build()
+        let dataLink = await account.upload(dataObject: dataObject)
+    }
+    {{% /tab %}}    
+{{% /tabs %}}
+
 
 #### Download
+Download a data object from Self object server.
+{{% tabs groupId="language" %}}
+    {{% tab "Kotlin" %}}    
+    val data = account.download(dataLink)
+    {{% /tab %}}
+
+    {{% tab "Swift" %}}
+    let data = try await account.download(dataLink: dataLink)
+    {{% /tab %}}    
+{{% /tabs %}}
+
+

@@ -7,7 +7,7 @@ type : "docs"
 weight: 2
 ---
 
-Self SDK need to initialize before using its api. 
+Self SDK need to initialize before using the APIs. 
 
 ### Android
 Add the following codes to App `onCreate`

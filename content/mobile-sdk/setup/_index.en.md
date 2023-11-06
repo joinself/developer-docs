@@ -9,6 +9,7 @@ weight: 1
 
 ### Install the library
 #### Android
+<!--
 Add the following codes to gradle configuration.
 {{% tabs groupId="language" %}}
     {{% tab "Kotlin" %}}
@@ -20,6 +21,7 @@ Add the following codes to gradle configuration.
 	}
     {{% /tab %}}    
 {{% /tabs %}}
+-->
 
 Use snapshot version, available on [Maven Central](https://s01.oss.sonatype.org/content/repositories/snapshots/com/joinself/)
 {{% tabs groupId="language" %}}
