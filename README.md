@@ -1,15 +1,35 @@
 # Developer Documentation
 
+[![CI](https://github.com/joinself/developer-docs/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/joinself/developer-docs/actions/workflows/gh-pages.yml)
+
+Documentation website https://docs.joinself.com/.
+
 ## Installation
 
-- install Hugo: https://gohugo.io/installation/
-- clone the repo: `git clone git@github.com:joinself/developer-docs.git`
-- change directory: `cd developer-docs`
-- remove the cached themes: `rm --cached themes -r`
-- add the dot theme submodule: `git submodule add https://github.com/themefisher/dot-hugo-documentation-theme themes/dot`
-- start the server: `hugo serve --ignoreCache --disableFastRender --noHTTPCache -w -v`
+Install Hugo https://gohugo.io/installation/
 
+Clone project and start Hugo
+
+```bash
+git clone --recurse-submodules git@github.com:joinself/developer-docs.git
+cd developer-docs
+hugo server
+```
+
+The site should now be available on http://localhost:1313/
+
+## Documentation
+
+- [Documentation](https://docs.joinself.com/)
+
+## Support
+
+Looking for help? Reach out to us at [support@joinself.com](mailto:support@joinself.com)
+
+## Contributing
+
+See [Contributing](CONTRIBUTING.md).
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](LICENSE).
+See [License](LICENSE).
