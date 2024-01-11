@@ -6,7 +6,7 @@ description: "Self Privacy Notice"
 type : "docs"
 custom_title: "Privacy Notice"
 toc: true
-weight: 1
+weight: 3
 ---
 
 Last updated: 31st August, 2022

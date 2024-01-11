@@ -6,7 +6,7 @@ description: "Self Country Availability"
 type : "docs"
 custom_title: "Country Availability"
 toc: true
-weight: 1
+weight: 5
 ---
 
 The list below is the current list of countries to which Self can provide Services. Our Services are in Beta, and not all systems or document checks will be functional in all territories. This list forms part of any commercial Terms and conditions. If your Organisation is based outside of the countries in this list, Self will be unable to accept your application to join the Network or use our Services. 
