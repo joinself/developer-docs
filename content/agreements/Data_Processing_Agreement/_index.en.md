@@ -6,7 +6,7 @@ description: "Self Data Processing Agreement"
 type : "docs"
 custom_title: "Data Processing Agreement"
 toc: true
-weight: 1
+weight: 4
 ---
 
 This Data Processing Agreement (“DPA”) is subject to and forms part of your Self Commercial Terms and Conditions and governs Self’s Processing of Personal Data.

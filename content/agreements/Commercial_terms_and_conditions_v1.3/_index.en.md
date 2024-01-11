@@ -6,7 +6,7 @@ description: "Self Commercial Terms and Conditions v1.3"
 type : "docs"
 custom_title: "Commercial Terms and Conditions v1.3"
 toc: true
-weight: 1
+weight: 2
 ---
 
 These Self Commercial Terms and Conditions includes this introduction, the General Terms, Definitions, Services Terms, and incorporated documents and terms (“**Agreement**”) and forms a legal agreement between Self Group Limited (“**Self**”)and the entity or sole proprietor on whose behalf a Self Organisation Account is created (“**you**” and “**your**”) This Agreement states the terms and conditions that apply to your use of the Services.					
