@@ -34,7 +34,7 @@ res = @client.facts.request_via_intermediary(selfid, facts)
 <p>resp, err := client.FactService().RequestViaIntermediary(&amp;req)
 </code></pre></p></div><div class=tab-pane title=Typescript><pre><code>try {
     let res = await sdk.facts().requestViaIntermediary(selfID, [{
-        fact: 'phone_number',
+        fact: 'unverified_phone_number',
         operator: '==',
         sources: ['user_specified'],
         expected_value: '+44111222333'
@@ -45,7 +45,7 @@ res = @client.facts.request_via_intermediary(selfid, facts)
         sdk.logger.warn(&quot;you are unauthorized to run this action&quot;)
     } else if (res.status === 'accepted') {
         sdk.logger.info(&quot;your assertion is....&quot;)
-        sdk.logger.info(res.attestationValuesFor('phone_number')[0])
+        sdk.logger.info(res.attestationValuesFor('unverified_phone_number')[0])
     } else {
         sdk.logger.info(&quot;your request has been rejected&quot;)
     }
