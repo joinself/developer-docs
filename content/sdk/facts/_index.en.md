@@ -25,11 +25,11 @@ As this list is always growing, you can check the possible values on your SDK [r
 
 ### Fact
 
-This is the name of the fact you want to request like _display_name_, _email_address_ or _phone_number_.
+This is the name of the fact you want to request like _display_name_, _email_address_ or _unverified_phone_number_.
 
 The list of values by source is:
 
-*   **_user_specified_**: _display_name_, _email_address_ and _phone_number_
+*   **_user_specified_**: _display_name_, _email_address_ and _unverified_phone_number_
 *   **_passport_** and **_identity-card _**: _document_number_, _surname_, _given_names_, _date_of_birth_, _date_of_expiration_, _sex_, _nationality_, _country_of_issuance.
 *   **_driving_license_** : _document_number_, _surname_, _given_names_, _date_of_birth_, _date_of_issuance_, _date_of_expiration_, _address_, _issuing_authority_, _place_of_birth_, _country_of_issuance_.
 
