@@ -60,6 +60,6 @@ Additionally each fact of the response has a list of attestations let’s see ho
     {{% /tab %}}
 
     {{% tab "Typescript" %}}
-    sdk.logger.info(res.attestationValuesFor('phone_number')[0])
+    sdk.logger.info(res.attestationValuesFor('unverified_phone_number')[0])
     {{% /tab %}}
 {{% /tabs %}}

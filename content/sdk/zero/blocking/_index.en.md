@@ -40,7 +40,7 @@ keywords: ["fact", "anonymous", "zero knowledge", "zero", "intermediary", "block
     {{% tab "Typescript" %}}
     try {
         let res = await sdk.facts().requestViaIntermediary(selfID, [{
-            fact: 'phone_number',
+            fact: 'unverified_phone_number',
             operator: '==',
             sources: ['user_specified'],
             expected_value: '+44111222333'
@@ -51,7 +51,7 @@ keywords: ["fact", "anonymous", "zero knowledge", "zero", "intermediary", "block
             sdk.logger.warn("you are unauthorized to run this action")
         } else if (res.status === 'accepted') {
             sdk.logger.info("your assertion is....")
-            sdk.logger.info(res.attestationValuesFor('phone_number')[0])
+            sdk.logger.info(res.attestationValuesFor('unverified_phone_number')[0])
         } else {
             sdk.logger.info("your request has been rejected")
         }
